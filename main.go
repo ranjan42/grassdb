@@ -3,18 +3,20 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
 	"net"
 	"strings"
 
-	"grassdb/internal/raft"
+	"grassdb/internal/raft" // Corrected import path
 
-	pb "github.com/ranjan/grassdb/proto"
+	pb "github.com/ranjan42/grassdb/proto" // Correct import path
 
 	"google.golang.org/grpc"
 )
 
 func main() {
+	fmt.Println("Starting Raft Node...")
 	id := flag.String("id", "", "Unique node ID")
 	port := flag.String("port", "", "Port to listen on")
 	peersStr := flag.String("peers", "", "Comma-separated list of peer addresses (e.g. node2:50052,node3:50053)")
@@ -27,6 +29,7 @@ func main() {
 
 	applyCh := make(chan string)
 	node := raft.NewRaftNode(*id, peers, applyCh)
+	fmt.Printf("Raft Node initialized: %+v\n", node)
 
 	lis, err := net.Listen("tcp", ":"+*port)
 	if err != nil {
