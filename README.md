@@ -15,7 +15,7 @@ grassdb/
 │       ├── server.go
 │       └── raft.go
 └── proto/             # Protobuf definitions
-    └── distdb.proto
+    └── grassdb.proto
 ```
 
 ## Features
