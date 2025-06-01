@@ -73,4 +73,4 @@ grassdb/
 - [Write-Ahead Logs](https://en.wikipedia.org/wiki/Write-ahead_logging)
 
 ## Authors
-**ranjan42** – Creator of grassdb
+**ranjan42** – Creator of PebbleDB
