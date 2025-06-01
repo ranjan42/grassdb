@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package grassdb;
 
+option go_package = "github.com/ranjan42/grassdb/proto;grassdbpb";
+
 service Database {
     rpc Get (GetRequest) returns (GetResponse);
     rpc Set (SetRequest) returns (SetResponse);
