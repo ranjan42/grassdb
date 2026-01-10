@@ -1,16 +1,18 @@
-2026/01/11 03:09:39 gRPC server listening on :50052
-2026/01/11 03:09:39 [node2] Election timeout, becoming Candidate
-2026/01/11 03:09:40 [node2] Won election! Becoming Leader for term 5
-2026/01/11 03:09:42 [node2] Won election! Becoming Leader for term 9
-2026/01/11 03:09:43 [node2] Won election! Becoming Leader for term 12
-2026/01/11 03:09:44 [node2] Won election! Becoming Leader for term 15
-2026/01/11 03:09:45 [node2] Won election! Becoming Leader for term 18
-2026/01/11 03:09:47 [node2] Won election! Becoming Leader for term 22
-2026/01/11 03:09:49 [node2] Won election! Becoming Leader for term 26
-2026/01/11 03:09:50 [node2] Won election! Becoming Leader for term 30
-2026/01/11 03:09:52 [node2] Won election! Becoming Leader for term 34
-2026/01/11 03:09:53 [node2] Won election! Becoming Leader for term 37
-2026/01/11 03:09:55 [node2] Won election! Becoming Leader for term 40
-2026/01/11 03:09:56 [node2] Won election! Becoming Leader for term 43
-2026/01/11 03:09:57 [node2] Won election! Becoming Leader for term 46
-2026/01/11 03:09:58 [node2] Won election! Becoming Leader for term 49
+2026/01/11 03:17:09 gRPC server listening on :50052
+2026/01/11 03:17:10 [node2] Won election! Becoming Leader for term 2
+2026/01/11 03:17:11 [node2] Won election! Becoming Leader for term 5
+2026/01/11 03:17:12 [node2] Won election! Becoming Leader for term 8
+2026/01/11 03:17:13 [node2] Won election! Becoming Leader for term 11
+2026/01/11 03:17:15 [node2] Won election! Becoming Leader for term 14
+2026/01/11 03:17:15 [node2] Election timeout, becoming Candidate
+2026/01/11 03:17:15 [node2] Won election! Becoming Leader for term 16
+2026/01/11 03:17:17 [node2] Won election! Becoming Leader for term 20
+2026/01/11 03:17:18 [node2] Won election! Becoming Leader for term 23
+2026/01/11 03:17:19 [node2] Won election! Becoming Leader for term 27
+2026/01/11 03:17:21 [node2] Won election! Becoming Leader for term 30
+2026/01/11 03:17:22 [node2] Election timeout, becoming Candidate
+2026/01/11 03:17:22 [node2] Won election! Becoming Leader for term 33
+2026/01/11 03:17:23 [node2] Won election! Becoming Leader for term 36
+2026/01/11 03:17:24 [node2] Won election! Becoming Leader for term 40
+2026/01/11 03:17:25 [node2] Election timeout, becoming Candidate
+2026/01/11 03:17:25 [node2] Won election! Becoming Leader for term 42

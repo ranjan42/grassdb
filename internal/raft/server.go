@@ -61,3 +61,28 @@ func (rn *RaftNode) AppendEntries(ctx context.Context, args *pb.AppendEntriesReq
 
 	return &pb.AppendEntriesResponse{Term: int64(rn.currentTerm), Success: true}, nil
 }
+
+func (rn *RaftNode) InstallSnapshot(ctx context.Context, args *pb.InstallSnapshotRequest) (*pb.InstallSnapshotResponse, error) {
+	rn.mu.Lock()
+	defer rn.mu.Unlock()
+
+	if args.Term > int64(rn.currentTerm) {
+		rn.currentTerm = int(args.Term)
+		rn.state = Follower
+		rn.votedFor = ""
+	}
+
+	if args.Term < int64(rn.currentTerm) {
+		return &pb.InstallSnapshotResponse{Term: int64(rn.currentTerm)}, nil
+	}
+
+	rn.resetElectionTimer()
+
+	// Simplified Snapshot handling:
+	// In a full implementation, we would discard the log and replace it with state.
+	// For now, we acknowledge the leader's authority.
+
+	return &pb.InstallSnapshotResponse{
+		Term: int64(rn.currentTerm),
+	}, nil
+}

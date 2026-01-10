@@ -82,7 +82,30 @@ You can interact with the cluster using a gRPC client. Since `grassdb` uses stan
 
 ### Example Client interaction
 
-*Coming soon: Client SDK and CLI tool.*
+### Client CLI Tool
+
+You can use the built-in CLI tool to interact with the cluster. It automatically handles leader discovery and retries.
+
+1. **Build the CLI:**
+   ```bash
+   go build -o grass-cli cmd/grass-cli/main.go
+   ```
+
+2. **Set a value:**
+   ```bash
+   ./grass-cli set mykey myvalue
+   ```
+
+3. **Get a value:**
+   ```bash
+   ./grass-cli get mykey
+   ```
+
+4. **Custom Peers:**
+   If running on different ports/hosts:
+   ```bash
+   ./grass-cli -peers=host1:50051,host2:50052 set foo bar
+   ```
 
 ---
 

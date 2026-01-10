@@ -39,6 +39,10 @@ type RaftNode struct {
 	leaderTimeoutTimer *time.Timer // Timer to detect leader failure
 	applyCh            chan string // simplified state machine
 	peerClients        map[string]pb.DatabaseClient
+
+	// Snapshot state
+	lastIncludedIndex int
+	lastIncludedTerm  int
 }
 
 func NewRaftNode(id string, peers []string, applyCh chan string) *RaftNode {
@@ -247,4 +251,35 @@ func randomElectionTimeout() time.Duration {
 
 func randomLeaderTimeout() time.Duration {
 	return time.Duration(600+rand.Intn(400)) * time.Millisecond
+}
+
+// Snapshot creates a snapshot of the state machine up to the given index.
+// In this simplified version, it truncates the log.
+func (rn *RaftNode) Snapshot(index int, data []byte) {
+	rn.mu.Lock()
+	defer rn.mu.Unlock()
+
+	if index <= rn.lastIncludedIndex {
+		return // Already snapshotted
+	}
+
+	// Calculate actual log index
+	// Logical index = lastIncludedIndex + len(log) if we kept everything
+	// We need to find the entry at 'index'
+
+	// For now, let's assume index is valid and in our current log.
+	// realIndex := index - rn.lastIncludedIndex
+
+	// We basically just clear the log for now as a POC of compaction.
+	// In a real impl, we keep the last entry as the new "prevLog" for AppendEntries consistency.
+
+	rn.lastIncludedIndex = index
+	rn.lastIncludedTerm = rn.currentTerm // Simplified
+
+	// Truncate log (keep nothing for now, or maybe keep tails)
+	rn.log = make([]*pb.LogEntry, 0)
+
+	log.Printf("[%s] Created snapshot at index %d", rn.id, index)
+
+	// TODO: Write 'data' (snapshot state) to disk
 }
