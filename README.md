@@ -1,76 +1,115 @@
-# grassdb
-A simple distributed database that regrows easily, just like grass.
+# grassdb - Distributed Key-Value Store
 
-```
-grassdb/
-├── internal/
-│   ├── server/        # gRPC server that handles Get/Set
-│   │   └── server.go
-│   ├── storage/       # WAL and in-memory key-value store
-│   │   ├── wal.go
-│   │   └── kvstore.go
-│   └── raft/          # Raft consensus algorithm
-│       ├── node.go
-│       ├── log.go
-│       ├── server.go
-│       └── raft.go
-└── proto/             # Protobuf definitions
-    └── grassdb.proto
-```
+`grassdb` is an enterprise-grade distributed key-value store written in Go. It uses the Raft consensus algorithm to ensure data consistency and high availability across a cluster of nodes. Just like grass, it's designed to be resilient and "regrow" easily after failures.
 
-## Features
-- ✅ In-memory key-value store with persistence via WAL
-- ✅ gRPC API to interact with the database (Set, Get)
-- ✅ Basic Raft implementation:
-  - Leader election (RequestVote)
-  - Append entries (AppendEntries)
-  - Term tracking and election timers
+---
 
-## How It Works
+## 🌟 Key Features
 
-### Startup
-- Each node initializes with a unique ID and peer list.
-- Key-value state is restored from a WAL file.
+*   **Distributed Consensus**: Implements the Raft consensus algorithm (Leader Election, Log Replication).
+*   **Strong Consistency**: Writes are directed to the leader and replicated to followers.
+*   **High Availability**: The cluster continues to operate as long as a quorum (majority) of nodes are up.
+*   **Persistence**: Uses a Write-Ahead Log (WAL) to persist data to disk, ensuring survivability across restarts.
+*   **gRPC API**: Modern, high-performance API for all interactions (Client-to-Node and Node-to-Node).
 
-### Client Interaction
-- A gRPC API allows clients to Set or Get values.
+---
 
-### Raft Leader Election
-- If no leader heartbeat is received, a node starts an election.
-- Votes are requested via RequestVote RPC.
-- The leader replicates log entries via AppendEntries.
+## 🏗 Architecture
 
-## Getting Started
+`grassdb` is built on a modular architecture:
 
-1. **Clone and build**
-   ```bash
-   git clone https://github.com/ranjan42/grassdb.git
-   cd grassdb
-   go mod tidy
-   ```
+1.  **API Layer (gRPC)**: Handles client requests (`Get`, `Set`) and internal Raft RPCs (`RequestVote`, `AppendEntries`).
+2.  **Consensus Layer (Raft)**: Manages the distributed state machine. It handles leader election, heartbeat mechanism, and log replication.
+3.  **Storage Layer**:
+    *   **In-Memory Store**: Fast access to current state.
+    *   **WAL (Write-Ahead Log)**: Appends every write operation to a disk file for durability.
 
-2. **Generate gRPC code**
-   ```bash
-   protoc --go_out=. --go-grpc_out=. proto/grassdb.proto
-   ```
+---
 
-3. **Run the server**
-   ```bash
-   go run main.go
-   ```
-   `main.go` initializes the node, starts the gRPC server, and connects to peers.
+## 🚀 Getting Started
 
-## 🛠️ To-Do
-- Log replication and consistency checks
-- Commit log entries to the key-value store only after quorum
-- Cluster membership changes
-- Snapshots and log compaction
-- Metrics and observability
+### Prerequisites
 
-## 📚 Learn More
-- [The Raft Paper](https://raft.github.io/)
-- [gRPC in Go](https://grpc.io/docs/languages/go/)
-- [Write-Ahead Logs](https://en.wikipedia.org/wiki/Write-ahead_logging)
+*   Go 1.24+
+*   Protobuf Compiler (`protoc`) with Go plugins
 
-## Authors
-**ranjan42** – Creator of grassdb
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/ranjan42/grassdb.git
+    cd grassdb
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    go mod tidy
+    ```
+
+3.  **Generate Protobuf code (if modifying .proto files):**
+    ```bash
+    protoc --go_out=. --go-grpc_out=. --go_opt=paths=source_relative --go-grpc_opt=paths=source_relative proto/grassdb.proto
+    ```
+
+### Running a Local Cluster
+
+We provide a helper script to launch a 3-node cluster locally.
+
+1.  **Build the binary:**
+    ```bash
+    go build -o grassdb main.go
+    ```
+
+2.  **Start the cluster:**
+    ```bash
+    bash start_cluster.sh
+    ```
+    This will start 3 nodes on ports `:50051`, `:50052`, and `:50053`.
+
+3.  **Verify Leader Election:**
+    Check the logs (e.g., `node1.log`) to see which node became the leader:
+    ```bash
+    grep "Won election" node*.log
+    ```
+
+---
+
+## 🔧 Usage
+
+You can interact with the cluster using a gRPC client. Since `grassdb` uses standard gRPC, you can write a simple client in Go, Python, or efficient CLI tools like `grpcurl`.
+
+**Note**: All write operations (`Set`) must be sent to the **Leader**. If you send a write to a Follower, it will return an error indicating who the Leader is (Redirect logic to be fully implemented).
+
+### Example Client interaction
+
+*Coming soon: Client SDK and CLI tool.*
+
+---
+
+## 📚 Internals & Design
+
+### Raft Implementation Details
+*   **Leader Election**: Randomized election timeouts (300-600ms) to prevent split votes.
+*   **Heartbeats**: Leader sends heartbeats every 100ms to maintain authority.
+*   **Transport**: Persistent gRPC connections are established between peers to minimize connection overhead.
+
+### Data Persistence
+Each node maintains its own `distdb_<node_id>.wal` file. On startup, the node replays this WAL to restore its state before joining the cluster.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please check the [Task List](task.md) for current roadmap items.
+
+1.  Fork the repo
+2.  Create your feature branch (`git checkout -b feature/amazing-feature`)
+3.  Commit your changes (`git commit -m 'Add some amazing feature'`)
+4.  Push to the branch (`git push origin feature/amazing-feature`)
+5.  Open a Pull Request
+
+---
+
+## 📜 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
