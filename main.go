@@ -3,43 +3,29 @@ package main
 
 import (
 	"flag"
-	"fmt"
-	"log"
-	"net"
 	"strings"
 
-	"grassdb/internal/raft" // Corrected import path
-
-	pb "github.com/ranjan42/grassdb/proto" // Correct import path
-
-	"google.golang.org/grpc"
+	"grassdb/internal/raft"
+	"grassdb/internal/server"
 )
 
 func main() {
-	fmt.Println("Starting Raft Node...")
-	id := flag.String("id", "", "Unique node ID")
-	port := flag.String("port", "", "Port to listen on")
-	peersStr := flag.String("peers", "", "Comma-separated list of peer addresses (e.g. node2:50052,node3:50053)")
+	id := flag.String("id", "node1", "Unique node ID")
+	addr := flag.String("addr", ":50051", "Address to listen on")
+	peersStr := flag.String("peers", "", "Comma-separated list of peer addresses (e.g. 127.0.0.1:50052,127.0.0.1:50053)")
 	flag.Parse()
 
-	if *id == "" || *port == "" {
-		log.Fatalf("Both --id and --port are required")
+	var peers []string
+	if *peersStr != "" {
+		peers = strings.Split(*peersStr, ",")
 	}
-	peers := strings.Split(*peersStr, ",")
 
+	// Channel to apply committed entries to the state machine
 	applyCh := make(chan string)
+
+	// Initialize Raft Node
 	node := raft.NewRaftNode(*id, peers, applyCh)
-	fmt.Printf("Raft Node initialized: %+v\n", node)
 
-	lis, err := net.Listen("tcp", ":"+*port)
-	if err != nil {
-		log.Fatalf("failed to listen on port %s: %v", *port, err)
-	}
-	grpcServer := grpc.NewServer()
-	pb.RegisterRaftServer(grpcServer, node)
-
-	log.Printf("Raft node %s listening on port %s\n", *id, *port)
-	if err := grpcServer.Serve(lis); err != nil {
-		log.Fatalf("failed to serve gRPC server: %v", err)
-	}
+	// Start gRPC Server (handles both Database and Raft RPCs)
+	server.StartGRPCServer(*addr, node)
 }

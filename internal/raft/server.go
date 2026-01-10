@@ -2,58 +2,62 @@ package raft
 
 import (
 	"context"
+
+	pb "github.com/ranjan42/grassdb/proto"
 )
 
-type AppendEntriesArgs struct {
-	Term     int
-	LeaderID string
-}
-
-type AppendEntriesReply struct {
-	Term    int
-	Success bool
-}
-
-type RequestVoteArgs struct {
-	Term         int
-	CandidateID  string
-	LastLogIndex int
-	LastLogTerm  int
-}
-
-type RequestVoteReply struct {
-	Term        int
-	VoteGranted bool
-}
-
-func (rn *RaftNode) RequestVote(ctx context.Context, args *RequestVoteArgs) (*RequestVoteReply, error) {
+func (rn *RaftNode) RequestVote(ctx context.Context, args *pb.RequestVoteRequest) (*pb.RequestVoteResponse, error) {
 	rn.mu.Lock()
 	defer rn.mu.Unlock()
 
-	if args.Term < rn.currentTerm {
-		return &RequestVoteReply{Term: rn.currentTerm, VoteGranted: false}, nil
+	// Implement logic:
+	// 1. Reply false if term < currentTerm
+	// 2. If votedFor is null or candidateId, and candidate's log is at least as up-to-date as receiver's log, grant vote
+
+	if args.Term < int64(rn.currentTerm) {
+		return &pb.RequestVoteResponse{Term: int64(rn.currentTerm), VoteGranted: false}, nil
 	}
 
-	if rn.votedFor == "" || rn.votedFor == args.CandidateID {
-		rn.votedFor = args.CandidateID
-		rn.currentTerm = args.Term
-		return &RequestVoteReply{Term: rn.currentTerm, VoteGranted: true}, nil
+	// If RPC request or response contains term T > currentTerm: set currentTerm = T, convert to follower
+	if args.Term > int64(rn.currentTerm) {
+		rn.currentTerm = int(args.Term)
+		rn.state = Follower
+		rn.votedFor = ""
 	}
 
-	return &RequestVoteReply{Term: rn.currentTerm, VoteGranted: false}, nil
+	if rn.votedFor == "" || rn.votedFor == args.CandidateId {
+		// TODO: Check log up-to-dateness
+		rn.votedFor = args.CandidateId
+		rn.resetElectionTimer()
+		return &pb.RequestVoteResponse{Term: int64(rn.currentTerm), VoteGranted: true}, nil
+	}
+
+	return &pb.RequestVoteResponse{Term: int64(rn.currentTerm), VoteGranted: false}, nil
 }
 
-func (rn *RaftNode) AppendEntries(ctx context.Context, args *AppendEntriesArgs) (*AppendEntriesReply, error) {
+func (rn *RaftNode) AppendEntries(ctx context.Context, args *pb.AppendEntriesRequest) (*pb.AppendEntriesResponse, error) {
 	rn.mu.Lock()
 	defer rn.mu.Unlock()
 
-	if args.Term < rn.currentTerm {
-		return &AppendEntriesReply{Term: rn.currentTerm, Success: false}, nil
+	if args.Term < int64(rn.currentTerm) {
+		return &pb.AppendEntriesResponse{Term: int64(rn.currentTerm), Success: false}, nil
 	}
 
-	rn.currentTerm = args.Term
-	rn.state = Follower
+	// If RPC request or response contains term T > currentTerm: set currentTerm = T, convert to follower
+	if args.Term > int64(rn.currentTerm) {
+		rn.currentTerm = int(args.Term)
+		rn.state = Follower
+		rn.votedFor = ""
+	}
+
+	// If we are candidate/leader and receive AppendEntries from valid leader, become follower
+	if rn.state != Follower {
+		rn.state = Follower
+	}
+
 	rn.resetElectionTimer()
 
-	return &AppendEntriesReply{Term: rn.currentTerm, Success: true}, nil
+	// TODO: Log replication logic
+
+	return &pb.AppendEntriesResponse{Term: int64(rn.currentTerm), Success: true}, nil
 }

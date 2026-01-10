@@ -1,9 +1,12 @@
 package raft
 
 import (
+	"log"
 	"math/rand"
 	"sync"
 	"time"
+
+	pb "github.com/ranjan42/grassdb/proto"
 )
 
 type State string
@@ -15,16 +18,27 @@ const (
 )
 
 type RaftNode struct {
-	mu                 sync.Mutex
-	id                 string
-	state              State
-	currentTerm        int
-	votedFor           string
+	mu          sync.Mutex
+	id          string
+	state       State
+	currentTerm int
+	votedFor    string
+	log         []*pb.LogEntry
+
+	// Volatile state on all servers
+	commitIndex int
+	lastApplied int
+
+	// Volatile state on leaders
+	nextIndex  map[string]int
+	matchIndex map[string]int
+
 	peers              []string
 	electionTimer      *time.Timer
 	heartbeatTimer     *time.Timer
 	leaderTimeoutTimer *time.Timer // Timer to detect leader failure
 	applyCh            chan string // simplified state machine
+	peerClients        map[string]pb.DatabaseClient
 }
 
 func NewRaftNode(id string, peers []string, applyCh chan string) *RaftNode {
@@ -34,8 +48,12 @@ func NewRaftNode(id string, peers []string, applyCh chan string) *RaftNode {
 		state:              Follower,
 		applyCh:            applyCh,
 		electionTimer:      time.NewTimer(randomElectionTimeout()),
-		heartbeatTimer:     time.NewTimer(50 * time.Millisecond),
+		heartbeatTimer:     time.NewTimer(100 * time.Millisecond),
 		leaderTimeoutTimer: time.NewTimer(randomLeaderTimeout()),
+		log:                make([]*pb.LogEntry, 0),
+		nextIndex:          make(map[string]int),
+		matchIndex:         make(map[string]int),
+		peerClients:        make(map[string]pb.DatabaseClient),
 	}
 	go rn.run()
 	return rn
@@ -62,6 +80,7 @@ func (rn *RaftNode) runFollower() {
 		case <-rn.electionTimer.C:
 			rn.mu.Lock()
 			rn.state = Candidate
+			log.Printf("[%s] Election timeout, becoming Candidate", rn.id)
 			rn.mu.Unlock()
 			return
 		case <-rn.leaderTimeoutTimer.C:
@@ -70,9 +89,13 @@ func (rn *RaftNode) runFollower() {
 			rn.mu.Unlock()
 			return
 		default:
+			rn.mu.Lock()
 			if rn.state != Follower {
+				rn.mu.Unlock()
 				return
 			}
+			rn.mu.Unlock()
+			time.Sleep(10 * time.Millisecond) // IDLE wait
 		}
 	}
 }
@@ -82,71 +105,146 @@ func (rn *RaftNode) runCandidate() {
 	rn.currentTerm++
 	rn.votedFor = rn.id
 	rn.resetElectionTimer()
+	term := rn.currentTerm
+	id := rn.id
 	rn.mu.Unlock()
 
-	// In a real setup, we would now send RequestVote RPCs to peers
+	// Send RequestVote to all peers
+	votes := 1 // Vote for self
+	voteCh := make(chan bool, len(rn.peers))
 
-	// Simulate success
-	time.Sleep(100 * time.Millisecond)
+	for _, peer := range rn.peers {
+		go func(p string) {
+			args := &pb.RequestVoteRequest{
+				Term:        int64(term),
+				CandidateId: id,
+				// LastLogIndex: ...
+				// LastLogTerm: ...
+			}
+			resp, err := rn.sendRequestVote(p, args)
+			if err != nil {
+				voteCh <- false
+				return
+			}
+			voteCh <- resp.VoteGranted
+		}(peer)
+	}
+
+	// Wait for votes
+	for i := 0; i < len(rn.peers); i++ {
+		vote := <-voteCh
+		if vote {
+			votes++
+		}
+	}
+
 	rn.mu.Lock()
-	rn.state = Leader
+	if rn.state != Candidate {
+		rn.mu.Unlock()
+		return
+	}
+
+	// Majority check (myself + peers)
+	if votes > (len(rn.peers)+1)/2 {
+		rn.state = Leader
+		log.Printf("[%s] Won election! Becoming Leader for term %d", rn.id, rn.currentTerm)
+		rn.votedFor = ""
+		// Initialize leader state
+		for _, p := range rn.peers {
+			rn.nextIndex[p] = len(rn.log) // Index of next log entry to send
+			rn.matchIndex[p] = -1         // Index of highest log entry known to be replicated
+		}
+	} else {
+		// Failed election, stay candidate (loop will retry or follower)
+		// Back to follower effectively if timeout?
+		// Actually runCandidate just finishes, main loop calls it again if state is Candidate
+		// But we should verify if we stepped down
+	}
 	rn.mu.Unlock()
 }
 
 func (rn *RaftNode) runLeader() {
 	rn.resetHeartbeatTimer()
-	rn.resetLeaderTimeoutTimer()
+	rn.leaderTimeoutTimer.Stop() // Stop the election timer while leader
 	for {
 		select {
 		case <-rn.heartbeatTimer.C:
 			rn.sendHeartbeats()
 			rn.resetHeartbeatTimer()
-		case <-rn.leaderTimeoutTimer.C:
-			rn.mu.Lock()
-			rn.state = Candidate
-			rn.mu.Unlock()
-			return
 		default:
+			rn.mu.Lock()
 			if rn.state != Leader {
+				rn.mu.Unlock()
 				return
 			}
+			rn.mu.Unlock()
+			time.Sleep(10 * time.Millisecond)
 		}
 	}
 }
 
+// ID returns the node's unique identifier.
+func (rn *RaftNode) ID() string {
+	return rn.id
+}
+
+// IsLeader checks if the node is currently the leader.
+func (rn *RaftNode) IsLeader() bool {
+	rn.mu.Lock()
+	defer rn.mu.Unlock()
+	return rn.state == Leader
+}
+
+// LeaderID returns the current leader's ID if known.
+// Note: This is an optimization; it might be stale.
+func (rn *RaftNode) LeaderID() string {
+	rn.mu.Lock()
+	defer rn.mu.Unlock()
+	if rn.state == Leader {
+		return rn.id
+	}
+	// TODO: Track current leader ID in follow state
+	return "unknown"
+}
+
 func (rn *RaftNode) sendHeartbeats() {
-	// In a real system: send AppendEntries RPC with empty entries
-	// Here we simulate a heartbeat broadcast
+	rn.broadcastAppendEntries()
 }
 
 func (rn *RaftNode) resetElectionTimer() {
 	if !rn.electionTimer.Stop() {
-		<-rn.electionTimer.C
+		select {
+		case <-rn.electionTimer.C:
+		default:
+		}
 	}
 	rn.electionTimer.Reset(randomElectionTimeout())
 }
 
 func (rn *RaftNode) resetHeartbeatTimer() {
 	if !rn.heartbeatTimer.Stop() {
-		<-rn.heartbeatTimer.C
+		select {
+		case <-rn.heartbeatTimer.C:
+		default:
+		}
 	}
-	rn.heartbeatTimer.Reset(50 * time.Millisecond)
+	rn.heartbeatTimer.Reset(100 * time.Millisecond)
 }
 
 func (rn *RaftNode) resetLeaderTimeoutTimer() {
 	if !rn.leaderTimeoutTimer.Stop() {
-		<-rn.leaderTimeoutTimer.C
+		select {
+		case <-rn.leaderTimeoutTimer.C:
+		default:
+		}
 	}
 	rn.leaderTimeoutTimer.Reset(randomLeaderTimeout())
 }
 
 func randomElectionTimeout() time.Duration {
-	return time.Duration(150+rand.Intn(150)) * time.Millisecond
+	return time.Duration(300+rand.Intn(300)) * time.Millisecond
 }
 
 func randomLeaderTimeout() time.Duration {
-	return time.Duration(300+rand.Intn(200)) * time.Millisecond
+	return time.Duration(600+rand.Intn(400)) * time.Millisecond
 }
-
-// Placeholder function to ensure the package is valid.
-func RaftFunction() {}

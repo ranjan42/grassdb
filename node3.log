@@ -1,0 +1,21 @@
+2026/01/11 03:09:39 gRPC server listening on :50053
+2026/01/11 03:09:39 [node3] Election timeout, becoming Candidate
+2026/01/11 03:09:39 [node3] Won election! Becoming Leader for term 2
+2026/01/11 03:09:40 [node3] Won election! Becoming Leader for term 4
+2026/01/11 03:09:41 [node3] Won election! Becoming Leader for term 7
+2026/01/11 03:09:42 [node3] Won election! Becoming Leader for term 10
+2026/01/11 03:09:44 [node3] Won election! Becoming Leader for term 13
+2026/01/11 03:09:45 [node3] Won election! Becoming Leader for term 16
+2026/01/11 03:09:46 [node3] Won election! Becoming Leader for term 19
+2026/01/11 03:09:47 [node3] Won election! Becoming Leader for term 21
+2026/01/11 03:09:48 [node3] Election timeout, becoming Candidate
+2026/01/11 03:09:48 [node3] Won election! Becoming Leader for term 24
+2026/01/11 03:09:49 [node3] Won election! Becoming Leader for term 27
+2026/01/11 03:09:50 [node3] Won election! Becoming Leader for term 29
+2026/01/11 03:09:51 [node3] Won election! Becoming Leader for term 31
+2026/01/11 03:09:52 [node3] Won election! Becoming Leader for term 33
+2026/01/11 03:09:53 [node3] Won election! Becoming Leader for term 36
+2026/01/11 03:09:54 [node3] Won election! Becoming Leader for term 38
+2026/01/11 03:09:55 [node3] Won election! Becoming Leader for term 41
+2026/01/11 03:09:56 [node3] Won election! Becoming Leader for term 44
+2026/01/11 03:09:57 [node3] Won election! Becoming Leader for term 47

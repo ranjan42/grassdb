@@ -36,3 +36,10 @@ func (s *Store) Set(key, value string) {
 	_ = s.wal.Write(key, value) // In production: handle the error
 	s.data[key] = value
 }
+
+func (s *Store) Get(key string) (string, bool) {
+	s.mu.RLock()
+	defer s.mu.RUnlock()
+	val, ok := s.data[key]
+	return val, ok
+}
