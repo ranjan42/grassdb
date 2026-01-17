@@ -5,7 +5,6 @@
         "web"
     ],
     "scripts": {
-        "install": "npm install",
         "build": "cd web && npm run build"
     }
 }
