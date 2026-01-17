@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: any = {
   /* config options here */
-  reactCompiler: true,
+
   // Optimize build memory usage
   typescript: {
     ignoreBuildErrors: true,

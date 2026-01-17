@@ -74,6 +74,39 @@ We provide a helper script to launch a 3-node cluster locally.
 
 ---
 
+### 🌐 Running the Web Dashboard
+
+We provide a modern Next.js dashboard to interact with the cluster visually.
+
+1.  **Start the Cluster:**
+    Follow the steps above to run `bash start_cluster.sh`. The nodes will also start HTTP servers on ports `:8081`, `:8082`, and `:8083`.
+
+2.  **Start the Web App:**
+    ```bash
+    cd web
+    npm install
+    npm run dev
+    ```
+
+3.  **Open the Dashboard:**
+    Visit [http://localhost:3000](http://localhost:3000). By default, it connects to Node 1 (`http://localhost:8081`).
+
+---
+
+## ☁️ Hosting on Vercel
+
+GrassDB is configured to run as a serverless full-stack application on Vercel.
+
+1.  **Push your code** to a GitHub repository.
+2.  **Import the project** in Vercel.
+    *   **Framework Preset**: Next.js
+    *   **Root Directory**: Leave as default (`./`).
+3.  **Deploy!**
+
+**Note**: The Vercel deployment uses an ephemeral in-memory adapter for the database logic (`api/index.go`). Data will persist only while the serverless function is warm. This is perfect for demos but not for production storage.
+
+---
+
 ## 🔧 Usage
 
 You can interact with the cluster using a gRPC client. Since `grassdb` uses standard gRPC, you can write a simple client in Go, Python, or efficient CLI tools like `grpcurl`.

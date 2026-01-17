@@ -11,6 +11,12 @@ export default function Home() {
   const [status, setStatus] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const NODE_PORTS: Record<string, string> = {
+    "node1": "8081",
+    "node2": "8082",
+    "node3": "8083"
+  };
+
   const handleSet = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -22,12 +28,25 @@ export default function Home() {
         body: JSON.stringify({ key, value }),
       });
       const data = await res.json();
+
       if (data.success) {
         setStatus(`Successfully set ${key}`);
         setKey('');
         setValue('');
       } else {
-        setStatus(`Error: ${data.error || 'Unknown error'}`);
+        // Handle "Not Leader" specifically
+        if (data.error === "Not Leader" && data.leader_id) {
+          const leaderPort = NODE_PORTS[data.leader_id];
+          const leaderUrl = `http://localhost:${leaderPort}`;
+
+          setStatus(`Error: Not Leader. Leader is ${data.leader_id}. Switching to ${leaderUrl}...`);
+          setDbUrl(leaderUrl);
+
+          // Optional: Auto-retry could go here, but let's just switch and ask user to click again for safety
+          setTimeout(() => setStatus(`Switched to Leader (${data.leader_id}). Please try again.`), 1500);
+        } else {
+          setStatus(`Error: ${data.error || 'Unknown error'}`);
+        }
       }
     } catch (err) {
       setStatus(`Failed to connect to GrassDB at ${dbUrl}`);
