@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function Home() {
-  const [dbUrl, setDbUrl] = useState('http://localhost:8081');
+  const [dbUrl, setDbUrl] = useState('');
   const [key, setKey] = useState('');
   const [value, setValue] = useState('');
   const [searchKey, setSearchKey] = useState('');

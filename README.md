@@ -4,7 +4,7 @@
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 *   **Distributed Consensus**: Implements the Raft consensus algorithm (Leader Election, Log Replication).
 *   **Strong Consistency**: Writes are directed to the leader and replicated to followers.
@@ -14,7 +14,7 @@
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 `grassdb` is built on a modular architecture:
 
@@ -26,7 +26,7 @@
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -74,7 +74,7 @@ We provide a helper script to launch a 3-node cluster locally.
 
 ---
 
-### 🌐 Running the Web Dashboard
+### Running the Web Dashboard
 
 We provide a modern Next.js dashboard to interact with the cluster visually.
 
@@ -93,7 +93,7 @@ We provide a modern Next.js dashboard to interact with the cluster visually.
 
 ---
 
-## ☁️ Hosting on Vercel
+## Hosting on Vercel
 
 GrassDB is configured to run as a serverless full-stack application on Vercel.
 
@@ -107,7 +107,7 @@ GrassDB is configured to run as a serverless full-stack application on Vercel.
 
 ---
 
-## 🔧 Usage
+## Usage
 
 You can interact with the cluster using a gRPC client. Since `grassdb` uses standard gRPC, you can write a simple client in Go, Python, or efficient CLI tools like `grpcurl`.
 
@@ -142,7 +142,7 @@ You can use the built-in CLI tool to interact with the cluster. It automatically
 
 ---
 
-## 📚 Internals & Design
+## Internals & Design
 
 ### Raft Implementation Details
 *   **Leader Election**: Randomized election timeouts (300-600ms) to prevent split votes.
@@ -154,7 +154,7 @@ Each node maintains its own `distdb_<node_id>.wal` file. On startup, the node re
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please check the [Task List](task.md) for current roadmap items.
 
@@ -166,6 +166,6 @@ Contributions are welcome! Please check the [Task List](task.md) for current roa
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
