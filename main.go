@@ -11,7 +11,8 @@ import (
 
 func main() {
 	id := flag.String("id", "node1", "Unique node ID")
-	addr := flag.String("addr", ":50051", "Address to listen on")
+	addr := flag.String("addr", ":50051", "Address to listen on for gRPC")
+	httpAddr := flag.String("http", ":8080", "Address to listen on for HTTP")
 	peersStr := flag.String("peers", "", "Comma-separated list of peer addresses (e.g. 127.0.0.1:50052,127.0.0.1:50053)")
 	flag.Parse()
 
@@ -26,6 +27,16 @@ func main() {
 	// Initialize Raft Node
 	node := raft.NewRaftNode(*id, peers, applyCh)
 
+	// Initialize Database Server
+	dbServer := server.NewServer(node)
+
+	// Start HTTP Server
+	go func() {
+		if err := server.StartHTTPServer(*httpAddr, dbServer); err != nil {
+			panic(err)
+		}
+	}()
+
 	// Start gRPC Server (handles both Database and Raft RPCs)
-	server.StartGRPCServer(*addr, node)
+	server.StartGRPCServer(*addr, dbServer)
 }

@@ -12,6 +12,14 @@ service Database {
     rpc RequestVote (RequestVoteRequest) returns (RequestVoteResponse);
     rpc AppendEntries (AppendEntriesRequest) returns (AppendEntriesResponse);
     rpc InstallSnapshot (InstallSnapshotRequest) returns (InstallSnapshotResponse);
+    
+    // Admin
+    rpc TakeSnapshot (TakeSnapshotRequest) returns (TakeSnapshotResponse);
+}
+
+message TakeSnapshotRequest {}
+message TakeSnapshotResponse {
+    bool success = 1;
 }
 
 message GetRequest {

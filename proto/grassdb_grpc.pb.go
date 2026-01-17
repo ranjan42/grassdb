@@ -24,6 +24,7 @@ const (
 	Database_RequestVote_FullMethodName     = "/grassdb.Database/RequestVote"
 	Database_AppendEntries_FullMethodName   = "/grassdb.Database/AppendEntries"
 	Database_InstallSnapshot_FullMethodName = "/grassdb.Database/InstallSnapshot"
+	Database_TakeSnapshot_FullMethodName    = "/grassdb.Database/TakeSnapshot"
 )
 
 // DatabaseClient is the client API for Database service.
@@ -36,6 +37,8 @@ type DatabaseClient interface {
 	RequestVote(ctx context.Context, in *RequestVoteRequest, opts ...grpc.CallOption) (*RequestVoteResponse, error)
 	AppendEntries(ctx context.Context, in *AppendEntriesRequest, opts ...grpc.CallOption) (*AppendEntriesResponse, error)
 	InstallSnapshot(ctx context.Context, in *InstallSnapshotRequest, opts ...grpc.CallOption) (*InstallSnapshotResponse, error)
+	// Admin
+	TakeSnapshot(ctx context.Context, in *TakeSnapshotRequest, opts ...grpc.CallOption) (*TakeSnapshotResponse, error)
 }
 
 type databaseClient struct {
@@ -96,6 +99,16 @@ func (c *databaseClient) InstallSnapshot(ctx context.Context, in *InstallSnapsho
 	return out, nil
 }
 
+func (c *databaseClient) TakeSnapshot(ctx context.Context, in *TakeSnapshotRequest, opts ...grpc.CallOption) (*TakeSnapshotResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(TakeSnapshotResponse)
+	err := c.cc.Invoke(ctx, Database_TakeSnapshot_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // DatabaseServer is the server API for Database service.
 // All implementations must embed UnimplementedDatabaseServer
 // for forward compatibility.
@@ -106,6 +119,8 @@ type DatabaseServer interface {
 	RequestVote(context.Context, *RequestVoteRequest) (*RequestVoteResponse, error)
 	AppendEntries(context.Context, *AppendEntriesRequest) (*AppendEntriesResponse, error)
 	InstallSnapshot(context.Context, *InstallSnapshotRequest) (*InstallSnapshotResponse, error)
+	// Admin
+	TakeSnapshot(context.Context, *TakeSnapshotRequest) (*TakeSnapshotResponse, error)
 	mustEmbedUnimplementedDatabaseServer()
 }
 
@@ -130,6 +145,9 @@ func (UnimplementedDatabaseServer) AppendEntries(context.Context, *AppendEntries
 }
 func (UnimplementedDatabaseServer) InstallSnapshot(context.Context, *InstallSnapshotRequest) (*InstallSnapshotResponse, error) {
 	return nil, status.Error(codes.Unimplemented, "method InstallSnapshot not implemented")
+}
+func (UnimplementedDatabaseServer) TakeSnapshot(context.Context, *TakeSnapshotRequest) (*TakeSnapshotResponse, error) {
+	return nil, status.Error(codes.Unimplemented, "method TakeSnapshot not implemented")
 }
 func (UnimplementedDatabaseServer) mustEmbedUnimplementedDatabaseServer() {}
 func (UnimplementedDatabaseServer) testEmbeddedByValue()                  {}
@@ -242,6 +260,24 @@ func _Database_InstallSnapshot_Handler(srv interface{}, ctx context.Context, dec
 	return interceptor(ctx, in, info, handler)
 }
 
+func _Database_TakeSnapshot_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(TakeSnapshotRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(DatabaseServer).TakeSnapshot(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: Database_TakeSnapshot_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(DatabaseServer).TakeSnapshot(ctx, req.(*TakeSnapshotRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // Database_ServiceDesc is the grpc.ServiceDesc for Database service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -268,6 +304,10 @@ var Database_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "InstallSnapshot",
 			Handler:    _Database_InstallSnapshot_Handler,
+		},
+		{
+			MethodName: "TakeSnapshot",
+			Handler:    _Database_TakeSnapshot_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

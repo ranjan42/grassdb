@@ -1,10 +1,13 @@
 package raft
 
 import (
+	"fmt"
 	"log"
 	"math/rand"
 	"sync"
 	"time"
+
+	"grassdb/internal/storage"
 
 	pb "github.com/ranjan42/grassdb/proto"
 )
@@ -232,7 +235,7 @@ func (rn *RaftNode) resetHeartbeatTimer() {
 		default:
 		}
 	}
-	rn.heartbeatTimer.Reset(100 * time.Millisecond)
+	rn.heartbeatTimer.Reset(150 * time.Millisecond)
 }
 
 func (rn *RaftNode) resetLeaderTimeoutTimer() {
@@ -246,11 +249,11 @@ func (rn *RaftNode) resetLeaderTimeoutTimer() {
 }
 
 func randomElectionTimeout() time.Duration {
-	return time.Duration(300+rand.Intn(300)) * time.Millisecond
+	return time.Duration(600+rand.Intn(400)) * time.Millisecond
 }
 
 func randomLeaderTimeout() time.Duration {
-	return time.Duration(600+rand.Intn(400)) * time.Millisecond
+	return time.Duration(1000+rand.Intn(500)) * time.Millisecond
 }
 
 // Snapshot creates a snapshot of the state machine up to the given index.
@@ -281,5 +284,9 @@ func (rn *RaftNode) Snapshot(index int, data []byte) {
 
 	log.Printf("[%s] Created snapshot at index %d", rn.id, index)
 
-	// TODO: Write 'data' (snapshot state) to disk
+	// Write 'data' (snapshot state) to disk
+	snapshotPath := fmt.Sprintf("distdb_%s.snap", rn.id)
+	if err := storage.SaveSnapshot(snapshotPath, data); err != nil {
+		log.Printf("Failed to save snapshot: %v", err)
+	}
 }

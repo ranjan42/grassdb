@@ -2,6 +2,7 @@ package raft
 
 import (
 	"context"
+	"log"
 
 	pb "github.com/ranjan42/grassdb/proto"
 )
@@ -57,7 +58,8 @@ func (rn *RaftNode) AppendEntries(ctx context.Context, args *pb.AppendEntriesReq
 
 	rn.resetElectionTimer()
 
-	// TODO: Log replication logic
+	// DEBUG LOG
+	log.Printf("[%s] Received Heartbeat from %s term %d", rn.ID(), args.LeaderId, args.Term)
 
 	return &pb.AppendEntriesResponse{Term: int64(rn.currentTerm), Success: true}, nil
 }

@@ -57,6 +57,13 @@ func main() {
 			fmt.Println(val)
 		}
 
+	case "snapshot":
+		if err := c.TakeSnapshot(); err != nil {
+			fmt.Printf("Error taking snapshot: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Println("Snapshot created successfully")
+
 	default:
 		fmt.Printf("Unknown command: %s\n", command)
 		os.Exit(1)

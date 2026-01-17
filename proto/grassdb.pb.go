@@ -21,6 +21,86 @@ const (
 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
 )
 
+type TakeSnapshotRequest struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *TakeSnapshotRequest) Reset() {
+	*x = TakeSnapshotRequest{}
+	mi := &file_proto_grassdb_proto_msgTypes[0]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *TakeSnapshotRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TakeSnapshotRequest) ProtoMessage() {}
+
+func (x *TakeSnapshotRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_grassdb_proto_msgTypes[0]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TakeSnapshotRequest.ProtoReflect.Descriptor instead.
+func (*TakeSnapshotRequest) Descriptor() ([]byte, []int) {
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{0}
+}
+
+type TakeSnapshotResponse struct {
+	state         protoimpl.MessageState `protogen:"open.v1"`
+	Success       bool                   `protobuf:"varint,1,opt,name=success,proto3" json:"success,omitempty"`
+	unknownFields protoimpl.UnknownFields
+	sizeCache     protoimpl.SizeCache
+}
+
+func (x *TakeSnapshotResponse) Reset() {
+	*x = TakeSnapshotResponse{}
+	mi := &file_proto_grassdb_proto_msgTypes[1]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *TakeSnapshotResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*TakeSnapshotResponse) ProtoMessage() {}
+
+func (x *TakeSnapshotResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_grassdb_proto_msgTypes[1]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use TakeSnapshotResponse.ProtoReflect.Descriptor instead.
+func (*TakeSnapshotResponse) Descriptor() ([]byte, []int) {
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{1}
+}
+
+func (x *TakeSnapshotResponse) GetSuccess() bool {
+	if x != nil {
+		return x.Success
+	}
+	return false
+}
+
 type GetRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Key           string                 `protobuf:"bytes,1,opt,name=key,proto3" json:"key,omitempty"`
@@ -30,7 +110,7 @@ type GetRequest struct {
 
 func (x *GetRequest) Reset() {
 	*x = GetRequest{}
-	mi := &file_proto_grassdb_proto_msgTypes[0]
+	mi := &file_proto_grassdb_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -42,7 +122,7 @@ func (x *GetRequest) String() string {
 func (*GetRequest) ProtoMessage() {}
 
 func (x *GetRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[0]
+	mi := &file_proto_grassdb_proto_msgTypes[2]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -55,7 +135,7 @@ func (x *GetRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetRequest.ProtoReflect.Descriptor instead.
 func (*GetRequest) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{0}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{2}
 }
 
 func (x *GetRequest) GetKey() string {
@@ -75,7 +155,7 @@ type GetResponse struct {
 
 func (x *GetResponse) Reset() {
 	*x = GetResponse{}
-	mi := &file_proto_grassdb_proto_msgTypes[1]
+	mi := &file_proto_grassdb_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -87,7 +167,7 @@ func (x *GetResponse) String() string {
 func (*GetResponse) ProtoMessage() {}
 
 func (x *GetResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[1]
+	mi := &file_proto_grassdb_proto_msgTypes[3]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -100,7 +180,7 @@ func (x *GetResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use GetResponse.ProtoReflect.Descriptor instead.
 func (*GetResponse) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{1}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{3}
 }
 
 func (x *GetResponse) GetValue() string {
@@ -127,7 +207,7 @@ type SetRequest struct {
 
 func (x *SetRequest) Reset() {
 	*x = SetRequest{}
-	mi := &file_proto_grassdb_proto_msgTypes[2]
+	mi := &file_proto_grassdb_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -139,7 +219,7 @@ func (x *SetRequest) String() string {
 func (*SetRequest) ProtoMessage() {}
 
 func (x *SetRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[2]
+	mi := &file_proto_grassdb_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -152,7 +232,7 @@ func (x *SetRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetRequest.ProtoReflect.Descriptor instead.
 func (*SetRequest) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{2}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{4}
 }
 
 func (x *SetRequest) GetKey() string {
@@ -180,7 +260,7 @@ type SetResponse struct {
 
 func (x *SetResponse) Reset() {
 	*x = SetResponse{}
-	mi := &file_proto_grassdb_proto_msgTypes[3]
+	mi := &file_proto_grassdb_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -192,7 +272,7 @@ func (x *SetResponse) String() string {
 func (*SetResponse) ProtoMessage() {}
 
 func (x *SetResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[3]
+	mi := &file_proto_grassdb_proto_msgTypes[5]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -205,7 +285,7 @@ func (x *SetResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use SetResponse.ProtoReflect.Descriptor instead.
 func (*SetResponse) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{3}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{5}
 }
 
 func (x *SetResponse) GetSuccess() bool {
@@ -240,7 +320,7 @@ type LogEntry struct {
 
 func (x *LogEntry) Reset() {
 	*x = LogEntry{}
-	mi := &file_proto_grassdb_proto_msgTypes[4]
+	mi := &file_proto_grassdb_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -252,7 +332,7 @@ func (x *LogEntry) String() string {
 func (*LogEntry) ProtoMessage() {}
 
 func (x *LogEntry) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[4]
+	mi := &file_proto_grassdb_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -265,7 +345,7 @@ func (x *LogEntry) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use LogEntry.ProtoReflect.Descriptor instead.
 func (*LogEntry) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{4}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{6}
 }
 
 func (x *LogEntry) GetTerm() int64 {
@@ -301,7 +381,7 @@ type RequestVoteRequest struct {
 
 func (x *RequestVoteRequest) Reset() {
 	*x = RequestVoteRequest{}
-	mi := &file_proto_grassdb_proto_msgTypes[5]
+	mi := &file_proto_grassdb_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -313,7 +393,7 @@ func (x *RequestVoteRequest) String() string {
 func (*RequestVoteRequest) ProtoMessage() {}
 
 func (x *RequestVoteRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[5]
+	mi := &file_proto_grassdb_proto_msgTypes[7]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -326,7 +406,7 @@ func (x *RequestVoteRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestVoteRequest.ProtoReflect.Descriptor instead.
 func (*RequestVoteRequest) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{5}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{7}
 }
 
 func (x *RequestVoteRequest) GetTerm() int64 {
@@ -367,7 +447,7 @@ type RequestVoteResponse struct {
 
 func (x *RequestVoteResponse) Reset() {
 	*x = RequestVoteResponse{}
-	mi := &file_proto_grassdb_proto_msgTypes[6]
+	mi := &file_proto_grassdb_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -379,7 +459,7 @@ func (x *RequestVoteResponse) String() string {
 func (*RequestVoteResponse) ProtoMessage() {}
 
 func (x *RequestVoteResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[6]
+	mi := &file_proto_grassdb_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -392,7 +472,7 @@ func (x *RequestVoteResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use RequestVoteResponse.ProtoReflect.Descriptor instead.
 func (*RequestVoteResponse) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{6}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{8}
 }
 
 func (x *RequestVoteResponse) GetTerm() int64 {
@@ -423,7 +503,7 @@ type AppendEntriesRequest struct {
 
 func (x *AppendEntriesRequest) Reset() {
 	*x = AppendEntriesRequest{}
-	mi := &file_proto_grassdb_proto_msgTypes[7]
+	mi := &file_proto_grassdb_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -435,7 +515,7 @@ func (x *AppendEntriesRequest) String() string {
 func (*AppendEntriesRequest) ProtoMessage() {}
 
 func (x *AppendEntriesRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[7]
+	mi := &file_proto_grassdb_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -448,7 +528,7 @@ func (x *AppendEntriesRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AppendEntriesRequest.ProtoReflect.Descriptor instead.
 func (*AppendEntriesRequest) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{7}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{9}
 }
 
 func (x *AppendEntriesRequest) GetTerm() int64 {
@@ -503,7 +583,7 @@ type AppendEntriesResponse struct {
 
 func (x *AppendEntriesResponse) Reset() {
 	*x = AppendEntriesResponse{}
-	mi := &file_proto_grassdb_proto_msgTypes[8]
+	mi := &file_proto_grassdb_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -515,7 +595,7 @@ func (x *AppendEntriesResponse) String() string {
 func (*AppendEntriesResponse) ProtoMessage() {}
 
 func (x *AppendEntriesResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[8]
+	mi := &file_proto_grassdb_proto_msgTypes[10]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -528,7 +608,7 @@ func (x *AppendEntriesResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use AppendEntriesResponse.ProtoReflect.Descriptor instead.
 func (*AppendEntriesResponse) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{8}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{10}
 }
 
 func (x *AppendEntriesResponse) GetTerm() int64 {
@@ -558,7 +638,7 @@ type InstallSnapshotRequest struct {
 
 func (x *InstallSnapshotRequest) Reset() {
 	*x = InstallSnapshotRequest{}
-	mi := &file_proto_grassdb_proto_msgTypes[9]
+	mi := &file_proto_grassdb_proto_msgTypes[11]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -570,7 +650,7 @@ func (x *InstallSnapshotRequest) String() string {
 func (*InstallSnapshotRequest) ProtoMessage() {}
 
 func (x *InstallSnapshotRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[9]
+	mi := &file_proto_grassdb_proto_msgTypes[11]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -583,7 +663,7 @@ func (x *InstallSnapshotRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InstallSnapshotRequest.ProtoReflect.Descriptor instead.
 func (*InstallSnapshotRequest) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{9}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{11}
 }
 
 func (x *InstallSnapshotRequest) GetTerm() int64 {
@@ -630,7 +710,7 @@ type InstallSnapshotResponse struct {
 
 func (x *InstallSnapshotResponse) Reset() {
 	*x = InstallSnapshotResponse{}
-	mi := &file_proto_grassdb_proto_msgTypes[10]
+	mi := &file_proto_grassdb_proto_msgTypes[12]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -642,7 +722,7 @@ func (x *InstallSnapshotResponse) String() string {
 func (*InstallSnapshotResponse) ProtoMessage() {}
 
 func (x *InstallSnapshotResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_grassdb_proto_msgTypes[10]
+	mi := &file_proto_grassdb_proto_msgTypes[12]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -655,7 +735,7 @@ func (x *InstallSnapshotResponse) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use InstallSnapshotResponse.ProtoReflect.Descriptor instead.
 func (*InstallSnapshotResponse) Descriptor() ([]byte, []int) {
-	return file_proto_grassdb_proto_rawDescGZIP(), []int{10}
+	return file_proto_grassdb_proto_rawDescGZIP(), []int{12}
 }
 
 func (x *InstallSnapshotResponse) GetTerm() int64 {
@@ -669,7 +749,10 @@ var File_proto_grassdb_proto protoreflect.FileDescriptor
 
 const file_proto_grassdb_proto_rawDesc = "" +
 	"\n" +
-	"\x13proto/grassdb.proto\x12\agrassdb\"\x1e\n" +
+	"\x13proto/grassdb.proto\x12\agrassdb\"\x15\n" +
+	"\x13TakeSnapshotRequest\"0\n" +
+	"\x14TakeSnapshotResponse\x12\x18\n" +
+	"\asuccess\x18\x01 \x01(\bR\asuccess\"\x1e\n" +
 	"\n" +
 	"GetRequest\x12\x10\n" +
 	"\x03key\x18\x01 \x01(\tR\x03key\"9\n" +
@@ -713,13 +796,14 @@ const file_proto_grassdb_proto_rawDesc = "" +
 	"\x12last_included_term\x18\x04 \x01(\x03R\x10lastIncludedTerm\x12\x12\n" +
 	"\x04data\x18\x05 \x01(\fR\x04data\"-\n" +
 	"\x17InstallSnapshotResponse\x12\x12\n" +
-	"\x04term\x18\x01 \x01(\x03R\x04term2\xde\x02\n" +
+	"\x04term\x18\x01 \x01(\x03R\x04term2\xab\x03\n" +
 	"\bDatabase\x120\n" +
 	"\x03Get\x12\x13.grassdb.GetRequest\x1a\x14.grassdb.GetResponse\x120\n" +
 	"\x03Set\x12\x13.grassdb.SetRequest\x1a\x14.grassdb.SetResponse\x12H\n" +
 	"\vRequestVote\x12\x1b.grassdb.RequestVoteRequest\x1a\x1c.grassdb.RequestVoteResponse\x12N\n" +
 	"\rAppendEntries\x12\x1d.grassdb.AppendEntriesRequest\x1a\x1e.grassdb.AppendEntriesResponse\x12T\n" +
-	"\x0fInstallSnapshot\x12\x1f.grassdb.InstallSnapshotRequest\x1a .grassdb.InstallSnapshotResponseB)Z'github.com/ranjan42/grassdb/proto;protob\x06proto3"
+	"\x0fInstallSnapshot\x12\x1f.grassdb.InstallSnapshotRequest\x1a .grassdb.InstallSnapshotResponse\x12K\n" +
+	"\fTakeSnapshot\x12\x1c.grassdb.TakeSnapshotRequest\x1a\x1d.grassdb.TakeSnapshotResponseB)Z'github.com/ranjan42/grassdb/proto;protob\x06proto3"
 
 var (
 	file_proto_grassdb_proto_rawDescOnce sync.Once
@@ -733,34 +817,38 @@ func file_proto_grassdb_proto_rawDescGZIP() []byte {
 	return file_proto_grassdb_proto_rawDescData
 }
 
-var file_proto_grassdb_proto_msgTypes = make([]protoimpl.MessageInfo, 11)
+var file_proto_grassdb_proto_msgTypes = make([]protoimpl.MessageInfo, 13)
 var file_proto_grassdb_proto_goTypes = []any{
-	(*GetRequest)(nil),              // 0: grassdb.GetRequest
-	(*GetResponse)(nil),             // 1: grassdb.GetResponse
-	(*SetRequest)(nil),              // 2: grassdb.SetRequest
-	(*SetResponse)(nil),             // 3: grassdb.SetResponse
-	(*LogEntry)(nil),                // 4: grassdb.LogEntry
-	(*RequestVoteRequest)(nil),      // 5: grassdb.RequestVoteRequest
-	(*RequestVoteResponse)(nil),     // 6: grassdb.RequestVoteResponse
-	(*AppendEntriesRequest)(nil),    // 7: grassdb.AppendEntriesRequest
-	(*AppendEntriesResponse)(nil),   // 8: grassdb.AppendEntriesResponse
-	(*InstallSnapshotRequest)(nil),  // 9: grassdb.InstallSnapshotRequest
-	(*InstallSnapshotResponse)(nil), // 10: grassdb.InstallSnapshotResponse
+	(*TakeSnapshotRequest)(nil),     // 0: grassdb.TakeSnapshotRequest
+	(*TakeSnapshotResponse)(nil),    // 1: grassdb.TakeSnapshotResponse
+	(*GetRequest)(nil),              // 2: grassdb.GetRequest
+	(*GetResponse)(nil),             // 3: grassdb.GetResponse
+	(*SetRequest)(nil),              // 4: grassdb.SetRequest
+	(*SetResponse)(nil),             // 5: grassdb.SetResponse
+	(*LogEntry)(nil),                // 6: grassdb.LogEntry
+	(*RequestVoteRequest)(nil),      // 7: grassdb.RequestVoteRequest
+	(*RequestVoteResponse)(nil),     // 8: grassdb.RequestVoteResponse
+	(*AppendEntriesRequest)(nil),    // 9: grassdb.AppendEntriesRequest
+	(*AppendEntriesResponse)(nil),   // 10: grassdb.AppendEntriesResponse
+	(*InstallSnapshotRequest)(nil),  // 11: grassdb.InstallSnapshotRequest
+	(*InstallSnapshotResponse)(nil), // 12: grassdb.InstallSnapshotResponse
 }
 var file_proto_grassdb_proto_depIdxs = []int32{
-	4,  // 0: grassdb.AppendEntriesRequest.entries:type_name -> grassdb.LogEntry
-	0,  // 1: grassdb.Database.Get:input_type -> grassdb.GetRequest
-	2,  // 2: grassdb.Database.Set:input_type -> grassdb.SetRequest
-	5,  // 3: grassdb.Database.RequestVote:input_type -> grassdb.RequestVoteRequest
-	7,  // 4: grassdb.Database.AppendEntries:input_type -> grassdb.AppendEntriesRequest
-	9,  // 5: grassdb.Database.InstallSnapshot:input_type -> grassdb.InstallSnapshotRequest
-	1,  // 6: grassdb.Database.Get:output_type -> grassdb.GetResponse
-	3,  // 7: grassdb.Database.Set:output_type -> grassdb.SetResponse
-	6,  // 8: grassdb.Database.RequestVote:output_type -> grassdb.RequestVoteResponse
-	8,  // 9: grassdb.Database.AppendEntries:output_type -> grassdb.AppendEntriesResponse
-	10, // 10: grassdb.Database.InstallSnapshot:output_type -> grassdb.InstallSnapshotResponse
-	6,  // [6:11] is the sub-list for method output_type
-	1,  // [1:6] is the sub-list for method input_type
+	6,  // 0: grassdb.AppendEntriesRequest.entries:type_name -> grassdb.LogEntry
+	2,  // 1: grassdb.Database.Get:input_type -> grassdb.GetRequest
+	4,  // 2: grassdb.Database.Set:input_type -> grassdb.SetRequest
+	7,  // 3: grassdb.Database.RequestVote:input_type -> grassdb.RequestVoteRequest
+	9,  // 4: grassdb.Database.AppendEntries:input_type -> grassdb.AppendEntriesRequest
+	11, // 5: grassdb.Database.InstallSnapshot:input_type -> grassdb.InstallSnapshotRequest
+	0,  // 6: grassdb.Database.TakeSnapshot:input_type -> grassdb.TakeSnapshotRequest
+	3,  // 7: grassdb.Database.Get:output_type -> grassdb.GetResponse
+	5,  // 8: grassdb.Database.Set:output_type -> grassdb.SetResponse
+	8,  // 9: grassdb.Database.RequestVote:output_type -> grassdb.RequestVoteResponse
+	10, // 10: grassdb.Database.AppendEntries:output_type -> grassdb.AppendEntriesResponse
+	12, // 11: grassdb.Database.InstallSnapshot:output_type -> grassdb.InstallSnapshotResponse
+	1,  // 12: grassdb.Database.TakeSnapshot:output_type -> grassdb.TakeSnapshotResponse
+	7,  // [7:13] is the sub-list for method output_type
+	1,  // [1:7] is the sub-list for method input_type
 	1,  // [1:1] is the sub-list for extension type_name
 	1,  // [1:1] is the sub-list for extension extendee
 	0,  // [0:1] is the sub-list for field type_name
@@ -777,7 +865,7 @@ func file_proto_grassdb_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_grassdb_proto_rawDesc), len(file_proto_grassdb_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   11,
+			NumMessages:   13,
 			NumExtensions: 0,
 			NumServices:   1,
 		},

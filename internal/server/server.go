@@ -25,6 +25,16 @@ func NewServer(rn *raft.RaftNode) *DatabaseServer {
 	if err != nil {
 		log.Fatalf("failed to initialize WAL: %v", err)
 	}
+
+	// Attempt to load snapshot
+	snapshotPath := fmt.Sprintf("distdb_%s.snap", rn.ID())
+	if data, err := storage.LoadSnapshot(snapshotPath); err == nil {
+		log.Printf("[%s] Loading snapshot from disk...", rn.ID())
+		if err := store.RestoreFromSnapshot(data); err != nil {
+			log.Printf("Failed to restore snapshot: %v", err)
+		}
+	}
+
 	return &DatabaseServer{
 		store:    store,
 		raftNode: rn,
@@ -60,14 +70,35 @@ func (s *DatabaseServer) AppendEntries(ctx context.Context, req *pb.AppendEntrie
 	return s.raftNode.AppendEntries(ctx, req)
 }
 
-func StartGRPCServer(addr string, rn *raft.RaftNode) {
+func (s *DatabaseServer) InstallSnapshot(ctx context.Context, req *pb.InstallSnapshotRequest) (*pb.InstallSnapshotResponse, error) {
+	return s.raftNode.InstallSnapshot(ctx, req)
+}
+
+func (s *DatabaseServer) TakeSnapshot(ctx context.Context, req *pb.TakeSnapshotRequest) (*pb.TakeSnapshotResponse, error) {
+	if !s.raftNode.IsLeader() {
+		return &pb.TakeSnapshotResponse{Success: false}, fmt.Errorf("not leader")
+	}
+
+	// 1. Get snapshot from store
+	data, err := s.store.GetSnapshot()
+	if err != nil {
+		return &pb.TakeSnapshotResponse{Success: false}, err
+	}
+
+	// 2. Pass to RaftNode to persist (using dummy index 1 for POC)
+	s.raftNode.Snapshot(1, data)
+
+	return &pb.TakeSnapshotResponse{Success: true}, nil
+}
+
+func StartGRPCServer(addr string, srv *DatabaseServer) {
 	lis, err := net.Listen("tcp", addr)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
 
 	grpcServer := grpc.NewServer()
-	pb.RegisterDatabaseServer(grpcServer, NewServer(rn))
+	pb.RegisterDatabaseServer(grpcServer, srv)
 
 	log.Printf("gRPC server listening on %s", addr)
 	if err := grpcServer.Serve(lis); err != nil {

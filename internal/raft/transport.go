@@ -3,6 +3,7 @@ package raft
 import (
 	"context"
 	"fmt"
+	"log"
 	"time"
 
 	pb "github.com/ranjan42/grassdb/proto"
@@ -38,8 +39,8 @@ func (rn *RaftNode) sendRequestVote(peer string, args *pb.RequestVoteRequest) (*
 		return nil, err
 	}
 
-	// Set a short timeout
-	ctx, cancel := context.WithTimeout(context.Background(), 100*time.Millisecond)
+	// Set a reasonable timeout
+	ctx, cancel := context.WithTimeout(context.Background(), 500*time.Millisecond)
 	defer cancel()
 
 	return c.RequestVote(ctx, args)
@@ -52,8 +53,8 @@ func (rn *RaftNode) sendAppendEntries(peer string, args *pb.AppendEntriesRequest
 		return nil, err
 	}
 
-	// Set a short timeout
-	ctx, cancel := context.WithTimeout(context.Background(), 100*time.Millisecond)
+	// Set a reasonable timeout
+	ctx, cancel := context.WithTimeout(context.Background(), 500*time.Millisecond)
 	defer cancel()
 
 	return c.AppendEntries(ctx, args)
@@ -82,7 +83,7 @@ func (rn *RaftNode) broadcastAppendEntries() {
 		go func(p string) {
 			resp, err := rn.sendAppendEntries(p, args)
 			if err != nil {
-				// log.Printf("Failed to send AppendEntries to %s: %v", p, err)
+				log.Printf("Failed to send AppendEntries to %s: %v", p, err)
 				return
 			}
 			rn.mu.Lock()
