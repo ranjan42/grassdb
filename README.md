@@ -22,16 +22,16 @@
 
 ```mermaid
 graph TD
-    Client[Client App] -->|gRPC/HTTP| Leader[Node 1 (Leader)]
+    Client["Client App"] -->|"gRPC/HTTP"| Leader["Node 1 (Leader)"]
     
     subgraph Cluster
-        Leader -->|Log Replication| Follower1[Node 2 (Follower)]
-        Leader -->|Log Replication| Follower2[Node 3 (Follower)]
+        Leader -->|"Log Replication"| Follower1["Node 2 (Follower)"]
+        Leader -->|"Log Replication"| Follower2["Node 3 (Follower)"]
     end
 
     subgraph Node Details
-        Leader -->|Write| WAL[(WAL Disk)]
-        Leader -->|Update| Mem[In-Memory Map]
+        Leader -->|Write| WAL[("WAL Disk")]
+        Leader -->|Update| Mem["In-Memory Map"]
     end
 ```
 
