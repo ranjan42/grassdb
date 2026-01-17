@@ -1,1314 +1,1315 @@
-2026/01/17 13:23:07 gRPC server listening on :50051
-2026/01/17 13:23:08 [node1] Received Heartbeat from node3 term 1
-2026/01/17 13:23:08 [node1] Received Heartbeat from node3 term 1
-2026/01/17 13:23:08 [node1] Won election! Becoming Leader for term 2
-2026/01/17 13:23:08 [node1] Received Heartbeat from node2 term 3
-2026/01/17 13:23:08 [node1] Received Heartbeat from node2 term 3
-2026/01/17 13:23:09 [node1] Received Heartbeat from node2 term 3
-2026/01/17 13:23:09 [node1] Received Heartbeat from node2 term 3
-2026/01/17 13:23:09 [node1] Received Heartbeat from node2 term 3
-2026/01/17 13:23:09 [node1] Received Heartbeat from node2 term 3
-2026/01/17 13:23:09 [node1] Won election! Becoming Leader for term 4
-2026/01/17 13:23:09 [node1] Received Heartbeat from node3 term 5
-2026/01/17 13:23:10 [node1] Received Heartbeat from node3 term 5
-2026/01/17 13:23:10 [node1] Received Heartbeat from node3 term 5
-2026/01/17 13:23:10 [node1] Received Heartbeat from node3 term 5
-2026/01/17 13:23:10 [node1] Received Heartbeat from node3 term 5
-2026/01/17 13:23:10 [node1] Received Heartbeat from node3 term 5
-2026/01/17 13:23:10 [node1] Received Heartbeat from node3 term 5
-2026/01/17 13:23:11 [node1] Received Heartbeat from node2 term 6
-2026/01/17 13:23:11 [node1] Received Heartbeat from node2 term 6
-2026/01/17 13:23:11 [node1] Won election! Becoming Leader for term 7
-2026/01/17 13:23:12 [node1] Received Heartbeat from node2 term 9
-2026/01/17 13:23:12 [node1] Received Heartbeat from node2 term 9
-2026/01/17 13:23:12 [node1] Received Heartbeat from node2 term 9
-2026/01/17 13:23:12 [node1] Received Heartbeat from node2 term 9
-2026/01/17 13:23:13 [node1] Received Heartbeat from node2 term 9
-2026/01/17 13:23:13 [node1] Received Heartbeat from node2 term 9
-2026/01/17 13:23:13 [node1] Received Heartbeat from node2 term 9
-2026/01/17 13:23:13 [node1] Won election! Becoming Leader for term 10
-2026/01/17 13:23:13 [node1] Received Heartbeat from node3 term 11
-2026/01/17 13:23:13 [node1] Received Heartbeat from node3 term 11
-2026/01/17 13:23:13 [node1] Received Heartbeat from node3 term 11
-2026/01/17 13:23:14 [node1] Received Heartbeat from node3 term 11
-2026/01/17 13:23:14 [node1] Received Heartbeat from node3 term 11
-2026/01/17 13:23:14 [node1] Received Heartbeat from node3 term 11
-2026/01/17 13:23:14 [node1] Received Heartbeat from node3 term 11
-2026/01/17 13:23:14 [node1] Received Heartbeat from node3 term 11
-2026/01/17 13:23:14 [node1] Won election! Becoming Leader for term 12
-2026/01/17 13:23:14 [node1] Received Heartbeat from node3 term 12
-2026/01/17 13:23:15 [node1] Received Heartbeat from node2 term 13
-2026/01/17 13:23:15 [node1] Received Heartbeat from node2 term 13
-2026/01/17 13:23:15 [node1] Received Heartbeat from node2 term 13
-2026/01/17 13:23:15 [node1] Received Heartbeat from node2 term 13
-2026/01/17 13:23:15 [node1] Received Heartbeat from node2 term 13
-2026/01/17 13:23:15 [node1] Received Heartbeat from node2 term 13
-2026/01/17 13:23:15 [node1] Received Heartbeat from node2 term 13
-2026/01/17 13:23:16 [node1] Received Heartbeat from node3 term 14
-2026/01/17 13:23:16 [node1] Won election! Becoming Leader for term 15
-2026/01/17 13:23:17 [node1] Received Heartbeat from node2 term 16
-2026/01/17 13:23:17 [node1] Received Heartbeat from node3 term 17
-2026/01/17 13:23:17 [node1] Received Heartbeat from node3 term 17
-2026/01/17 13:23:17 [node1] Received Heartbeat from node3 term 17
-2026/01/17 13:23:17 [node1] Received Heartbeat from node3 term 17
-2026/01/17 13:23:18 [node1] Received Heartbeat from node3 term 17
-2026/01/17 13:23:18 [node1] Received Heartbeat from node3 term 17
-2026/01/17 13:23:18 [node1] Received Heartbeat from node3 term 17
-2026/01/17 13:23:18 [node1] Received Heartbeat from node3 term 17
-2026/01/17 13:23:18 [node1] Won election! Becoming Leader for term 18
-2026/01/17 13:23:18 [node1] Received Heartbeat from node2 term 19
-2026/01/17 13:23:18 [node1] Received Heartbeat from node2 term 19
-2026/01/17 13:23:19 [node1] Received Heartbeat from node2 term 19
-2026/01/17 13:23:19 [node1] Received Heartbeat from node2 term 19
-2026/01/17 13:23:19 [node1] Received Heartbeat from node2 term 19
-2026/01/17 13:23:19 [node1] Received Heartbeat from node2 term 19
-2026/01/17 13:23:19 [node1] Received Heartbeat from node2 term 19
-2026/01/17 13:23:19 [node1] Received Heartbeat from node2 term 19
-2026/01/17 13:23:19 [node1] Won election! Becoming Leader for term 20
-2026/01/17 13:23:20 [node1] Received Heartbeat from node3 term 21
-2026/01/17 13:23:20 [node1] Received Heartbeat from node3 term 21
-2026/01/17 13:23:20 [node1] Received Heartbeat from node3 term 21
-2026/01/17 13:23:20 [node1] Received Heartbeat from node3 term 21
-2026/01/17 13:23:20 [node1] Received Heartbeat from node3 term 21
-2026/01/17 13:23:20 [node1] Received Heartbeat from node3 term 21
-2026/01/17 13:23:21 [node1] Received Heartbeat from node3 term 21
-2026/01/17 13:23:21 [node1] Received Heartbeat from node3 term 21
-2026/01/17 13:23:21 [node1] Won election! Becoming Leader for term 22
-2026/01/17 13:23:21 [node1] Received Heartbeat from node2 term 23
-2026/01/17 13:23:21 [node1] Received Heartbeat from node2 term 23
-2026/01/17 13:23:21 [node1] Received Heartbeat from node2 term 23
-2026/01/17 13:23:21 [node1] Received Heartbeat from node2 term 23
-2026/01/17 13:23:22 [node1] Received Heartbeat from node2 term 23
-2026/01/17 13:23:22 [node1] Received Heartbeat from node2 term 23
-2026/01/17 13:23:22 [node1] Received Heartbeat from node3 term 24
-2026/01/17 13:23:22 [node1] Received Heartbeat from node3 term 24
-2026/01/17 13:23:22 [node1] Won election! Becoming Leader for term 25
-2026/01/17 13:23:24 [node1] Received Heartbeat from node3 term 27
-2026/01/17 13:23:24 [node1] Received Heartbeat from node3 term 27
-2026/01/17 13:23:24 [node1] Received Heartbeat from node3 term 27
-2026/01/17 13:23:24 [node1] Received Heartbeat from node3 term 27
-2026/01/17 13:23:24 [node1] Received Heartbeat from node3 term 27
-2026/01/17 13:23:24 [node1] Received Heartbeat from node3 term 27
-2026/01/17 13:23:25 [node1] Won election! Becoming Leader for term 28
-2026/01/17 13:23:25 [node1] Received Heartbeat from node2 term 29
-2026/01/17 13:23:25 [node1] Received Heartbeat from node2 term 29
-2026/01/17 13:23:25 [node1] Received Heartbeat from node2 term 29
-2026/01/17 13:23:25 [node1] Received Heartbeat from node2 term 29
-2026/01/17 13:23:25 [node1] Received Heartbeat from node2 term 29
-2026/01/17 13:23:25 [node1] Received Heartbeat from node2 term 29
-2026/01/17 13:23:26 [node1] Received Heartbeat from node2 term 29
-2026/01/17 13:23:26 [node1] Won election! Becoming Leader for term 30
-2026/01/17 13:23:26 [node1] Received Heartbeat from node3 term 31
-2026/01/17 13:23:26 [node1] Received Heartbeat from node3 term 31
-2026/01/17 13:23:27 [node1] Received Heartbeat from node3 term 31
-2026/01/17 13:23:27 [node1] Received Heartbeat from node3 term 31
-2026/01/17 13:23:27 [node1] Received Heartbeat from node3 term 31
-2026/01/17 13:23:27 [node1] Received Heartbeat from node2 term 32
-2026/01/17 13:23:27 [node1] Received Heartbeat from node2 term 32
-2026/01/17 13:23:27 [node1] Received Heartbeat from node2 term 32
-2026/01/17 13:23:28 [node1] Won election! Becoming Leader for term 33
-2026/01/17 13:23:28 [node1] Received Heartbeat from node3 term 34
-2026/01/17 13:23:29 [node1] Received Heartbeat from node3 term 34
-2026/01/17 13:23:29 [node1] Received Heartbeat from node3 term 34
-2026/01/17 13:23:29 [node1] Received Heartbeat from node3 term 34
-2026/01/17 13:23:29 [node1] Received Heartbeat from node2 term 35
-2026/01/17 13:23:29 [node1] Received Heartbeat from node2 term 35
-2026/01/17 13:23:29 [node1] Received Heartbeat from node2 term 35
-2026/01/17 13:23:29 [node1] Received Heartbeat from node2 term 35
-2026/01/17 13:23:30 [node1] Received Heartbeat from node2 term 35
-2026/01/17 13:23:30 [node1] Won election! Becoming Leader for term 36
-2026/01/17 13:23:30 [node1] Received Heartbeat from node3 term 37
-2026/01/17 13:23:30 [node1] Received Heartbeat from node3 term 37
-2026/01/17 13:23:31 [node1] Received Heartbeat from node3 term 37
-2026/01/17 13:23:31 [node1] Received Heartbeat from node3 term 37
-2026/01/17 13:23:31 [node1] Received Heartbeat from node3 term 37
-2026/01/17 13:23:31 [node1] Received Heartbeat from node2 term 38
-2026/01/17 13:23:31 [node1] Received Heartbeat from node2 term 38
-2026/01/17 13:23:31 [node1] Won election! Becoming Leader for term 39
-2026/01/17 13:23:33 [node1] Received Heartbeat from node3 term 40
-2026/01/17 13:23:33 [node1] Received Heartbeat from node3 term 40
-2026/01/17 13:23:33 [node1] Received Heartbeat from node2 term 41
-2026/01/17 13:23:33 [node1] Received Heartbeat from node2 term 41
-2026/01/17 13:23:33 [node1] Received Heartbeat from node2 term 41
-2026/01/17 13:23:33 [node1] Received Heartbeat from node2 term 41
-2026/01/17 13:23:34 [node1] Received Heartbeat from node2 term 41
-2026/01/17 13:23:34 [node1] Received Heartbeat from node2 term 41
-2026/01/17 13:23:34 [node1] Won election! Becoming Leader for term 42
-2026/01/17 13:23:34 [node1] Received Heartbeat from node2 term 42
-2026/01/17 13:23:34 [node1] Received Heartbeat from node3 term 43
-2026/01/17 13:23:34 [node1] Received Heartbeat from node3 term 43
-2026/01/17 13:23:34 [node1] Received Heartbeat from node3 term 43
-2026/01/17 13:23:34 [node1] Received Heartbeat from node3 term 43
-2026/01/17 13:23:35 [node1] Received Heartbeat from node3 term 43
-2026/01/17 13:23:35 [node1] Received Heartbeat from node3 term 43
-2026/01/17 13:23:35 [node1] Received Heartbeat from node2 term 44
-2026/01/17 13:23:35 [node1] Received Heartbeat from node2 term 44
-2026/01/17 13:23:35 [node1] Won election! Becoming Leader for term 45
-2026/01/17 13:23:36 [node1] Received Heartbeat from node3 term 46
-2026/01/17 13:23:36 [node1] Received Heartbeat from node3 term 46
-2026/01/17 13:23:37 [node1] Received Heartbeat from node2 term 47
-2026/01/17 13:23:37 [node1] Received Heartbeat from node2 term 47
-2026/01/17 13:23:37 [node1] Received Heartbeat from node2 term 47
-2026/01/17 13:23:37 [node1] Received Heartbeat from node2 term 47
-2026/01/17 13:23:37 [node1] Received Heartbeat from node2 term 47
-2026/01/17 13:23:37 [node1] Won election! Becoming Leader for term 48
-2026/01/17 13:23:38 [node1] Received Heartbeat from node3 term 49
-2026/01/17 13:23:38 [node1] Received Heartbeat from node3 term 49
-2026/01/17 13:23:38 [node1] Received Heartbeat from node3 term 49
-2026/01/17 13:23:38 [node1] Received Heartbeat from node3 term 49
-2026/01/17 13:23:38 [node1] Received Heartbeat from node3 term 49
-2026/01/17 13:23:39 [node1] Received Heartbeat from node2 term 50
-2026/01/17 13:23:39 [node1] Received Heartbeat from node2 term 50
-2026/01/17 13:23:39 [node1] Received Heartbeat from node2 term 50
-2026/01/17 13:23:39 [node1] Received Heartbeat from node2 term 50
-2026/01/17 13:23:39 [node1] Won election! Becoming Leader for term 51
-2026/01/17 13:23:40 [node1] Received Heartbeat from node3 term 52
-2026/01/17 13:23:40 [node1] Received Heartbeat from node3 term 52
-2026/01/17 13:23:40 [node1] Received Heartbeat from node3 term 52
-2026/01/17 13:23:40 [node1] Received Heartbeat from node3 term 52
-2026/01/17 13:23:40 [node1] Received Heartbeat from node2 term 53
-2026/01/17 13:23:40 [node1] Received Heartbeat from node2 term 53
-2026/01/17 13:23:41 [node1] Received Heartbeat from node2 term 53
-2026/01/17 13:23:41 [node1] Won election! Becoming Leader for term 54
-2026/01/17 13:23:41 [node1] Received Heartbeat from node3 term 55
-2026/01/17 13:23:42 [node1] Received Heartbeat from node3 term 55
-2026/01/17 13:23:42 [node1] Received Heartbeat from node3 term 55
-2026/01/17 13:23:42 [node1] Received Heartbeat from node3 term 55
-2026/01/17 13:23:42 [node1] Received Heartbeat from node2 term 56
-2026/01/17 13:23:42 [node1] Received Heartbeat from node2 term 56
-2026/01/17 13:23:42 [node1] Received Heartbeat from node2 term 56
-2026/01/17 13:23:43 [node1] Won election! Becoming Leader for term 57
-2026/01/17 13:23:43 [node1] Received Heartbeat from node2 term 57
-2026/01/17 13:23:44 [node1] Received Heartbeat from node3 term 59
-2026/01/17 13:23:44 [node1] Received Heartbeat from node3 term 59
-2026/01/17 13:23:44 [node1] Won election! Becoming Leader for term 60
-2026/01/17 13:23:45 [node1] Received Heartbeat from node2 term 61
-2026/01/17 13:23:45 [node1] Received Heartbeat from node2 term 62
-2026/01/17 13:23:46 [node1] Election timeout, becoming Candidate
-2026/01/17 13:23:46 [node1] Won election! Becoming Leader for term 63
-2026/01/17 13:23:46 [node1] Received Heartbeat from node3 term 65
-2026/01/17 13:23:46 [node1] Received Heartbeat from node3 term 65
-2026/01/17 13:23:46 [node1] Received Heartbeat from node3 term 65
-2026/01/17 13:23:47 [node1] Received Heartbeat from node3 term 65
-2026/01/17 13:23:47 [node1] Received Heartbeat from node3 term 65
-2026/01/17 13:23:47 [node1] Received Heartbeat from node3 term 65
-2026/01/17 13:23:47 [node1] Received Heartbeat from node3 term 65
-2026/01/17 13:23:47 [node1] Received Heartbeat from node3 term 65
-2026/01/17 13:23:47 [node1] Won election! Becoming Leader for term 66
-2026/01/17 13:23:48 [node1] Received Heartbeat from node2 term 67
-2026/01/17 13:23:48 [node1] Received Heartbeat from node2 term 67
-2026/01/17 13:23:48 [node1] Received Heartbeat from node2 term 67
-2026/01/17 13:23:48 [node1] Received Heartbeat from node2 term 67
-2026/01/17 13:23:48 [node1] Received Heartbeat from node2 term 67
-2026/01/17 13:23:48 [node1] Received Heartbeat from node2 term 67
-2026/01/17 13:23:49 [node1] Won election! Becoming Leader for term 68
-2026/01/17 13:23:50 [node1] Received Heartbeat from node2 term 70
-2026/01/17 13:23:50 [node1] Received Heartbeat from node2 term 70
-2026/01/17 13:23:50 [node1] Received Heartbeat from node2 term 70
-2026/01/17 13:23:50 [node1] Won election! Becoming Leader for term 71
-2026/01/17 13:23:50 [node1] Received Heartbeat from node3 term 72
-2026/01/17 13:23:50 [node1] Received Heartbeat from node3 term 72
-2026/01/17 13:23:51 [node1] Received Heartbeat from node3 term 72
-2026/01/17 13:23:51 [node1] Received Heartbeat from node3 term 72
-2026/01/17 13:23:51 [node1] Received Heartbeat from node3 term 72
-2026/01/17 13:23:51 [node1] Received Heartbeat from node3 term 72
-2026/01/17 13:23:51 [node1] Received Heartbeat from node3 term 72
-2026/01/17 13:23:51 [node1] Won election! Becoming Leader for term 73
-2026/01/17 13:23:51 [node1] Received Heartbeat from node2 term 74
-2026/01/17 13:23:52 [node1] Received Heartbeat from node2 term 74
-2026/01/17 13:23:52 [node1] Received Heartbeat from node2 term 74
-2026/01/17 13:23:52 [node1] Received Heartbeat from node2 term 74
-2026/01/17 13:23:52 [node1] Received Heartbeat from node2 term 74
-2026/01/17 13:23:52 [node1] Received Heartbeat from node2 term 74
-2026/01/17 13:23:52 [node1] Received Heartbeat from node2 term 74
-2026/01/17 13:23:53 [node1] Received Heartbeat from node2 term 74
-2026/01/17 13:23:53 [node1] Won election! Becoming Leader for term 76
-2026/01/17 13:23:53 [node1] Received Heartbeat from node3 term 76
-2026/01/17 13:23:53 [node1] Election timeout, becoming Candidate
-2026/01/17 13:23:53 [node1] Won election! Becoming Leader for term 77
-2026/01/17 13:23:54 [node1] Received Heartbeat from node2 term 79
-2026/01/17 13:23:54 [node1] Received Heartbeat from node2 term 79
-2026/01/17 13:23:54 [node1] Received Heartbeat from node2 term 79
-2026/01/17 13:23:55 [node1] Received Heartbeat from node2 term 79
-2026/01/17 13:23:55 [node1] Received Heartbeat from node2 term 79
-2026/01/17 13:23:55 [node1] Received Heartbeat from node2 term 79
-2026/01/17 13:23:55 [node1] Received Heartbeat from node2 term 79
-2026/01/17 13:23:55 [node1] Won election! Becoming Leader for term 80
-2026/01/17 13:23:56 [node1] Received Heartbeat from node3 term 81
-2026/01/17 13:23:56 [node1] Received Heartbeat from node3 term 81
-2026/01/17 13:23:56 [node1] Received Heartbeat from node3 term 81
-2026/01/17 13:23:56 [node1] Received Heartbeat from node3 term 81
-2026/01/17 13:23:56 [node1] Received Heartbeat from node3 term 81
-2026/01/17 13:23:56 [node1] Received Heartbeat from node3 term 81
-2026/01/17 13:23:56 [node1] Received Heartbeat from node3 term 81
-2026/01/17 13:23:56 [node1] Won election! Becoming Leader for term 83
-2026/01/17 13:23:58 [node1] Received Heartbeat from node3 term 84
-2026/01/17 13:23:58 [node1] Received Heartbeat from node2 term 85
-2026/01/17 13:23:58 [node1] Received Heartbeat from node2 term 85
-2026/01/17 13:23:58 [node1] Received Heartbeat from node2 term 85
-2026/01/17 13:23:59 [node1] Received Heartbeat from node2 term 85
-2026/01/17 13:23:59 [node1] Received Heartbeat from node2 term 85
-2026/01/17 13:23:59 [node1] Received Heartbeat from node2 term 85
-2026/01/17 13:23:59 [node1] Received Heartbeat from node2 term 85
-2026/01/17 13:23:59 [node1] Won election! Becoming Leader for term 86
-2026/01/17 13:23:59 [node1] Received Heartbeat from node3 term 87
-2026/01/17 13:23:59 [node1] Received Heartbeat from node3 term 87
-2026/01/17 13:24:00 [node1] Received Heartbeat from node3 term 87
-2026/01/17 13:24:00 [node1] Received Heartbeat from node3 term 87
-2026/01/17 13:24:00 [node1] Received Heartbeat from node3 term 87
-2026/01/17 13:24:00 [node1] Received Heartbeat from node3 term 87
-2026/01/17 13:24:00 [node1] Won election! Becoming Leader for term 89
-2026/01/17 13:24:01 [node1] Received Heartbeat from node3 term 90
-2026/01/17 13:24:02 [node1] Received Heartbeat from node2 term 91
-2026/01/17 13:24:02 [node1] Received Heartbeat from node2 term 91
-2026/01/17 13:24:02 [node1] Received Heartbeat from node2 term 91
-2026/01/17 13:24:02 [node1] Received Heartbeat from node2 term 91
-2026/01/17 13:24:02 [node1] Received Heartbeat from node2 term 91
-2026/01/17 13:24:02 [node1] Received Heartbeat from node2 term 91
-2026/01/17 13:24:02 [node1] Received Heartbeat from node2 term 91
-2026/01/17 13:24:03 [node1] Won election! Becoming Leader for term 92
-2026/01/17 13:24:03 [node1] Received Heartbeat from node3 term 93
-2026/01/17 13:24:03 [node1] Received Heartbeat from node3 term 93
-2026/01/17 13:24:03 [node1] Received Heartbeat from node3 term 93
-2026/01/17 13:24:03 [node1] Received Heartbeat from node3 term 93
-2026/01/17 13:24:04 [node1] Received Heartbeat from node3 term 93
-2026/01/17 13:24:04 [node1] Received Heartbeat from node3 term 93
-2026/01/17 13:24:04 [node1] Received Heartbeat from node3 term 93
-2026/01/17 13:24:04 [node1] Received Heartbeat from node2 term 94
-2026/01/17 13:24:04 [node1] Won election! Becoming Leader for term 95
-2026/01/17 13:24:05 [node1] Received Heartbeat from node3 term 96
-2026/01/17 13:24:06 [node1] Received Heartbeat from node3 term 96
-2026/01/17 13:24:06 [node1] Received Heartbeat from node3 term 96
-2026/01/17 13:24:06 [node1] Received Heartbeat from node2 term 97
-2026/01/17 13:24:06 [node1] Received Heartbeat from node2 term 97
-2026/01/17 13:24:06 [node1] Received Heartbeat from node2 term 97
-2026/01/17 13:24:06 [node1] Received Heartbeat from node2 term 97
-2026/01/17 13:24:06 [node1] Won election! Becoming Leader for term 98
-2026/01/17 13:24:07 [node1] Received Heartbeat from node3 term 99
-2026/01/17 13:24:07 [node1] Received Heartbeat from node3 term 99
-2026/01/17 13:24:07 [node1] Received Heartbeat from node3 term 99
-2026/01/17 13:24:08 [node1] Received Heartbeat from node2 term 100
-2026/01/17 13:24:08 [node1] Received Heartbeat from node2 term 100
-2026/01/17 13:24:08 [node1] Received Heartbeat from node2 term 100
-2026/01/17 13:24:08 [node1] Received Heartbeat from node2 term 100
-2026/01/17 13:24:08 [node1] Won election! Becoming Leader for term 101
-2026/01/17 13:24:09 [node1] Received Heartbeat from node3 term 102
-2026/01/17 13:24:09 [node1] Received Heartbeat from node3 term 102
-2026/01/17 13:24:09 [node1] Received Heartbeat from node3 term 102
-2026/01/17 13:24:09 [node1] Received Heartbeat from node3 term 102
-2026/01/17 13:24:10 [node1] Received Heartbeat from node2 term 103
-2026/01/17 13:24:10 [node1] Received Heartbeat from node2 term 103
-2026/01/17 13:24:10 [node1] Received Heartbeat from node2 term 103
-2026/01/17 13:24:10 [node1] Won election! Becoming Leader for term 104
-2026/01/17 13:24:11 [node1] Received Heartbeat from node3 term 105
-2026/01/17 13:24:11 [node1] Received Heartbeat from node3 term 105
-2026/01/17 13:24:11 [node1] Received Heartbeat from node3 term 105
-2026/01/17 13:24:11 [node1] Received Heartbeat from node3 term 105
-2026/01/17 13:24:11 [node1] Received Heartbeat from node2 term 106
-2026/01/17 13:24:11 [node1] Received Heartbeat from node2 term 106
-2026/01/17 13:24:12 [node1] Received Heartbeat from node2 term 106
-2026/01/17 13:24:12 [node1] Won election! Becoming Leader for term 107
-2026/01/17 13:24:13 [node1] Received Heartbeat from node3 term 108
-2026/01/17 13:24:13 [node1] Received Heartbeat from node2 term 109
-2026/01/17 13:24:13 [node1] Received Heartbeat from node2 term 109
-2026/01/17 13:24:13 [node1] Received Heartbeat from node2 term 109
-2026/01/17 13:24:13 [node1] Received Heartbeat from node2 term 109
-2026/01/17 13:24:14 [node1] Received Heartbeat from node2 term 109
-2026/01/17 13:24:14 [node1] Received Heartbeat from node2 term 109
-2026/01/17 13:24:14 [node1] Won election! Becoming Leader for term 110
-2026/01/17 13:24:14 [node1] Received Heartbeat from node3 term 111
-2026/01/17 13:24:14 [node1] Received Heartbeat from node3 term 111
-2026/01/17 13:24:14 [node1] Received Heartbeat from node3 term 111
-2026/01/17 13:24:15 [node1] Received Heartbeat from node3 term 111
-2026/01/17 13:24:15 [node1] Received Heartbeat from node3 term 111
-2026/01/17 13:24:15 [node1] Received Heartbeat from node3 term 111
-2026/01/17 13:24:15 [node1] Received Heartbeat from node3 term 111
-2026/01/17 13:24:15 [node1] Won election! Becoming Leader for term 113
-2026/01/17 13:24:16 [node1] Received Heartbeat from node3 term 114
-2026/01/17 13:24:17 [node1] Received Heartbeat from node2 term 115
-2026/01/17 13:24:17 [node1] Received Heartbeat from node2 term 115
-2026/01/17 13:24:17 [node1] Received Heartbeat from node2 term 115
-2026/01/17 13:24:17 [node1] Received Heartbeat from node2 term 115
-2026/01/17 13:24:17 [node1] Received Heartbeat from node2 term 115
-2026/01/17 13:24:17 [node1] Received Heartbeat from node2 term 115
-2026/01/17 13:24:18 [node1] Received Heartbeat from node2 term 115
-2026/01/17 13:24:18 [node1] Received Heartbeat from node2 term 115
-2026/01/17 13:24:18 [node1] Won election! Becoming Leader for term 116
-2026/01/17 13:24:18 [node1] Received Heartbeat from node3 term 117
-2026/01/17 13:24:18 [node1] Received Heartbeat from node3 term 117
-2026/01/17 13:24:18 [node1] Received Heartbeat from node3 term 117
-2026/01/17 13:24:18 [node1] Received Heartbeat from node3 term 117
-2026/01/17 13:24:19 [node1] Received Heartbeat from node3 term 117
-2026/01/17 13:24:19 [node1] Received Heartbeat from node3 term 117
-2026/01/17 13:24:19 [node1] Won election! Becoming Leader for term 118
-2026/01/17 13:24:19 [node1] Received Heartbeat from node2 term 119
-2026/01/17 13:24:19 [node1] Received Heartbeat from node2 term 119
-2026/01/17 13:24:20 [node1] Received Heartbeat from node2 term 119
-2026/01/17 13:24:20 [node1] Received Heartbeat from node2 term 119
-2026/01/17 13:24:20 [node1] Received Heartbeat from node2 term 119
-2026/01/17 13:24:20 [node1] Received Heartbeat from node2 term 119
-2026/01/17 13:24:20 [node1] Received Heartbeat from node2 term 119
-2026/01/17 13:24:20 [node1] Won election! Becoming Leader for term 121
-2026/01/17 13:24:22 [node1] Received Heartbeat from node2 term 123
-2026/01/17 13:24:22 [node1] Received Heartbeat from node2 term 123
-2026/01/17 13:24:22 [node1] Received Heartbeat from node2 term 123
-2026/01/17 13:24:22 [node1] Received Heartbeat from node2 term 123
-2026/01/17 13:24:23 [node1] Received Heartbeat from node2 term 123
-2026/01/17 13:24:23 [node1] Received Heartbeat from node2 term 123
-2026/01/17 13:24:23 [node1] Received Heartbeat from node2 term 123
-2026/01/17 13:24:23 [node1] Won election! Becoming Leader for term 124
-2026/01/17 13:24:23 [node1] Received Heartbeat from node3 term 125
-2026/01/17 13:24:23 [node1] Received Heartbeat from node3 term 125
-2026/01/17 13:24:24 [node1] Received Heartbeat from node3 term 125
-2026/01/17 13:24:24 [node1] Received Heartbeat from node3 term 125
-2026/01/17 13:24:24 [node1] Received Heartbeat from node3 term 125
-2026/01/17 13:24:24 [node1] Received Heartbeat from node2 term 126
-2026/01/17 13:24:24 [node1] Received Heartbeat from node2 term 126
-2026/01/17 13:24:24 [node1] Won election! Becoming Leader for term 127
-2026/01/17 13:24:25 [node1] Received Heartbeat from node3 term 128
-2026/01/17 13:24:25 [node1] Received Heartbeat from node3 term 128
-2026/01/17 13:24:26 [node1] Received Heartbeat from node2 term 129
-2026/01/17 13:24:26 [node1] Received Heartbeat from node2 term 129
-2026/01/17 13:24:26 [node1] Received Heartbeat from node2 term 129
-2026/01/17 13:24:26 [node1] Received Heartbeat from node2 term 129
-2026/01/17 13:24:26 [node1] Received Heartbeat from node2 term 129
-2026/01/17 13:24:27 [node1] Received Heartbeat from node2 term 129
-2026/01/17 13:24:27 [node1] Won election! Becoming Leader for term 130
-2026/01/17 13:24:27 [node1] Received Heartbeat from node3 term 131
-2026/01/17 13:24:27 [node1] Received Heartbeat from node3 term 131
-2026/01/17 13:24:28 [node1] Received Heartbeat from node3 term 131
-2026/01/17 13:24:28 [node1] Received Heartbeat from node3 term 131
-2026/01/17 13:24:28 [node1] Received Heartbeat from node3 term 131
-2026/01/17 13:24:28 [node1] Received Heartbeat from node3 term 132
-2026/01/17 13:24:28 [node1] Won election! Becoming Leader for term 133
-2026/01/17 13:24:29 [node1] Received Heartbeat from node2 term 134
-2026/01/17 13:24:29 [node1] Received Heartbeat from node3 term 134
-2026/01/17 13:24:30 [node1] Election timeout, becoming Candidate
-2026/01/17 13:24:30 [node1] Won election! Becoming Leader for term 135
-2026/01/17 13:24:31 [node1] Received Heartbeat from node2 term 136
-2026/01/17 13:24:31 [node1] Received Heartbeat from node3 term 137
-2026/01/17 13:24:31 [node1] Received Heartbeat from node3 term 137
-2026/01/17 13:24:31 [node1] Received Heartbeat from node3 term 137
-2026/01/17 13:24:31 [node1] Received Heartbeat from node3 term 137
-2026/01/17 13:24:31 [node1] Received Heartbeat from node3 term 137
-2026/01/17 13:24:32 [node1] Won election! Becoming Leader for term 138
-2026/01/17 13:24:32 [node1] Received Heartbeat from node2 term 139
-2026/01/17 13:24:32 [node1] Received Heartbeat from node2 term 139
-2026/01/17 13:24:33 [node1] Received Heartbeat from node2 term 139
-2026/01/17 13:24:33 [node1] Received Heartbeat from node2 term 139
-2026/01/17 13:24:33 [node1] Received Heartbeat from node3 term 140
-2026/01/17 13:24:33 [node1] Received Heartbeat from node3 term 140
-2026/01/17 13:24:33 [node1] Won election! Becoming Leader for term 141
-2026/01/17 13:24:34 [node1] Received Heartbeat from node2 term 142
-2026/01/17 13:24:34 [node1] Received Heartbeat from node2 term 142
-2026/01/17 13:24:34 [node1] Received Heartbeat from node2 term 142
-2026/01/17 13:24:35 [node1] Received Heartbeat from node3 term 143
-2026/01/17 13:24:35 [node1] Received Heartbeat from node3 term 143
-2026/01/17 13:24:35 [node1] Received Heartbeat from node3 term 143
-2026/01/17 13:24:35 [node1] Received Heartbeat from node3 term 143
-2026/01/17 13:24:35 [node1] Received Heartbeat from node3 term 143
-2026/01/17 13:24:35 [node1] Won election! Becoming Leader for term 144
-2026/01/17 13:24:36 [node1] Received Heartbeat from node2 term 145
-2026/01/17 13:24:36 [node1] Received Heartbeat from node2 term 145
-2026/01/17 13:24:36 [node1] Received Heartbeat from node2 term 145
-2026/01/17 13:24:36 [node1] Received Heartbeat from node2 term 145
-2026/01/17 13:24:36 [node1] Received Heartbeat from node3 term 146
-2026/01/17 13:24:37 [node1] Received Heartbeat from node3 term 146
-2026/01/17 13:24:37 [node1] Received Heartbeat from node3 term 146
-2026/01/17 13:24:37 [node1] Won election! Becoming Leader for term 147
-2026/01/17 13:24:38 [node1] Received Heartbeat from node2 term 148
-2026/01/17 13:24:38 [node1] Received Heartbeat from node2 term 148
-2026/01/17 13:24:38 [node1] Received Heartbeat from node2 term 148
-2026/01/17 13:24:38 [node1] Received Heartbeat from node2 term 148
-2026/01/17 13:24:38 [node1] Received Heartbeat from node2 term 148
-2026/01/17 13:24:39 [node1] Received Heartbeat from node3 term 149
-2026/01/17 13:24:39 [node1] Received Heartbeat from node3 term 149
-2026/01/17 13:24:39 [node1] Won election! Becoming Leader for term 150
-2026/01/17 13:24:40 [node1] Received Heartbeat from node3 term 152
-2026/01/17 13:24:40 [node1] Received Heartbeat from node3 term 152
-2026/01/17 13:24:40 [node1] Received Heartbeat from node3 term 152
-2026/01/17 13:24:41 [node1] Won election! Becoming Leader for term 154
-2026/01/17 13:24:42 [node1] Received Heartbeat from node2 term 156
-2026/01/17 13:24:42 [node1] Received Heartbeat from node2 term 156
-2026/01/17 13:24:42 [node1] Received Heartbeat from node2 term 156
-2026/01/17 13:24:42 [node1] Received Heartbeat from node2 term 156
-2026/01/17 13:24:43 [node1] Received Heartbeat from node2 term 156
-2026/01/17 13:24:43 [node1] Received Heartbeat from node2 term 156
-2026/01/17 13:24:43 [node1] Received Heartbeat from node2 term 156
-2026/01/17 13:24:43 [node1] Received Heartbeat from node3 term 157
-2026/01/17 13:24:43 [node1] Won election! Becoming Leader for term 158
-2026/01/17 13:24:44 [node1] Received Heartbeat from node3 term 160
-2026/01/17 13:24:45 [node1] Received Heartbeat from node3 term 160
-2026/01/17 13:24:45 [node1] Received Heartbeat from node3 term 160
-2026/01/17 13:24:45 [node1] Received Heartbeat from node3 term 160
-2026/01/17 13:24:45 [node1] Received Heartbeat from node3 term 160
-2026/01/17 13:24:45 [node1] Received Heartbeat from node3 term 160
-2026/01/17 13:24:45 [node1] Received Heartbeat from node3 term 160
-2026/01/17 13:24:45 [node1] Won election! Becoming Leader for term 162
-2026/01/17 13:24:47 [node1] Received Heartbeat from node3 term 164
-2026/01/17 13:24:47 [node1] Received Heartbeat from node3 term 164
-2026/01/17 13:24:47 [node1] Received Heartbeat from node3 term 164
-2026/01/17 13:24:47 [node1] Received Heartbeat from node3 term 164
-2026/01/17 13:24:48 [node1] Received Heartbeat from node3 term 164
-2026/01/17 13:24:48 [node1] Won election! Becoming Leader for term 165
-2026/01/17 13:24:48 [node1] Received Heartbeat from node2 term 166
-2026/01/17 13:24:48 [node1] Received Heartbeat from node2 term 166
-2026/01/17 13:24:48 [node1] Received Heartbeat from node2 term 166
-2026/01/17 13:24:49 [node1] Received Heartbeat from node2 term 166
-2026/01/17 13:24:49 [node1] Received Heartbeat from node2 term 166
-2026/01/17 13:24:49 [node1] Received Heartbeat from node2 term 166
-2026/01/17 13:24:49 [node1] Received Heartbeat from node2 term 166
-2026/01/17 13:24:49 [node1] Received Heartbeat from node3 term 167
-2026/01/17 13:24:49 [node1] Won election! Becoming Leader for term 168
-2026/01/17 13:24:51 [node1] Received Heartbeat from node2 term 170
-2026/01/17 13:24:51 [node1] Received Heartbeat from node2 term 170
-2026/01/17 13:24:51 [node1] Received Heartbeat from node2 term 170
-2026/01/17 13:24:51 [node1] Received Heartbeat from node2 term 170
-2026/01/17 13:24:51 [node1] Received Heartbeat from node2 term 170
-2026/01/17 13:24:51 [node1] Received Heartbeat from node2 term 170
-2026/01/17 13:24:51 [node1] Received Heartbeat from node2 term 170
-2026/01/17 13:24:52 [node1] Received Heartbeat from node2 term 170
-2026/01/17 13:24:52 [node1] Won election! Becoming Leader for term 171
-2026/01/17 13:24:52 [node1] Received Heartbeat from node3 term 172
-2026/01/17 13:24:52 [node1] Received Heartbeat from node3 term 172
-2026/01/17 13:24:52 [node1] Received Heartbeat from node3 term 172
-2026/01/17 13:24:52 [node1] Received Heartbeat from node3 term 172
-2026/01/17 13:24:53 [node1] Received Heartbeat from node3 term 172
-2026/01/17 13:24:53 [node1] Received Heartbeat from node2 term 173
-2026/01/17 13:24:53 [node1] Won election! Becoming Leader for term 174
-2026/01/17 13:24:54 [node1] Received Heartbeat from node2 term 176
-2026/01/17 13:24:54 [node1] Received Heartbeat from node2 term 176
-2026/01/17 13:24:55 [node1] Received Heartbeat from node2 term 176
-2026/01/17 13:24:55 [node1] Received Heartbeat from node2 term 176
-2026/01/17 13:24:55 [node1] Received Heartbeat from node2 term 176
-2026/01/17 13:24:55 [node1] Received Heartbeat from node2 term 176
-2026/01/17 13:24:55 [node1] Received Heartbeat from node2 term 176
-2026/01/17 13:24:55 [node1] Received Heartbeat from node3 term 177
-2026/01/17 13:24:56 [node1] Received Heartbeat from node3 term 177
-2026/01/17 13:24:56 [node1] Won election! Becoming Leader for term 178
-2026/01/17 13:24:56 [node1] Received Heartbeat from node2 term 179
-2026/01/17 13:24:57 [node1] Received Heartbeat from node2 term 179
-2026/01/17 13:24:57 [node1] Received Heartbeat from node3 term 180
-2026/01/17 13:24:57 [node1] Received Heartbeat from node3 term 180
-2026/01/17 13:24:57 [node1] Received Heartbeat from node3 term 180
-2026/01/17 13:24:57 [node1] Received Heartbeat from node3 term 180
-2026/01/17 13:24:57 [node1] Won election! Becoming Leader for term 181
-2026/01/17 13:24:58 [node1] Received Heartbeat from node2 term 182
-2026/01/17 13:24:58 [node1] Received Heartbeat from node2 term 182
-2026/01/17 13:24:58 [node1] Received Heartbeat from node2 term 182
-2026/01/17 13:24:58 [node1] Received Heartbeat from node2 term 182
-2026/01/17 13:24:59 [node1] Received Heartbeat from node2 term 182
-2026/01/17 13:24:59 [node1] Received Heartbeat from node2 term 182
-2026/01/17 13:24:59 [node1] Received Heartbeat from node3 term 183
-2026/01/17 13:24:59 [node1] Won election! Becoming Leader for term 184
-2026/01/17 13:25:00 [node1] Received Heartbeat from node2 term 185
-2026/01/17 13:25:00 [node1] Received Heartbeat from node2 term 185
-2026/01/17 13:25:01 [node1] Received Heartbeat from node3 term 186
-2026/01/17 13:25:01 [node1] Received Heartbeat from node3 term 186
-2026/01/17 13:25:01 [node1] Received Heartbeat from node3 term 186
-2026/01/17 13:25:01 [node1] Received Heartbeat from node3 term 186
-2026/01/17 13:25:01 [node1] Received Heartbeat from node3 term 186
-2026/01/17 13:25:01 [node1] Won election! Becoming Leader for term 187
-2026/01/17 13:25:02 [node1] Received Heartbeat from node2 term 188
-2026/01/17 13:25:02 [node1] Received Heartbeat from node2 term 188
-2026/01/17 13:25:02 [node1] Received Heartbeat from node2 term 188
-2026/01/17 13:25:03 [node1] Received Heartbeat from node2 term 188
-2026/01/17 13:25:03 [node1] Received Heartbeat from node2 term 188
-2026/01/17 13:25:03 [node1] Received Heartbeat from node3 term 189
-2026/01/17 13:25:03 [node1] Received Heartbeat from node3 term 189
-2026/01/17 13:25:03 [node1] Received Heartbeat from node3 term 189
-2026/01/17 13:25:03 [node1] Received Heartbeat from node3 term 189
-2026/01/17 13:25:03 [node1] Won election! Becoming Leader for term 190
-2026/01/17 13:25:05 [node1] Received Heartbeat from node3 term 192
-2026/01/17 13:25:05 [node1] Received Heartbeat from node3 term 192
-2026/01/17 13:25:05 [node1] Received Heartbeat from node3 term 192
-2026/01/17 13:25:05 [node1] Received Heartbeat from node3 term 192
-2026/01/17 13:25:05 [node1] Received Heartbeat from node3 term 192
-2026/01/17 13:25:05 [node1] Won election! Becoming Leader for term 193
-2026/01/17 13:25:06 [node1] Received Heartbeat from node2 term 194
-2026/01/17 13:25:06 [node1] Received Heartbeat from node2 term 194
-2026/01/17 13:25:06 [node1] Received Heartbeat from node2 term 194
-2026/01/17 13:25:06 [node1] Received Heartbeat from node2 term 194
-2026/01/17 13:25:06 [node1] Received Heartbeat from node2 term 194
-2026/01/17 13:25:06 [node1] Received Heartbeat from node2 term 194
-2026/01/17 13:25:06 [node1] Received Heartbeat from node2 term 194
-2026/01/17 13:25:07 [node1] Received Heartbeat from node3 term 195
-2026/01/17 13:25:07 [node1] Received Heartbeat from node3 term 195
-2026/01/17 13:25:07 [node1] Won election! Becoming Leader for term 196
-2026/01/17 13:25:08 [node1] Received Heartbeat from node2 term 197
-2026/01/17 13:25:08 [node1] Received Heartbeat from node3 term 198
-2026/01/17 13:25:08 [node1] Received Heartbeat from node3 term 198
-2026/01/17 13:25:08 [node1] Received Heartbeat from node3 term 198
-2026/01/17 13:25:08 [node1] Received Heartbeat from node3 term 198
-2026/01/17 13:25:09 [node1] Received Heartbeat from node3 term 198
-2026/01/17 13:25:09 [node1] Received Heartbeat from node3 term 198
-2026/01/17 13:25:09 [node1] Received Heartbeat from node3 term 198
-2026/01/17 13:25:09 [node1] Won election! Becoming Leader for term 200
-2026/01/17 13:25:11 [node1] Received Heartbeat from node2 term 202
-2026/01/17 13:25:11 [node1] Received Heartbeat from node2 term 202
-2026/01/17 13:25:11 [node1] Received Heartbeat from node2 term 202
-2026/01/17 13:25:11 [node1] Received Heartbeat from node2 term 202
-2026/01/17 13:25:11 [node1] Received Heartbeat from node2 term 202
-2026/01/17 13:25:11 [node1] Received Heartbeat from node2 term 202
-2026/01/17 13:25:12 [node1] Received Heartbeat from node2 term 202
-2026/01/17 13:25:12 [node1] Won election! Becoming Leader for term 203
-2026/01/17 13:25:12 [node1] Received Heartbeat from node3 term 204
-2026/01/17 13:25:12 [node1] Received Heartbeat from node3 term 204
-2026/01/17 13:25:12 [node1] Received Heartbeat from node3 term 204
-2026/01/17 13:25:12 [node1] Received Heartbeat from node3 term 204
-2026/01/17 13:25:13 [node1] Received Heartbeat from node3 term 204
-2026/01/17 13:25:13 [node1] Received Heartbeat from node3 term 204
-2026/01/17 13:25:13 [node1] Received Heartbeat from node3 term 204
-2026/01/17 13:25:13 [node1] Received Heartbeat from node3 term 204
-2026/01/17 13:25:13 [node1] Received Heartbeat from node3 term 204
-2026/01/17 13:25:13 [node1] Won election! Becoming Leader for term 206
-2026/01/17 13:25:15 [node1] Received Heartbeat from node3 term 208
-2026/01/17 13:25:15 [node1] Received Heartbeat from node3 term 208
-2026/01/17 13:25:15 [node1] Received Heartbeat from node3 term 208
-2026/01/17 13:25:15 [node1] Received Heartbeat from node3 term 208
-2026/01/17 13:25:15 [node1] Received Heartbeat from node3 term 208
-2026/01/17 13:25:15 [node1] Received Heartbeat from node3 term 208
-2026/01/17 13:25:16 [node1] Received Heartbeat from node3 term 208
-2026/01/17 13:25:16 [node1] Received Heartbeat from node2 term 209
-2026/01/17 13:25:16 [node1] Won election! Becoming Leader for term 210
-2026/01/17 13:25:17 [node1] Received Heartbeat from node3 term 211
-2026/01/17 13:25:17 [node1] Received Heartbeat from node3 term 211
-2026/01/17 13:25:17 [node1] Received Heartbeat from node3 term 211
-2026/01/17 13:25:17 [node1] Received Heartbeat from node3 term 211
-2026/01/17 13:25:17 [node1] Received Heartbeat from node2 term 212
-2026/01/17 13:25:18 [node1] Won election! Becoming Leader for term 213
-2026/01/17 13:25:18 [node1] Received Heartbeat from node2 term 213
-2026/01/17 13:25:18 [node1] Received Heartbeat from node3 term 214
-2026/01/17 13:25:19 [node1] Received Heartbeat from node3 term 214
-2026/01/17 13:25:19 [node1] Received Heartbeat from node2 term 215
-2026/01/17 13:25:19 [node1] Received Heartbeat from node2 term 215
-2026/01/17 13:25:19 [node1] Received Heartbeat from node2 term 215
-2026/01/17 13:25:19 [node1] Won election! Becoming Leader for term 216
-2026/01/17 13:25:20 [node1] Received Heartbeat from node3 term 218
-2026/01/17 13:25:21 [node1] Received Heartbeat from node2 term 219
-2026/01/17 13:25:21 [node1] Won election! Becoming Leader for term 220
-2026/01/17 13:25:22 [node1] Received Heartbeat from node3 term 221
-2026/01/17 13:25:22 [node1] Received Heartbeat from node3 term 221
-2026/01/17 13:25:22 [node1] Received Heartbeat from node3 term 221
-2026/01/17 13:25:22 [node1] Received Heartbeat from node3 term 221
-2026/01/17 13:25:22 [node1] Received Heartbeat from node3 term 221
-2026/01/17 13:25:22 [node1] Received Heartbeat from node3 term 221
-2026/01/17 13:25:23 [node1] Received Heartbeat from node2 term 222
-2026/01/17 13:25:23 [node1] Received Heartbeat from node2 term 222
-2026/01/17 13:25:23 [node1] Won election! Becoming Leader for term 223
-2026/01/17 13:25:24 [node1] Received Heartbeat from node3 term 224
-2026/01/17 13:25:24 [node1] Received Heartbeat from node2 term 225
-2026/01/17 13:25:24 [node1] Received Heartbeat from node2 term 225
-2026/01/17 13:25:24 [node1] Received Heartbeat from node2 term 225
-2026/01/17 13:25:25 [node1] Received Heartbeat from node2 term 225
-2026/01/17 13:25:25 [node1] Received Heartbeat from node2 term 225
-2026/01/17 13:25:25 [node1] Won election! Becoming Leader for term 226
-2026/01/17 13:25:25 [node1] Received Heartbeat from node3 term 227
-2026/01/17 13:25:26 [node1] Received Heartbeat from node3 term 227
-2026/01/17 13:25:26 [node1] Received Heartbeat from node3 term 227
-2026/01/17 13:25:26 [node1] Received Heartbeat from node3 term 227
-2026/01/17 13:25:26 [node1] Received Heartbeat from node3 term 227
-2026/01/17 13:25:26 [node1] Received Heartbeat from node2 term 228
-2026/01/17 13:25:26 [node1] Received Heartbeat from node2 term 228
-2026/01/17 13:25:27 [node1] Won election! Becoming Leader for term 229
-2026/01/17 13:25:27 [node1] Received Heartbeat from node3 term 230
-2026/01/17 13:25:28 [node1] Received Heartbeat from node3 term 230
-2026/01/17 13:25:28 [node1] Received Heartbeat from node3 term 230
-2026/01/17 13:25:28 [node1] Received Heartbeat from node3 term 230
-2026/01/17 13:25:28 [node1] Received Heartbeat from node2 term 231
-2026/01/17 13:25:28 [node1] Received Heartbeat from node2 term 231
-2026/01/17 13:25:28 [node1] Received Heartbeat from node2 term 231
-2026/01/17 13:25:29 [node1] Won election! Becoming Leader for term 232
-2026/01/17 13:25:29 [node1] Received Heartbeat from node3 term 233
-2026/01/17 13:25:29 [node1] Received Heartbeat from node3 term 233
-2026/01/17 13:25:30 [node1] Received Heartbeat from node3 term 233
-2026/01/17 13:25:30 [node1] Received Heartbeat from node2 term 234
-2026/01/17 13:25:30 [node1] Received Heartbeat from node2 term 234
-2026/01/17 13:25:30 [node1] Received Heartbeat from node2 term 234
-2026/01/17 13:25:30 [node1] Received Heartbeat from node2 term 234
-2026/01/17 13:25:30 [node1] Won election! Becoming Leader for term 235
-2026/01/17 13:25:31 [node1] Received Heartbeat from node3 term 236
-2026/01/17 13:25:31 [node1] Received Heartbeat from node3 term 236
-2026/01/17 13:25:31 [node1] Received Heartbeat from node3 term 236
-2026/01/17 13:25:32 [node1] Received Heartbeat from node3 term 236
-2026/01/17 13:25:32 [node1] Received Heartbeat from node3 term 236
-2026/01/17 13:25:32 [node1] Received Heartbeat from node2 term 237
-2026/01/17 13:25:32 [node1] Won election! Becoming Leader for term 238
-2026/01/17 13:25:33 [node1] Received Heartbeat from node3 term 239
-2026/01/17 13:25:33 [node1] Received Heartbeat from node3 term 240
-2026/01/17 13:25:34 [node1] Won election! Becoming Leader for term 243
-2026/01/17 13:25:36 [node1] Received Heartbeat from node2 term 245
-2026/01/17 13:25:36 [node1] Received Heartbeat from node2 term 245
-2026/01/17 13:25:36 [node1] Received Heartbeat from node2 term 245
-2026/01/17 13:25:36 [node1] Received Heartbeat from node2 term 245
-2026/01/17 13:25:36 [node1] Received Heartbeat from node2 term 245
-2026/01/17 13:25:37 [node1] Received Heartbeat from node2 term 245
-2026/01/17 13:25:37 [node1] Received Heartbeat from node2 term 245
-2026/01/17 13:25:37 [node1] Won election! Becoming Leader for term 247
-2026/01/17 13:25:38 [node1] Received Heartbeat from node2 term 248
-2026/01/17 13:25:38 [node1] Received Heartbeat from node3 term 249
-2026/01/17 13:25:38 [node1] Received Heartbeat from node3 term 249
-2026/01/17 13:25:39 [node1] Received Heartbeat from node3 term 249
-2026/01/17 13:25:39 [node1] Received Heartbeat from node3 term 249
-2026/01/17 13:25:39 [node1] Received Heartbeat from node3 term 249
-2026/01/17 13:25:39 [node1] Received Heartbeat from node3 term 249
-2026/01/17 13:25:39 [node1] Won election! Becoming Leader for term 250
-2026/01/17 13:25:39 [node1] Received Heartbeat from node2 term 251
-2026/01/17 13:25:40 [node1] Received Heartbeat from node2 term 251
-2026/01/17 13:25:40 [node1] Received Heartbeat from node2 term 251
-2026/01/17 13:25:40 [node1] Received Heartbeat from node2 term 251
-2026/01/17 13:25:40 [node1] Received Heartbeat from node2 term 251
-2026/01/17 13:25:40 [node1] Received Heartbeat from node3 term 252
-2026/01/17 13:25:40 [node1] Received Heartbeat from node3 term 252
-2026/01/17 13:25:41 [node1] Received Heartbeat from node3 term 252
-2026/01/17 13:25:41 [node1] Received Heartbeat from node3 term 252
-2026/01/17 13:25:41 [node1] Won election! Becoming Leader for term 253
-2026/01/17 13:25:42 [node1] Received Heartbeat from node2 term 254
-2026/01/17 13:25:42 [node1] Received Heartbeat from node2 term 254
-2026/01/17 13:25:42 [node1] Received Heartbeat from node2 term 254
-2026/01/17 13:25:42 [node1] Received Heartbeat from node2 term 254
-2026/01/17 13:25:42 [node1] Received Heartbeat from node3 term 255
-2026/01/17 13:25:42 [node1] Received Heartbeat from node3 term 255
-2026/01/17 13:25:43 [node1] Received Heartbeat from node3 term 255
-2026/01/17 13:25:43 [node1] Won election! Becoming Leader for term 256
-2026/01/17 13:25:44 [node1] Received Heartbeat from node2 term 257
-2026/01/17 13:25:44 [node1] Received Heartbeat from node2 term 257
-2026/01/17 13:25:44 [node1] Received Heartbeat from node2 term 257
-2026/01/17 13:25:44 [node1] Received Heartbeat from node3 term 258
-2026/01/17 13:25:44 [node1] Received Heartbeat from node3 term 258
-2026/01/17 13:25:45 [node1] Received Heartbeat from node3 term 258
-2026/01/17 13:25:45 [node1] Received Heartbeat from node3 term 258
-2026/01/17 13:25:45 [node1] Received Heartbeat from node3 term 258
-2026/01/17 13:25:45 [node1] Received Heartbeat from node3 term 258
-2026/01/17 13:25:45 [node1] Won election! Becoming Leader for term 259
-2026/01/17 13:25:45 [node1] Received Heartbeat from node2 term 260
-2026/01/17 13:25:45 [node1] Received Heartbeat from node2 term 260
-2026/01/17 13:25:46 [node1] Received Heartbeat from node2 term 260
-2026/01/17 13:25:46 [node1] Received Heartbeat from node2 term 260
-2026/01/17 13:25:46 [node1] Received Heartbeat from node2 term 260
-2026/01/17 13:25:46 [node1] Received Heartbeat from node2 term 260
-2026/01/17 13:25:46 [node1] Received Heartbeat from node2 term 260
-2026/01/17 13:25:46 [node1] Received Heartbeat from node2 term 260
-2026/01/17 13:25:46 [node1] Won election! Becoming Leader for term 262
-2026/01/17 13:25:48 [node1] Received Heartbeat from node3 term 264
-2026/01/17 13:25:48 [node1] Received Heartbeat from node3 term 264
-2026/01/17 13:25:48 [node1] Received Heartbeat from node3 term 264
-2026/01/17 13:25:48 [node1] Received Heartbeat from node3 term 264
-2026/01/17 13:25:48 [node1] Received Heartbeat from node3 term 264
-2026/01/17 13:25:48 [node1] Received Heartbeat from node3 term 264
-2026/01/17 13:25:49 [node1] Received Heartbeat from node3 term 264
-2026/01/17 13:25:49 [node1] Received Heartbeat from node3 term 264
-2026/01/17 13:25:49 [node1] Won election! Becoming Leader for term 265
-2026/01/17 13:25:49 [node1] Received Heartbeat from node2 term 266
-2026/01/17 13:25:49 [node1] Received Heartbeat from node2 term 266
-2026/01/17 13:25:49 [node1] Received Heartbeat from node2 term 266
-2026/01/17 13:25:49 [node1] Received Heartbeat from node2 term 266
-2026/01/17 13:25:50 [node1] Received Heartbeat from node2 term 266
-2026/01/17 13:25:50 [node1] Received Heartbeat from node2 term 266
-2026/01/17 13:25:50 [node1] Received Heartbeat from node2 term 266
-2026/01/17 13:25:50 [node1] Won election! Becoming Leader for term 267
-2026/01/17 13:25:50 [node1] Received Heartbeat from node3 term 268
-2026/01/17 13:25:50 [node1] Received Heartbeat from node3 term 268
-2026/01/17 13:25:51 [node1] Received Heartbeat from node3 term 268
-2026/01/17 13:25:51 [node1] Received Heartbeat from node3 term 268
-2026/01/17 13:25:51 [node1] Received Heartbeat from node3 term 268
-2026/01/17 13:25:51 [node1] Received Heartbeat from node3 term 268
-2026/01/17 13:25:51 [node1] Won election! Becoming Leader for term 269
-2026/01/17 13:25:51 [node1] Received Heartbeat from node3 term 269
-2026/01/17 13:25:51 [node1] Received Heartbeat from node2 term 270
-2026/01/17 13:25:52 [node1] Received Heartbeat from node2 term 270
-2026/01/17 13:25:52 [node1] Received Heartbeat from node2 term 270
-2026/01/17 13:25:52 [node1] Received Heartbeat from node2 term 270
-2026/01/17 13:25:52 [node1] Received Heartbeat from node2 term 270
-2026/01/17 13:25:52 [node1] Received Heartbeat from node2 term 270
-2026/01/17 13:25:52 [node1] Won election! Becoming Leader for term 271
-2026/01/17 13:25:53 [node1] Received Heartbeat from node3 term 272
-2026/01/17 13:25:53 [node1] Received Heartbeat from node3 term 272
-2026/01/17 13:25:53 [node1] Received Heartbeat from node3 term 272
-2026/01/17 13:25:53 [node1] Received Heartbeat from node3 term 272
-2026/01/17 13:25:53 [node1] Received Heartbeat from node3 term 272
-2026/01/17 13:25:54 [node1] Received Heartbeat from node3 term 272
-2026/01/17 13:25:54 [node1] Received Heartbeat from node3 term 273
-2026/01/17 13:25:54 [node1] Won election! Becoming Leader for term 274
-2026/01/17 13:25:55 [node1] Received Heartbeat from node3 term 275
-2026/01/17 13:25:55 [node1] Received Heartbeat from node2 term 276
-2026/01/17 13:25:55 [node1] Received Heartbeat from node2 term 276
-2026/01/17 13:25:56 [node1] Received Heartbeat from node2 term 276
-2026/01/17 13:25:56 [node1] Received Heartbeat from node2 term 276
-2026/01/17 13:25:56 [node1] Received Heartbeat from node2 term 276
-2026/01/17 13:25:56 [node1] Won election! Becoming Leader for term 277
-2026/01/17 13:25:56 [node1] Received Heartbeat from node3 term 278
-2026/01/17 13:25:57 [node1] Received Heartbeat from node3 term 278
-2026/01/17 13:25:57 [node1] Received Heartbeat from node3 term 278
-2026/01/17 13:25:57 [node1] Received Heartbeat from node3 term 278
-2026/01/17 13:25:57 [node1] Received Heartbeat from node3 term 278
-2026/01/17 13:25:57 [node1] Received Heartbeat from node3 term 278
-2026/01/17 13:25:57 [node1] Received Heartbeat from node3 term 278
-2026/01/17 13:25:58 [node1] Won election! Becoming Leader for term 280
-2026/01/17 13:25:59 [node1] Received Heartbeat from node2 term 282
-2026/01/17 13:25:59 [node1] Received Heartbeat from node2 term 282
-2026/01/17 13:25:59 [node1] Received Heartbeat from node2 term 282
-2026/01/17 13:25:59 [node1] Received Heartbeat from node2 term 282
-2026/01/17 13:26:00 [node1] Received Heartbeat from node2 term 282
-2026/01/17 13:26:00 [node1] Received Heartbeat from node2 term 282
-2026/01/17 13:26:00 [node1] Received Heartbeat from node2 term 282
-2026/01/17 13:26:00 [node1] Received Heartbeat from node2 term 282
-2026/01/17 13:26:00 [node1] Received Heartbeat from node3 term 283
-2026/01/17 13:26:00 [node1] Won election! Becoming Leader for term 284
-2026/01/17 13:26:01 [node1] Received Heartbeat from node3 term 285
-2026/01/17 13:26:01 [node1] Received Heartbeat from node2 term 285
-2026/01/17 13:26:02 [node1] Received Heartbeat from node2 term 286
-2026/01/17 13:26:02 [node1] Received Heartbeat from node2 term 286
-2026/01/17 13:26:03 [node1] Received Heartbeat from node2 term 286
-2026/01/17 13:26:03 [node1] Received Heartbeat from node2 term 286
-2026/01/17 13:26:03 [node1] Won election! Becoming Leader for term 287
-2026/01/17 13:26:03 [node1] Received Heartbeat from node3 term 288
-2026/01/17 13:26:03 [node1] Received Heartbeat from node3 term 288
-2026/01/17 13:26:03 [node1] Received Heartbeat from node3 term 288
-2026/01/17 13:26:04 [node1] Received Heartbeat from node3 term 288
-2026/01/17 13:26:04 [node1] Received Heartbeat from node3 term 288
-2026/01/17 13:26:04 [node1] Received Heartbeat from node2 term 289
-2026/01/17 13:26:04 [node1] Received Heartbeat from node2 term 289
-2026/01/17 13:26:04 [node1] Won election! Becoming Leader for term 290
-2026/01/17 13:26:04 [node1] Received Heartbeat from node2 term 290
-2026/01/17 13:26:05 [node1] Received Heartbeat from node3 term 291
-2026/01/17 13:26:05 [node1] Received Heartbeat from node3 term 291
-2026/01/17 13:26:05 [node1] Won election! Becoming Leader for term 292
-2026/01/17 13:26:05 [node1] Received Heartbeat from node2 term 293
-2026/01/17 13:26:06 [node1] Received Heartbeat from node2 term 293
-2026/01/17 13:26:06 [node1] Received Heartbeat from node2 term 293
-2026/01/17 13:26:06 [node1] Received Heartbeat from node2 term 293
-2026/01/17 13:26:06 [node1] Received Heartbeat from node2 term 293
-2026/01/17 13:26:06 [node1] Received Heartbeat from node2 term 293
-2026/01/17 13:26:06 [node1] Received Heartbeat from node2 term 293
-2026/01/17 13:26:07 [node1] Received Heartbeat from node2 term 293
-2026/01/17 13:26:07 [node1] Received Heartbeat from node2 term 293
-2026/01/17 13:26:07 [node1] Won election! Becoming Leader for term 295
-2026/01/17 13:26:08 [node1] Received Heartbeat from node3 term 297
-2026/01/17 13:26:08 [node1] Received Heartbeat from node3 term 297
-2026/01/17 13:26:08 [node1] Received Heartbeat from node3 term 297
-2026/01/17 13:26:09 [node1] Received Heartbeat from node3 term 297
-2026/01/17 13:26:09 [node1] Received Heartbeat from node3 term 297
-2026/01/17 13:26:09 [node1] Received Heartbeat from node3 term 297
-2026/01/17 13:26:09 [node1] Received Heartbeat from node3 term 297
-2026/01/17 13:26:09 [node1] Received Heartbeat from node3 term 297
-2026/01/17 13:26:09 [node1] Received Heartbeat from node3 term 297
-2026/01/17 13:26:09 [node1] Won election! Becoming Leader for term 298
-2026/01/17 13:26:10 [node1] Received Heartbeat from node2 term 299
-2026/01/17 13:26:10 [node1] Received Heartbeat from node2 term 299
-2026/01/17 13:26:10 [node1] Received Heartbeat from node2 term 299
-2026/01/17 13:26:10 [node1] Received Heartbeat from node2 term 299
-2026/01/17 13:26:10 [node1] Received Heartbeat from node2 term 299
-2026/01/17 13:26:10 [node1] Received Heartbeat from node2 term 299
-2026/01/17 13:26:10 [node1] Received Heartbeat from node2 term 299
-2026/01/17 13:26:11 [node1] Received Heartbeat from node2 term 299
-2026/01/17 13:26:11 [node1] Won election! Becoming Leader for term 301
-2026/01/17 13:26:12 [node1] Received Heartbeat from node2 term 302
-2026/01/17 13:26:12 [node1] Received Heartbeat from node2 term 302
-2026/01/17 13:26:12 [node1] Received Heartbeat from node3 term 303
-2026/01/17 13:26:12 [node1] Received Heartbeat from node3 term 303
-2026/01/17 13:26:12 [node1] Received Heartbeat from node3 term 303
-2026/01/17 13:26:13 [node1] Received Heartbeat from node3 term 303
-2026/01/17 13:26:13 [node1] Received Heartbeat from node3 term 303
-2026/01/17 13:26:13 [node1] Received Heartbeat from node3 term 303
-2026/01/17 13:26:13 [node1] Won election! Becoming Leader for term 304
-2026/01/17 13:26:13 [node1] Received Heartbeat from node2 term 305
-2026/01/17 13:26:13 [node1] Received Heartbeat from node2 term 305
-2026/01/17 13:26:14 [node1] Received Heartbeat from node2 term 305
-2026/01/17 13:26:14 [node1] Received Heartbeat from node2 term 305
-2026/01/17 13:26:14 [node1] Received Heartbeat from node2 term 305
-2026/01/17 13:26:14 [node1] Received Heartbeat from node2 term 305
-2026/01/17 13:26:14 [node1] Received Heartbeat from node2 term 305
-2026/01/17 13:26:14 [node1] Received Heartbeat from node2 term 305
-2026/01/17 13:26:14 [node1] Won election! Becoming Leader for term 306
-2026/01/17 13:26:15 [node1] Received Heartbeat from node3 term 307
-2026/01/17 13:26:15 [node1] Received Heartbeat from node3 term 307
-2026/01/17 13:26:15 [node1] Received Heartbeat from node3 term 307
-2026/01/17 13:26:15 [node1] Received Heartbeat from node3 term 307
-2026/01/17 13:26:15 [node1] Received Heartbeat from node3 term 307
-2026/01/17 13:26:15 [node1] Received Heartbeat from node3 term 307
-2026/01/17 13:26:15 [node1] Received Heartbeat from node3 term 307
-2026/01/17 13:26:15 [node1] Won election! Becoming Leader for term 308
-2026/01/17 13:26:16 [node1] Received Heartbeat from node2 term 309
-2026/01/17 13:26:16 [node1] Received Heartbeat from node2 term 309
-2026/01/17 13:26:16 [node1] Received Heartbeat from node2 term 309
-2026/01/17 13:26:16 [node1] Received Heartbeat from node2 term 309
-2026/01/17 13:26:16 [node1] Received Heartbeat from node2 term 309
-2026/01/17 13:26:16 [node1] Received Heartbeat from node2 term 309
-2026/01/17 13:26:17 [node1] Received Heartbeat from node2 term 309
-2026/01/17 13:26:17 [node1] Received Heartbeat from node2 term 309
-2026/01/17 13:26:17 [node1] Won election! Becoming Leader for term 310
-2026/01/17 13:26:17 [node1] Received Heartbeat from node3 term 311
-2026/01/17 13:26:17 [node1] Received Heartbeat from node3 term 311
-2026/01/17 13:26:17 [node1] Received Heartbeat from node3 term 311
-2026/01/17 13:26:17 [node1] Received Heartbeat from node3 term 311
-2026/01/17 13:26:18 [node1] Received Heartbeat from node3 term 311
-2026/01/17 13:26:18 [node1] Received Heartbeat from node3 term 311
-2026/01/17 13:26:18 [node1] Received Heartbeat from node3 term 311
-2026/01/17 13:26:18 [node1] Received Heartbeat from node2 term 312
-2026/01/17 13:26:18 [node1] Received Heartbeat from node2 term 312
-2026/01/17 13:26:18 [node1] Won election! Becoming Leader for term 313
-2026/01/17 13:26:19 [node1] Received Heartbeat from node3 term 314
-2026/01/17 13:26:20 [node1] Received Heartbeat from node3 term 314
-2026/01/17 13:26:20 [node1] Received Heartbeat from node3 term 314
-2026/01/17 13:26:20 [node1] Received Heartbeat from node2 term 315
-2026/01/17 13:26:20 [node1] Received Heartbeat from node2 term 315
-2026/01/17 13:26:20 [node1] Received Heartbeat from node2 term 315
-2026/01/17 13:26:20 [node1] Received Heartbeat from node2 term 315
-2026/01/17 13:26:20 [node1] Won election! Becoming Leader for term 316
-2026/01/17 13:26:21 [node1] Received Heartbeat from node3 term 317
-2026/01/17 13:26:22 [node1] Received Heartbeat from node2 term 318
-2026/01/17 13:26:22 [node1] Received Heartbeat from node2 term 318
-2026/01/17 13:26:22 [node1] Received Heartbeat from node2 term 318
-2026/01/17 13:26:22 [node1] Received Heartbeat from node2 term 318
-2026/01/17 13:26:22 [node1] Won election! Becoming Leader for term 319
-2026/01/17 13:26:22 [node1] Received Heartbeat from node2 term 319
-2026/01/17 13:26:23 [node1] Received Heartbeat from node3 term 320
-2026/01/17 13:26:23 [node1] Received Heartbeat from node3 term 320
-2026/01/17 13:26:23 [node1] Received Heartbeat from node3 term 320
-2026/01/17 13:26:23 [node1] Received Heartbeat from node3 term 320
-2026/01/17 13:26:23 [node1] Received Heartbeat from node3 term 320
-2026/01/17 13:26:23 [node1] Received Heartbeat from node2 term 321
-2026/01/17 13:26:24 [node1] Received Heartbeat from node2 term 321
-2026/01/17 13:26:24 [node1] Won election! Becoming Leader for term 322
-2026/01/17 13:26:25 [node1] Received Heartbeat from node3 term 323
-2026/01/17 13:26:25 [node1] Received Heartbeat from node3 term 323
-2026/01/17 13:26:25 [node1] Received Heartbeat from node3 term 323
-2026/01/17 13:26:25 [node1] Received Heartbeat from node3 term 323
-2026/01/17 13:26:25 [node1] Received Heartbeat from node2 term 324
-2026/01/17 13:26:25 [node1] Received Heartbeat from node2 term 324
-2026/01/17 13:26:25 [node1] Received Heartbeat from node2 term 324
-2026/01/17 13:26:25 [node1] Won election! Becoming Leader for term 325
-2026/01/17 13:26:27 [node1] Received Heartbeat from node3 term 326
-2026/01/17 13:26:27 [node1] Received Heartbeat from node3 term 326
-2026/01/17 13:26:27 [node1] Received Heartbeat from node3 term 326
-2026/01/17 13:26:27 [node1] Received Heartbeat from node2 term 327
-2026/01/17 13:26:27 [node1] Received Heartbeat from node2 term 327
-2026/01/17 13:26:27 [node1] Received Heartbeat from node2 term 327
-2026/01/17 13:26:27 [node1] Received Heartbeat from node2 term 327
-2026/01/17 13:26:28 [node1] Won election! Becoming Leader for term 328
-2026/01/17 13:26:28 [node1] Received Heartbeat from node3 term 329
-2026/01/17 13:26:29 [node1] Received Heartbeat from node3 term 329
-2026/01/17 13:26:29 [node1] Received Heartbeat from node3 term 330
-2026/01/17 13:26:29 [node1] Won election! Becoming Leader for term 331
-2026/01/17 13:26:30 [node1] Received Heartbeat from node3 term 332
-2026/01/17 13:26:30 [node1] Received Heartbeat from node3 term 332
-2026/01/17 13:26:30 [node1] Received Heartbeat from node2 term 333
-2026/01/17 13:26:31 [node1] Received Heartbeat from node2 term 333
-2026/01/17 13:26:31 [node1] Received Heartbeat from node2 term 333
-2026/01/17 13:26:31 [node1] Received Heartbeat from node2 term 333
-2026/01/17 13:26:31 [node1] Received Heartbeat from node2 term 333
-2026/01/17 13:26:31 [node1] Won election! Becoming Leader for term 334
-2026/01/17 13:26:32 [node1] Received Heartbeat from node3 term 335
-2026/01/17 13:26:32 [node1] Received Heartbeat from node3 term 335
-2026/01/17 13:26:32 [node1] Received Heartbeat from node3 term 335
-2026/01/17 13:26:32 [node1] Received Heartbeat from node3 term 336
-2026/01/17 13:26:33 [node1] Won election! Becoming Leader for term 337
-2026/01/17 13:26:34 [node1] Received Heartbeat from node3 term 339
-2026/01/17 13:26:34 [node1] Received Heartbeat from node3 term 339
-2026/01/17 13:26:34 [node1] Received Heartbeat from node3 term 339
-2026/01/17 13:26:34 [node1] Received Heartbeat from node3 term 339
-2026/01/17 13:26:34 [node1] Received Heartbeat from node3 term 339
-2026/01/17 13:26:35 [node1] Received Heartbeat from node3 term 339
-2026/01/17 13:26:35 [node1] Won election! Becoming Leader for term 340
-2026/01/17 13:26:35 [node1] Received Heartbeat from node2 term 341
-2026/01/17 13:26:35 [node1] Received Heartbeat from node2 term 341
-2026/01/17 13:26:35 [node1] Received Heartbeat from node2 term 341
-2026/01/17 13:26:35 [node1] Received Heartbeat from node2 term 341
-2026/01/17 13:26:36 [node1] Received Heartbeat from node2 term 341
-2026/01/17 13:26:36 [node1] Received Heartbeat from node2 term 341
-2026/01/17 13:26:36 [node1] Received Heartbeat from node2 term 341
-2026/01/17 13:26:36 [node1] Received Heartbeat from node2 term 341
-2026/01/17 13:26:36 [node1] Won election! Becoming Leader for term 342
-2026/01/17 13:26:36 [node1] Received Heartbeat from node3 term 343
-2026/01/17 13:26:36 [node1] Received Heartbeat from node3 term 343
-2026/01/17 13:26:37 [node1] Received Heartbeat from node3 term 343
-2026/01/17 13:26:37 [node1] Received Heartbeat from node3 term 343
-2026/01/17 13:26:37 [node1] Received Heartbeat from node3 term 343
-2026/01/17 13:26:37 [node1] Received Heartbeat from node3 term 343
-2026/01/17 13:26:37 [node1] Received Heartbeat from node2 term 344
-2026/01/17 13:26:37 [node1] Received Heartbeat from node2 term 344
-2026/01/17 13:26:37 [node1] Won election! Becoming Leader for term 345
-2026/01/17 13:26:38 [node1] Received Heartbeat from node3 term 346
-2026/01/17 13:26:39 [node1] Received Heartbeat from node3 term 346
-2026/01/17 13:26:39 [node1] Received Heartbeat from node2 term 347
-2026/01/17 13:26:39 [node1] Received Heartbeat from node2 term 347
-2026/01/17 13:26:39 [node1] Received Heartbeat from node2 term 347
-2026/01/17 13:26:39 [node1] Received Heartbeat from node2 term 347
-2026/01/17 13:26:39 [node1] Won election! Becoming Leader for term 348
-2026/01/17 13:26:40 [node1] Received Heartbeat from node3 term 349
-2026/01/17 13:26:40 [node1] Received Heartbeat from node3 term 349
-2026/01/17 13:26:40 [node1] Received Heartbeat from node3 term 349
-2026/01/17 13:26:40 [node1] Received Heartbeat from node3 term 349
-2026/01/17 13:26:41 [node1] Received Heartbeat from node2 term 350
-2026/01/17 13:26:41 [node1] Received Heartbeat from node2 term 350
-2026/01/17 13:26:41 [node1] Received Heartbeat from node2 term 350
-2026/01/17 13:26:41 [node1] Won election! Becoming Leader for term 351
-2026/01/17 13:26:42 [node1] Received Heartbeat from node2 term 354
-2026/01/17 13:26:43 [node1] Received Heartbeat from node2 term 354
-2026/01/17 13:26:43 [node1] Won election! Becoming Leader for term 355
-2026/01/17 13:26:43 [node1] Received Heartbeat from node2 term 355
-2026/01/17 13:26:43 [node1] Election timeout, becoming Candidate
-2026/01/17 13:26:43 [node1] Won election! Becoming Leader for term 356
-2026/01/17 13:26:44 [node1] Received Heartbeat from node3 term 357
-2026/01/17 13:26:44 [node1] Received Heartbeat from node3 term 357
-2026/01/17 13:26:44 [node1] Received Heartbeat from node3 term 357
-2026/01/17 13:26:44 [node1] Received Heartbeat from node2 term 358
-2026/01/17 13:26:44 [node1] Received Heartbeat from node2 term 358
-2026/01/17 13:26:44 [node1] Received Heartbeat from node2 term 358
-2026/01/17 13:26:45 [node1] Received Heartbeat from node2 term 358
-2026/01/17 13:26:45 [node1] Received Heartbeat from node2 term 358
-2026/01/17 13:26:45 [node1] Received Heartbeat from node2 term 358
-2026/01/17 13:26:45 [node1] Won election! Becoming Leader for term 359
-2026/01/17 13:26:45 [node1] Received Heartbeat from node3 term 360
-2026/01/17 13:26:46 [node1] Received Heartbeat from node3 term 360
-2026/01/17 13:26:46 [node1] Received Heartbeat from node3 term 360
-2026/01/17 13:26:46 [node1] Received Heartbeat from node3 term 361
-2026/01/17 13:26:47 [node1] Won election! Becoming Leader for term 362
-2026/01/17 13:26:47 [node1] Received Heartbeat from node2 term 363
-2026/01/17 13:26:47 [node1] Received Heartbeat from node3 term 364
-2026/01/17 13:26:48 [node1] Received Heartbeat from node3 term 364
-2026/01/17 13:26:48 [node1] Received Heartbeat from node3 term 364
-2026/01/17 13:26:48 [node1] Received Heartbeat from node3 term 364
-2026/01/17 13:26:48 [node1] Received Heartbeat from node3 term 364
-2026/01/17 13:26:48 [node1] Received Heartbeat from node3 term 364
-2026/01/17 13:26:48 [node1] Won election! Becoming Leader for term 365
-2026/01/17 13:26:49 [node1] Received Heartbeat from node2 term 366
-2026/01/17 13:26:49 [node1] Received Heartbeat from node2 term 366
-2026/01/17 13:26:49 [node1] Received Heartbeat from node2 term 366
-2026/01/17 13:26:49 [node1] Received Heartbeat from node2 term 366
-2026/01/17 13:26:49 [node1] Received Heartbeat from node2 term 366
-2026/01/17 13:26:50 [node1] Received Heartbeat from node2 term 366
-2026/01/17 13:26:50 [node1] Received Heartbeat from node2 term 366
-2026/01/17 13:26:50 [node1] Received Heartbeat from node2 term 366
-2026/01/17 13:26:50 [node1] Received Heartbeat from node3 term 367
-2026/01/17 13:26:50 [node1] Won election! Becoming Leader for term 368
-2026/01/17 13:26:51 [node1] Received Heartbeat from node3 term 370
-2026/01/17 13:26:52 [node1] Received Heartbeat from node3 term 370
-2026/01/17 13:26:52 [node1] Received Heartbeat from node3 term 370
-2026/01/17 13:26:52 [node1] Received Heartbeat from node3 term 370
-2026/01/17 13:26:52 [node1] Received Heartbeat from node3 term 370
-2026/01/17 13:26:52 [node1] Received Heartbeat from node3 term 370
-2026/01/17 13:26:52 [node1] Received Heartbeat from node3 term 370
-2026/01/17 13:26:52 [node1] Won election! Becoming Leader for term 371
-2026/01/17 13:26:53 [node1] Received Heartbeat from node2 term 372
-2026/01/17 13:26:53 [node1] Received Heartbeat from node2 term 372
-2026/01/17 13:26:53 [node1] Received Heartbeat from node2 term 372
-2026/01/17 13:26:53 [node1] Received Heartbeat from node2 term 372
-2026/01/17 13:26:53 [node1] Received Heartbeat from node2 term 372
-2026/01/17 13:26:54 [node1] Received Heartbeat from node3 term 373
-2026/01/17 13:26:54 [node1] Received Heartbeat from node3 term 373
-2026/01/17 13:26:54 [node1] Received Heartbeat from node3 term 373
-2026/01/17 13:26:54 [node1] Won election! Becoming Leader for term 374
-2026/01/17 13:26:55 [node1] Received Heartbeat from node2 term 375
-2026/01/17 13:26:55 [node1] Received Heartbeat from node2 term 375
-2026/01/17 13:26:55 [node1] Received Heartbeat from node2 term 375
-2026/01/17 13:26:55 [node1] Received Heartbeat from node2 term 375
-2026/01/17 13:26:56 [node1] Received Heartbeat from node3 term 376
-2026/01/17 13:26:56 [node1] Received Heartbeat from node3 term 376
-2026/01/17 13:26:56 [node1] Received Heartbeat from node3 term 376
-2026/01/17 13:26:56 [node1] Won election! Becoming Leader for term 377
-2026/01/17 13:26:57 [node1] Received Heartbeat from node2 term 378
-2026/01/17 13:26:57 [node1] Received Heartbeat from node2 term 378
-2026/01/17 13:26:57 [node1] Received Heartbeat from node2 term 379
-2026/01/17 13:26:58 [node1] Won election! Becoming Leader for term 381
-2026/01/17 13:26:59 [node1] Received Heartbeat from node3 term 382
-2026/01/17 13:26:59 [node1] Received Heartbeat from node3 term 382
-2026/01/17 13:26:59 [node1] Received Heartbeat from node3 term 382
-2026/01/17 13:26:59 [node1] Received Heartbeat from node3 term 382
-2026/01/17 13:26:59 [node1] Received Heartbeat from node3 term 382
-2026/01/17 13:26:59 [node1] Received Heartbeat from node2 term 383
-2026/01/17 13:26:59 [node1] Received Heartbeat from node2 term 383
-2026/01/17 13:27:00 [node1] Received Heartbeat from node2 term 383
-2026/01/17 13:27:00 [node1] Won election! Becoming Leader for term 384
-2026/01/17 13:27:00 [node1] Received Heartbeat from node3 term 385
-2026/01/17 13:27:01 [node1] Received Heartbeat from node3 term 385
-2026/01/17 13:27:01 [node1] Received Heartbeat from node3 term 385
-2026/01/17 13:27:01 [node1] Received Heartbeat from node3 term 385
-2026/01/17 13:27:01 [node1] Received Heartbeat from node3 term 385
-2026/01/17 13:27:01 [node1] Received Heartbeat from node2 term 386
-2026/01/17 13:27:01 [node1] Received Heartbeat from node2 term 386
-2026/01/17 13:27:02 [node1] Received Heartbeat from node2 term 386
-2026/01/17 13:27:02 [node1] Received Heartbeat from node2 term 386
-2026/01/17 13:27:02 [node1] Won election! Becoming Leader for term 387
-2026/01/17 13:27:03 [node1] Received Heartbeat from node3 term 388
-2026/01/17 13:27:03 [node1] Received Heartbeat from node3 term 388
-2026/01/17 13:27:03 [node1] Received Heartbeat from node2 term 389
-2026/01/17 13:27:03 [node1] Received Heartbeat from node2 term 389
-2026/01/17 13:27:03 [node1] Received Heartbeat from node2 term 389
-2026/01/17 13:27:04 [node1] Received Heartbeat from node2 term 389
-2026/01/17 13:27:04 [node1] Received Heartbeat from node2 term 389
-2026/01/17 13:27:04 [node1] Received Heartbeat from node2 term 389
-2026/01/17 13:27:04 [node1] Won election! Becoming Leader for term 390
-2026/01/17 13:27:04 [node1] Received Heartbeat from node3 term 391
-2026/01/17 13:27:04 [node1] Received Heartbeat from node3 term 391
-2026/01/17 13:27:05 [node1] Received Heartbeat from node3 term 391
-2026/01/17 13:27:05 [node1] Received Heartbeat from node3 term 391
-2026/01/17 13:27:05 [node1] Received Heartbeat from node3 term 391
-2026/01/17 13:27:05 [node1] Received Heartbeat from node3 term 391
-2026/01/17 13:27:05 [node1] Received Heartbeat from node3 term 391
-2026/01/17 13:27:05 [node1] Received Heartbeat from node3 term 391
-2026/01/17 13:27:05 [node1] Won election! Becoming Leader for term 393
-2026/01/17 13:27:07 [node1] Received Heartbeat from node3 term 394
-2026/01/17 13:27:07 [node1] Received Heartbeat from node3 term 394
-2026/01/17 13:27:07 [node1] Received Heartbeat from node2 term 395
-2026/01/17 13:27:07 [node1] Received Heartbeat from node2 term 395
-2026/01/17 13:27:07 [node1] Received Heartbeat from node2 term 395
-2026/01/17 13:27:07 [node1] Received Heartbeat from node2 term 395
-2026/01/17 13:27:07 [node1] Won election! Becoming Leader for term 396
-2026/01/17 13:27:09 [node1] Received Heartbeat from node2 term 398
-2026/01/17 13:27:09 [node1] Received Heartbeat from node2 term 398
-2026/01/17 13:27:09 [node1] Received Heartbeat from node2 term 398
-2026/01/17 13:27:09 [node1] Received Heartbeat from node2 term 398
-2026/01/17 13:27:09 [node1] Received Heartbeat from node2 term 398
-2026/01/17 13:27:10 [node1] Won election! Becoming Leader for term 399
-2026/01/17 13:27:10 [node1] Received Heartbeat from node3 term 400
-2026/01/17 13:27:10 [node1] Received Heartbeat from node3 term 400
-2026/01/17 13:27:10 [node1] Received Heartbeat from node3 term 400
-2026/01/17 13:27:10 [node1] Received Heartbeat from node3 term 400
-2026/01/17 13:27:10 [node1] Received Heartbeat from node3 term 400
-2026/01/17 13:27:11 [node1] Received Heartbeat from node3 term 400
-2026/01/17 13:27:11 [node1] Received Heartbeat from node3 term 400
-2026/01/17 13:27:11 [node1] Received Heartbeat from node3 term 400
-2026/01/17 13:27:11 [node1] Won election! Becoming Leader for term 402
-2026/01/17 13:27:12 [node1] Received Heartbeat from node3 term 404
-2026/01/17 13:27:13 [node1] Received Heartbeat from node3 term 404
-2026/01/17 13:27:13 [node1] Received Heartbeat from node3 term 404
-2026/01/17 13:27:13 [node1] Received Heartbeat from node3 term 404
-2026/01/17 13:27:13 [node1] Received Heartbeat from node3 term 404
-2026/01/17 13:27:13 [node1] Received Heartbeat from node3 term 404
-2026/01/17 13:27:13 [node1] Won election! Becoming Leader for term 405
-2026/01/17 13:27:13 [node1] Received Heartbeat from node2 term 406
-2026/01/17 13:27:14 [node1] Received Heartbeat from node2 term 406
-2026/01/17 13:27:14 [node1] Received Heartbeat from node2 term 406
-2026/01/17 13:27:14 [node1] Received Heartbeat from node2 term 406
-2026/01/17 13:27:14 [node1] Received Heartbeat from node2 term 406
-2026/01/17 13:27:14 [node1] Received Heartbeat from node2 term 406
-2026/01/17 13:27:14 [node1] Won election! Becoming Leader for term 407
-2026/01/17 13:27:15 [node1] Received Heartbeat from node3 term 408
-2026/01/17 13:27:15 [node1] Received Heartbeat from node3 term 408
-2026/01/17 13:27:15 [node1] Received Heartbeat from node3 term 408
-2026/01/17 13:27:15 [node1] Received Heartbeat from node3 term 408
-2026/01/17 13:27:15 [node1] Received Heartbeat from node3 term 408
-2026/01/17 13:27:15 [node1] Received Heartbeat from node3 term 408
-2026/01/17 13:27:15 [node1] Received Heartbeat from node3 term 408
-2026/01/17 13:27:16 [node1] Received Heartbeat from node2 term 409
-2026/01/17 13:27:16 [node1] Won election! Becoming Leader for term 410
-2026/01/17 13:27:17 [node1] Received Heartbeat from node3 term 412
-2026/01/17 13:27:17 [node1] Received Heartbeat from node3 term 412
-2026/01/17 13:27:17 [node1] Received Heartbeat from node3 term 412
-2026/01/17 13:27:18 [node1] Received Heartbeat from node3 term 412
-2026/01/17 13:27:18 [node1] Received Heartbeat from node3 term 412
-2026/01/17 13:27:18 [node1] Received Heartbeat from node3 term 412
-2026/01/17 13:27:18 [node1] Received Heartbeat from node3 term 412
-2026/01/17 13:27:18 [node1] Received Heartbeat from node3 term 412
-2026/01/17 13:27:18 [node1] Won election! Becoming Leader for term 414
-2026/01/17 13:27:20 [node1] Received Heartbeat from node2 term 416
-2026/01/17 13:27:21 [node1] Received Heartbeat from node3 term 417
-2026/01/17 13:27:21 [node1] Received Heartbeat from node3 term 417
-2026/01/17 13:27:21 [node1] Received Heartbeat from node2 term 418
-2026/01/17 13:27:21 [node1] Won election! Becoming Leader for term 419
-2026/01/17 13:27:22 [node1] Received Heartbeat from node2 term 421
-2026/01/17 13:27:23 [node1] Received Heartbeat from node2 term 421
-2026/01/17 13:27:23 [node1] Received Heartbeat from node2 term 421
-2026/01/17 13:27:23 [node1] Received Heartbeat from node2 term 421
-2026/01/17 13:27:23 [node1] Received Heartbeat from node2 term 421
-2026/01/17 13:27:23 [node1] Received Heartbeat from node2 term 421
-2026/01/17 13:27:23 [node1] Received Heartbeat from node2 term 421
-2026/01/17 13:27:24 [node1] Received Heartbeat from node3 term 422
-2026/01/17 13:27:24 [node1] Won election! Becoming Leader for term 423
-2026/01/17 13:27:25 [node1] Received Heartbeat from node2 term 425
-2026/01/17 13:27:25 [node1] Received Heartbeat from node2 term 425
-2026/01/17 13:27:25 [node1] Received Heartbeat from node2 term 425
-2026/01/17 13:27:26 [node1] Received Heartbeat from node2 term 425
-2026/01/17 13:27:26 [node1] Received Heartbeat from node2 term 425
-2026/01/17 13:27:26 [node1] Received Heartbeat from node2 term 425
-2026/01/17 13:27:26 [node1] Won election! Becoming Leader for term 426
-2026/01/17 13:27:27 [node1] Received Heartbeat from node3 term 427
-2026/01/17 13:27:27 [node1] Received Heartbeat from node3 term 427
-2026/01/17 13:27:27 [node1] Received Heartbeat from node3 term 427
-2026/01/17 13:27:27 [node1] Received Heartbeat from node3 term 427
-2026/01/17 13:27:27 [node1] Received Heartbeat from node2 term 428
-2026/01/17 13:27:27 [node1] Received Heartbeat from node2 term 428
-2026/01/17 13:27:27 [node1] Won election! Becoming Leader for term 429
-2026/01/17 13:27:28 [node1] Received Heartbeat from node3 term 430
-2026/01/17 13:27:28 [node1] Received Heartbeat from node3 term 430
-2026/01/17 13:27:29 [node1] Received Heartbeat from node3 term 430
-2026/01/17 13:27:29 [node1] Received Heartbeat from node3 term 430
-2026/01/17 13:27:29 [node1] Received Heartbeat from node2 term 431
-2026/01/17 13:27:29 [node1] Received Heartbeat from node2 term 431
-2026/01/17 13:27:29 [node1] Received Heartbeat from node2 term 431
-2026/01/17 13:27:29 [node1] Won election! Becoming Leader for term 432
-2026/01/17 13:27:30 [node1] Received Heartbeat from node3 term 433
-2026/01/17 13:27:30 [node1] Received Heartbeat from node3 term 433
-2026/01/17 13:27:31 [node1] Received Heartbeat from node3 term 433
-2026/01/17 13:27:31 [node1] Received Heartbeat from node2 term 434
-2026/01/17 13:27:31 [node1] Received Heartbeat from node2 term 434
-2026/01/17 13:27:31 [node1] Received Heartbeat from node2 term 434
-2026/01/17 13:27:31 [node1] Received Heartbeat from node2 term 434
-2026/01/17 13:27:31 [node1] Won election! Becoming Leader for term 435
-2026/01/17 13:27:32 [node1] Received Heartbeat from node3 term 436
-2026/01/17 13:27:32 [node1] Received Heartbeat from node3 term 436
-2026/01/17 13:27:32 [node1] Received Heartbeat from node3 term 436
-2026/01/17 13:27:32 [node1] Received Heartbeat from node3 term 436
-2026/01/17 13:27:33 [node1] Received Heartbeat from node3 term 436
-2026/01/17 13:27:33 [node1] Received Heartbeat from node2 term 437
-2026/01/17 13:27:33 [node1] Won election! Becoming Leader for term 438
-2026/01/17 13:27:34 [node1] Received Heartbeat from node2 term 440
-2026/01/17 13:27:35 [node1] Received Heartbeat from node2 term 440
-2026/01/17 13:27:35 [node1] Received Heartbeat from node2 term 440
-2026/01/17 13:27:35 [node1] Received Heartbeat from node2 term 440
-2026/01/17 13:27:35 [node1] Received Heartbeat from node2 term 440
-2026/01/17 13:27:35 [node1] Won election! Becoming Leader for term 441
-2026/01/17 13:27:35 [node1] Received Heartbeat from node3 term 442
-2026/01/17 13:27:36 [node1] Received Heartbeat from node3 term 442
-2026/01/17 13:27:36 [node1] Received Heartbeat from node3 term 442
-2026/01/17 13:27:36 [node1] Received Heartbeat from node3 term 442
-2026/01/17 13:27:36 [node1] Received Heartbeat from node3 term 442
-2026/01/17 13:27:36 [node1] Received Heartbeat from node3 term 443
-2026/01/17 13:27:37 [node1] Won election! Becoming Leader for term 444
-2026/01/17 13:27:38 [node1] Received Heartbeat from node3 term 446
-2026/01/17 13:27:38 [node1] Received Heartbeat from node3 term 446
-2026/01/17 13:27:38 [node1] Received Heartbeat from node3 term 446
-2026/01/17 13:27:38 [node1] Received Heartbeat from node3 term 446
-2026/01/17 13:27:38 [node1] Received Heartbeat from node3 term 446
-2026/01/17 13:27:38 [node1] Received Heartbeat from node3 term 446
-2026/01/17 13:27:38 [node1] Received Heartbeat from node3 term 446
-2026/01/17 13:27:39 [node1] Won election! Becoming Leader for term 447
-2026/01/17 13:27:39 [node1] Received Heartbeat from node2 term 448
-2026/01/17 13:27:39 [node1] Received Heartbeat from node2 term 448
-2026/01/17 13:27:39 [node1] Received Heartbeat from node2 term 448
-2026/01/17 13:27:39 [node1] Received Heartbeat from node2 term 448
-2026/01/17 13:27:40 [node1] Received Heartbeat from node2 term 448
-2026/01/17 13:27:40 [node1] Received Heartbeat from node2 term 448
-2026/01/17 13:27:40 [node1] Received Heartbeat from node2 term 448
-2026/01/17 13:27:40 [node1] Won election! Becoming Leader for term 449
-2026/01/17 13:27:40 [node1] Received Heartbeat from node3 term 450
-2026/01/17 13:27:40 [node1] Received Heartbeat from node3 term 450
-2026/01/17 13:27:40 [node1] Received Heartbeat from node3 term 450
-2026/01/17 13:27:41 [node1] Received Heartbeat from node3 term 450
-2026/01/17 13:27:41 [node1] Received Heartbeat from node3 term 450
-2026/01/17 13:27:41 [node1] Received Heartbeat from node3 term 450
-2026/01/17 13:27:41 [node1] Received Heartbeat from node3 term 450
-2026/01/17 13:27:41 [node1] Received Heartbeat from node2 term 451
-2026/01/17 13:27:41 [node1] Won election! Becoming Leader for term 452
-2026/01/17 13:27:42 [node1] Received Heartbeat from node3 term 453
-2026/01/17 13:27:43 [node1] Received Heartbeat from node3 term 453
-2026/01/17 13:27:43 [node1] Received Heartbeat from node2 term 454
-2026/01/17 13:27:43 [node1] Received Heartbeat from node2 term 454
-2026/01/17 13:27:43 [node1] Received Heartbeat from node2 term 454
-2026/01/17 13:27:43 [node1] Received Heartbeat from node2 term 454
-2026/01/17 13:27:44 [node1] Received Heartbeat from node2 term 454
-2026/01/17 13:27:44 [node1] Won election! Becoming Leader for term 455
-2026/01/17 13:27:44 [node1] Received Heartbeat from node3 term 456
-2026/01/17 13:27:44 [node1] Received Heartbeat from node3 term 456
-2026/01/17 13:27:45 [node1] Received Heartbeat from node3 term 456
-2026/01/17 13:27:45 [node1] Received Heartbeat from node3 term 456
-2026/01/17 13:27:45 [node1] Received Heartbeat from node2 term 457
-2026/01/17 13:27:45 [node1] Received Heartbeat from node2 term 457
-2026/01/17 13:27:45 [node1] Received Heartbeat from node2 term 457
-2026/01/17 13:27:45 [node1] Received Heartbeat from node2 term 457
-2026/01/17 13:27:45 [node1] Won election! Becoming Leader for term 458
-2026/01/17 13:27:46 [node1] Received Heartbeat from node3 term 459
-2026/01/17 13:27:46 [node1] Received Heartbeat from node3 term 459
-2026/01/17 13:27:46 [node1] Received Heartbeat from node3 term 459
-2026/01/17 13:27:47 [node1] Received Heartbeat from node3 term 459
-2026/01/17 13:27:47 [node1] Received Heartbeat from node3 term 459
-2026/01/17 13:27:47 [node1] Received Heartbeat from node3 term 459
-2026/01/17 13:27:47 [node1] Received Heartbeat from node2 term 460
-2026/01/17 13:27:47 [node1] Received Heartbeat from node2 term 460
-2026/01/17 13:27:47 [node1] Won election! Becoming Leader for term 461
-2026/01/17 13:27:49 [node1] Received Heartbeat from node3 term 462
-2026/01/17 13:27:49 [node1] Received Heartbeat from node2 term 463
-2026/01/17 13:27:49 [node1] Received Heartbeat from node2 term 463
-2026/01/17 13:27:49 [node1] Received Heartbeat from node2 term 463
-2026/01/17 13:27:49 [node1] Received Heartbeat from node2 term 463
-2026/01/17 13:27:49 [node1] Received Heartbeat from node2 term 463
-2026/01/17 13:27:50 [node1] Received Heartbeat from node2 term 463
-2026/01/17 13:27:50 [node1] Won election! Becoming Leader for term 465
-2026/01/17 13:27:51 [node1] Received Heartbeat from node2 term 466
-2026/01/17 13:27:51 [node1] Received Heartbeat from node3 term 467
-2026/01/17 13:27:51 [node1] Received Heartbeat from node3 term 467
-2026/01/17 13:27:51 [node1] Received Heartbeat from node3 term 467
-2026/01/17 13:27:52 [node1] Received Heartbeat from node3 term 467
-2026/01/17 13:27:52 [node1] Received Heartbeat from node3 term 467
-2026/01/17 13:27:52 [node1] Won election! Becoming Leader for term 468
-2026/01/17 13:27:52 [node1] Received Heartbeat from node2 term 469
-2026/01/17 13:27:53 [node1] Received Heartbeat from node2 term 469
-2026/01/17 13:27:53 [node1] Received Heartbeat from node2 term 469
-2026/01/17 13:27:53 [node1] Received Heartbeat from node2 term 469
-2026/01/17 13:27:53 [node1] Received Heartbeat from node2 term 469
-2026/01/17 13:27:53 [node1] Received Heartbeat from node2 term 469
-2026/01/17 13:27:53 [node1] Received Heartbeat from node3 term 470
-2026/01/17 13:27:54 [node1] Received Heartbeat from node3 term 470
-2026/01/17 13:27:54 [node1] Won election! Becoming Leader for term 471
-2026/01/17 13:27:55 [node1] Received Heartbeat from node3 term 473
-2026/01/17 13:27:55 [node1] Received Heartbeat from node3 term 473
-2026/01/17 13:27:55 [node1] Received Heartbeat from node3 term 473
-2026/01/17 13:27:55 [node1] Received Heartbeat from node3 term 473
-2026/01/17 13:27:56 [node1] Received Heartbeat from node3 term 473
-2026/01/17 13:27:56 [node1] Received Heartbeat from node3 term 473
-2026/01/17 13:27:56 [node1] Won election! Becoming Leader for term 474
-2026/01/17 13:27:56 [node1] Received Heartbeat from node2 term 475
-2026/01/17 13:27:56 [node1] Received Heartbeat from node2 term 475
-2026/01/17 13:27:56 [node1] Received Heartbeat from node2 term 475
-2026/01/17 13:27:57 [node1] Received Heartbeat from node2 term 475
-2026/01/17 13:27:57 [node1] Received Heartbeat from node2 term 475
-2026/01/17 13:27:57 [node1] Received Heartbeat from node2 term 475
-2026/01/17 13:27:57 [node1] Received Heartbeat from node2 term 475
-2026/01/17 13:27:57 [node1] Received Heartbeat from node2 term 475
-2026/01/17 13:27:57 [node1] Won election! Becoming Leader for term 477
-2026/01/17 13:27:59 [node1] Received Heartbeat from node2 term 479
-2026/01/17 13:27:59 [node1] Received Heartbeat from node2 term 479
-2026/01/17 13:27:59 [node1] Received Heartbeat from node2 term 479
-2026/01/17 13:27:59 [node1] Received Heartbeat from node2 term 479
-2026/01/17 13:27:59 [node1] Received Heartbeat from node2 term 479
-2026/01/17 13:27:59 [node1] Received Heartbeat from node2 term 479
-2026/01/17 13:27:59 [node1] Won election! Becoming Leader for term 480
-2026/01/17 13:28:00 [node1] Received Heartbeat from node3 term 481
-2026/01/17 13:28:00 [node1] Received Heartbeat from node3 term 481
-2026/01/17 13:28:00 [node1] Received Heartbeat from node3 term 481
-2026/01/17 13:28:00 [node1] Received Heartbeat from node3 term 481
-2026/01/17 13:28:00 [node1] Received Heartbeat from node3 term 481
-2026/01/17 13:28:01 [node1] Received Heartbeat from node3 term 481
-2026/01/17 13:28:01 [node1] Received Heartbeat from node2 term 482
-2026/01/17 13:28:01 [node1] Received Heartbeat from node2 term 482
-2026/01/17 13:28:01 [node1] Received Heartbeat from node2 term 482
-2026/01/17 13:28:01 [node1] Won election! Becoming Leader for term 483
-2026/01/17 13:28:02 [node1] Received Heartbeat from node3 term 484
-2026/01/17 13:28:02 [node1] Received Heartbeat from node3 term 484
-2026/01/17 13:28:02 [node1] Received Heartbeat from node3 term 484
-2026/01/17 13:28:03 [node1] Received Heartbeat from node2 term 485
-2026/01/17 13:28:03 [node1] Received Heartbeat from node2 term 485
-2026/01/17 13:28:03 [node1] Received Heartbeat from node2 term 485
-2026/01/17 13:28:03 [node1] Won election! Becoming Leader for term 486
-2026/01/17 13:28:04 [node1] Received Heartbeat from node3 term 487
-2026/01/17 13:28:04 [node1] Received Heartbeat from node3 term 487
-2026/01/17 13:28:04 [node1] Received Heartbeat from node2 term 488
-2026/01/17 13:28:05 [node1] Received Heartbeat from node2 term 488
-2026/01/17 13:28:05 [node1] Received Heartbeat from node2 term 488
-2026/01/17 13:28:05 [node1] Received Heartbeat from node2 term 488
-2026/01/17 13:28:05 [node1] Received Heartbeat from node2 term 488
-2026/01/17 13:28:05 [node1] Won election! Becoming Leader for term 489
-2026/01/17 13:28:06 [node1] Received Heartbeat from node3 term 490
-2026/01/17 13:28:06 [node1] Received Heartbeat from node3 term 490
-2026/01/17 13:28:06 [node1] Received Heartbeat from node3 term 490
-2026/01/17 13:28:06 [node1] Received Heartbeat from node3 term 490
-2026/01/17 13:28:06 [node1] Received Heartbeat from node3 term 490
-2026/01/17 13:28:06 [node1] Received Heartbeat from node2 term 491
-2026/01/17 13:28:07 [node1] Received Heartbeat from node2 term 491
-2026/01/17 13:28:07 [node1] Received Heartbeat from node2 term 491
-2026/01/17 13:28:07 [node1] Won election! Becoming Leader for term 492
-2026/01/17 13:28:08 [node1] Election timeout, becoming Candidate
-2026/01/17 13:28:08 [node1] Won election! Becoming Leader for term 494
-2026/01/17 13:28:08 [node1] Received Heartbeat from node2 term 495
-2026/01/17 13:28:08 [node1] Received Heartbeat from node2 term 495
-2026/01/17 13:28:09 [node1] Received Heartbeat from node2 term 495
-2026/01/17 13:28:09 [node1] Received Heartbeat from node2 term 495
-2026/01/17 13:28:09 [node1] Received Heartbeat from node3 term 496
-2026/01/17 13:28:09 [node1] Received Heartbeat from node3 term 496
-2026/01/17 13:28:09 [node1] Won election! Becoming Leader for term 497
-2026/01/17 13:28:10 [node1] Received Heartbeat from node2 term 498
-2026/01/17 13:28:10 [node1] Received Heartbeat from node2 term 498
-2026/01/17 13:28:11 [node1] Received Heartbeat from node3 term 499
-2026/01/17 13:28:11 [node1] Received Heartbeat from node3 term 499
+2026/01/17 19:04:16 gRPC server listening on :50051
+2026/01/17 19:04:16 [node1] Received Heartbeat from node2 term 1
+2026/01/17 19:04:17 [node1] Received Heartbeat from node2 term 1
+2026/01/17 19:04:17 [node1] Won election! Becoming Leader for term 2
+2026/01/17 19:04:17 [node1] Received Heartbeat from node3 term 3
+2026/01/17 19:04:17 [node1] Received Heartbeat from node3 term 3
+2026/01/17 19:04:17 [node1] Received Heartbeat from node3 term 3
+2026/01/17 19:04:18 [node1] Received Heartbeat from node3 term 3
+2026/01/17 19:04:18 [node1] Received Heartbeat from node3 term 3
+2026/01/17 19:04:18 [node1] Received Heartbeat from node3 term 3
+2026/01/17 19:04:18 [node1] Received Heartbeat from node2 term 4
+2026/01/17 19:04:18 [node1] Received Heartbeat from node2 term 4
+2026/01/17 19:04:18 [node1] Won election! Becoming Leader for term 5
+2026/01/17 19:04:19 [node1] Received Heartbeat from node3 term 6
+2026/01/17 19:04:19 [node1] Received Heartbeat from node3 term 6
+2026/01/17 19:04:20 [node1] Received Heartbeat from node2 term 7
+2026/01/17 19:04:20 [node1] Received Heartbeat from node2 term 7
+2026/01/17 19:04:20 [node1] Received Heartbeat from node2 term 7
+2026/01/17 19:04:20 [node1] Received Heartbeat from node2 term 7
+2026/01/17 19:04:20 [node1] Received Heartbeat from node2 term 7
+2026/01/17 19:04:20 [node1] Received Heartbeat from node2 term 7
+2026/01/17 19:04:20 [node1] Won election! Becoming Leader for term 8
+2026/01/17 19:04:21 [node1] Received Heartbeat from node3 term 9
+2026/01/17 19:04:21 [node1] Received Heartbeat from node3 term 9
+2026/01/17 19:04:21 [node1] Received Heartbeat from node3 term 9
+2026/01/17 19:04:21 [node1] Received Heartbeat from node3 term 9
+2026/01/17 19:04:21 [node1] Received Heartbeat from node3 term 9
+2026/01/17 19:04:21 [node1] Received Heartbeat from node3 term 9
+2026/01/17 19:04:22 [node1] Received Heartbeat from node3 term 9
+2026/01/17 19:04:22 [node1] Won election! Becoming Leader for term 11
+2026/01/17 19:04:23 [node1] Received Heartbeat from node3 term 12
+2026/01/17 19:04:23 [node1] Received Heartbeat from node3 term 12
+2026/01/17 19:04:23 [node1] Received Heartbeat from node3 term 12
+2026/01/17 19:04:23 [node1] Received Heartbeat from node2 term 13
+2026/01/17 19:04:24 [node1] Received Heartbeat from node2 term 13
+2026/01/17 19:04:24 [node1] Received Heartbeat from node2 term 13
+2026/01/17 19:04:24 [node1] Received Heartbeat from node2 term 13
+2026/01/17 19:04:24 [node1] Won election! Becoming Leader for term 14
+2026/01/17 19:04:25 [node1] Received Heartbeat from node3 term 15
+2026/01/17 19:04:25 [node1] Received Heartbeat from node3 term 15
+2026/01/17 19:04:25 [node1] Received Heartbeat from node3 term 15
+2026/01/17 19:04:25 [node1] Received Heartbeat from node3 term 15
+2026/01/17 19:04:25 [node1] Received Heartbeat from node3 term 15
+2026/01/17 19:04:26 [node1] Received Heartbeat from node2 term 16
+2026/01/17 19:04:26 [node1] Received Heartbeat from node2 term 16
+2026/01/17 19:04:26 [node1] Received Heartbeat from node2 term 16
+2026/01/17 19:04:26 [node1] Received Heartbeat from node2 term 16
+2026/01/17 19:04:26 [node1] Won election! Becoming Leader for term 17
+2026/01/17 19:04:27 [node1] Received Heartbeat from node3 term 18
+2026/01/17 19:04:27 [node1] Received Heartbeat from node3 term 18
+2026/01/17 19:04:27 [node1] Received Heartbeat from node3 term 18
+2026/01/17 19:04:27 [node1] Received Heartbeat from node3 term 18
+2026/01/17 19:04:27 [node1] Received Heartbeat from node2 term 19
+2026/01/17 19:04:28 [node1] Received Heartbeat from node2 term 19
+2026/01/17 19:04:28 [node1] Received Heartbeat from node2 term 19
+2026/01/17 19:04:28 [node1] Won election! Becoming Leader for term 20
+2026/01/17 19:04:29 [node1] Received Heartbeat from node3 term 21
+2026/01/17 19:04:29 [node1] Received Heartbeat from node3 term 21
+2026/01/17 19:04:29 [node1] Received Heartbeat from node3 term 21
+2026/01/17 19:04:29 [node1] Received Heartbeat from node3 term 21
+2026/01/17 19:04:29 [node1] Received Heartbeat from node2 term 22
+2026/01/17 19:04:29 [node1] Received Heartbeat from node2 term 22
+2026/01/17 19:04:29 [node1] Won election! Becoming Leader for term 23
+2026/01/17 19:04:31 [node1] Received Heartbeat from node3 term 24
+2026/01/17 19:04:31 [node1] Received Heartbeat from node3 term 24
+2026/01/17 19:04:31 [node1] Received Heartbeat from node2 term 25
+2026/01/17 19:04:31 [node1] Received Heartbeat from node2 term 25
+2026/01/17 19:04:31 [node1] Received Heartbeat from node2 term 25
+2026/01/17 19:04:31 [node1] Received Heartbeat from node2 term 25
+2026/01/17 19:04:32 [node1] Received Heartbeat from node2 term 25
+2026/01/17 19:04:32 [node1] Received Heartbeat from node2 term 25
+2026/01/17 19:04:32 [node1] Won election! Becoming Leader for term 26
+2026/01/17 19:04:33 [node1] Received Heartbeat from node2 term 28
+2026/01/17 19:04:33 [node1] Received Heartbeat from node2 term 28
+2026/01/17 19:04:33 [node1] Won election! Becoming Leader for term 29
+2026/01/17 19:04:34 [node1] Received Heartbeat from node3 term 30
+2026/01/17 19:04:34 [node1] Received Heartbeat from node3 term 30
+2026/01/17 19:04:34 [node1] Received Heartbeat from node3 term 30
+2026/01/17 19:04:34 [node1] Received Heartbeat from node3 term 30
+2026/01/17 19:04:34 [node1] Received Heartbeat from node3 term 30
+2026/01/17 19:04:34 [node1] Received Heartbeat from node2 term 31
+2026/01/17 19:04:35 [node1] Received Heartbeat from node2 term 31
+2026/01/17 19:04:35 [node1] Received Heartbeat from node2 term 31
+2026/01/17 19:04:35 [node1] Won election! Becoming Leader for term 32
+2026/01/17 19:04:35 [node1] Received Heartbeat from node3 term 33
+2026/01/17 19:04:36 [node1] Received Heartbeat from node3 term 33
+2026/01/17 19:04:36 [node1] Received Heartbeat from node3 term 33
+2026/01/17 19:04:36 [node1] Received Heartbeat from node3 term 33
+2026/01/17 19:04:36 [node1] Received Heartbeat from node3 term 33
+2026/01/17 19:04:36 [node1] Received Heartbeat from node2 term 34
+2026/01/17 19:04:36 [node1] Received Heartbeat from node2 term 34
+2026/01/17 19:04:37 [node1] Won election! Becoming Leader for term 35
+2026/01/17 19:04:37 [node1] Received Heartbeat from node3 term 36
+2026/01/17 19:04:38 [node1] Received Heartbeat from node3 term 36
+2026/01/17 19:04:38 [node1] Received Heartbeat from node2 term 37
+2026/01/17 19:04:38 [node1] Received Heartbeat from node2 term 37
+2026/01/17 19:04:38 [node1] Received Heartbeat from node2 term 37
+2026/01/17 19:04:38 [node1] Received Heartbeat from node2 term 37
+2026/01/17 19:04:38 [node1] Won election! Becoming Leader for term 38
+2026/01/17 19:04:39 [node1] Received Heartbeat from node3 term 39
+2026/01/17 19:04:39 [node1] Received Heartbeat from node3 term 39
+2026/01/17 19:04:39 [node1] Received Heartbeat from node3 term 39
+2026/01/17 19:04:40 [node1] Received Heartbeat from node3 term 39
+2026/01/17 19:04:40 [node1] Received Heartbeat from node2 term 40
+2026/01/17 19:04:40 [node1] Received Heartbeat from node2 term 40
+2026/01/17 19:04:40 [node1] Received Heartbeat from node2 term 40
+2026/01/17 19:04:40 [node1] Received Heartbeat from node2 term 40
+2026/01/17 19:04:40 [node1] Won election! Becoming Leader for term 41
+2026/01/17 19:04:41 [node1] Received Heartbeat from node3 term 42
+2026/01/17 19:04:41 [node1] Received Heartbeat from node3 term 42
+2026/01/17 19:04:41 [node1] Received Heartbeat from node3 term 42
+2026/01/17 19:04:41 [node1] Received Heartbeat from node3 term 42
+2026/01/17 19:04:41 [node1] Received Heartbeat from node3 term 42
+2026/01/17 19:04:42 [node1] Received Heartbeat from node3 term 42
+2026/01/17 19:04:42 [node1] Received Heartbeat from node2 term 43
+2026/01/17 19:04:42 [node1] Won election! Becoming Leader for term 44
+2026/01/17 19:04:43 [node1] Received Heartbeat from node3 term 45
+2026/01/17 19:04:43 [node1] Received Heartbeat from node3 term 45
+2026/01/17 19:04:43 [node1] Received Heartbeat from node2 term 46
+2026/01/17 19:04:44 [node1] Received Heartbeat from node2 term 46
+2026/01/17 19:04:44 [node1] Received Heartbeat from node2 term 46
+2026/01/17 19:04:44 [node1] Received Heartbeat from node2 term 46
+2026/01/17 19:04:44 [node1] Won election! Becoming Leader for term 47
+2026/01/17 19:04:45 [node1] Received Heartbeat from node3 term 48
+2026/01/17 19:04:45 [node1] Received Heartbeat from node3 term 48
+2026/01/17 19:04:45 [node1] Received Heartbeat from node3 term 48
+2026/01/17 19:04:45 [node1] Received Heartbeat from node3 term 48
+2026/01/17 19:04:45 [node1] Received Heartbeat from node3 term 48
+2026/01/17 19:04:46 [node1] Received Heartbeat from node2 term 49
+2026/01/17 19:04:46 [node1] Received Heartbeat from node2 term 49
+2026/01/17 19:04:46 [node1] Won election! Becoming Leader for term 50
+2026/01/17 19:04:47 [node1] Received Heartbeat from node3 term 51
+2026/01/17 19:04:47 [node1] Received Heartbeat from node3 term 51
+2026/01/17 19:04:47 [node1] Received Heartbeat from node2 term 52
+2026/01/17 19:04:47 [node1] Received Heartbeat from node2 term 52
+2026/01/17 19:04:47 [node1] Received Heartbeat from node2 term 52
+2026/01/17 19:04:48 [node1] Received Heartbeat from node2 term 52
+2026/01/17 19:04:48 [node1] Won election! Becoming Leader for term 53
+2026/01/17 19:04:48 [node1] Received Heartbeat from node3 term 54
+2026/01/17 19:04:49 [node1] Received Heartbeat from node3 term 54
+2026/01/17 19:04:49 [node1] Received Heartbeat from node3 term 54
+2026/01/17 19:04:49 [node1] Received Heartbeat from node3 term 54
+2026/01/17 19:04:49 [node1] Received Heartbeat from node2 term 55
+2026/01/17 19:04:49 [node1] Received Heartbeat from node2 term 55
+2026/01/17 19:04:49 [node1] Received Heartbeat from node2 term 55
+2026/01/17 19:04:50 [node1] Received Heartbeat from node2 term 55
+2026/01/17 19:04:50 [node1] Won election! Becoming Leader for term 56
+2026/01/17 19:04:51 [node1] Received Heartbeat from node3 term 57
+2026/01/17 19:04:51 [node1] Received Heartbeat from node3 term 57
+2026/01/17 19:04:51 [node1] Received Heartbeat from node3 term 57
+2026/01/17 19:04:51 [node1] Received Heartbeat from node3 term 58
+2026/01/17 19:04:52 [node1] Won election! Becoming Leader for term 60
+2026/01/17 19:04:53 [node1] Received Heartbeat from node3 term 61
+2026/01/17 19:04:53 [node1] Received Heartbeat from node3 term 61
+2026/01/17 19:04:53 [node1] Received Heartbeat from node3 term 61
+2026/01/17 19:04:53 [node1] Received Heartbeat from node2 term 62
+2026/01/17 19:04:53 [node1] Received Heartbeat from node2 term 62
+2026/01/17 19:04:54 [node1] Received Heartbeat from node2 term 62
+2026/01/17 19:04:54 [node1] Received Heartbeat from node2 term 62
+2026/01/17 19:04:54 [node1] Won election! Becoming Leader for term 63
+2026/01/17 19:04:54 [node1] Received Heartbeat from node3 term 64
+2026/01/17 19:04:55 [node1] Received Heartbeat from node3 term 64
+2026/01/17 19:04:55 [node1] Received Heartbeat from node3 term 65
+2026/01/17 19:04:56 [node1] Received Heartbeat from node3 term 66
+2026/01/17 19:04:56 [node1] Won election! Becoming Leader for term 67
+2026/01/17 19:04:56 [node1] Received Heartbeat from node2 term 68
+2026/01/17 19:04:56 [node1] Received Heartbeat from node2 term 68
+2026/01/17 19:04:57 [node1] Received Heartbeat from node2 term 68
+2026/01/17 19:04:57 [node1] Received Heartbeat from node2 term 68
+2026/01/17 19:04:57 [node1] Received Heartbeat from node3 term 69
+2026/01/17 19:04:57 [node1] Received Heartbeat from node3 term 69
+2026/01/17 19:04:57 [node1] Received Heartbeat from node3 term 69
+2026/01/17 19:04:57 [node1] Won election! Becoming Leader for term 70
+2026/01/17 19:04:58 [node1] Received Heartbeat from node2 term 71
+2026/01/17 19:04:59 [node1] Received Heartbeat from node2 term 71
+2026/01/17 19:04:59 [node1] Received Heartbeat from node3 term 72
+2026/01/17 19:04:59 [node1] Received Heartbeat from node3 term 72
+2026/01/17 19:04:59 [node1] Received Heartbeat from node3 term 72
+2026/01/17 19:04:59 [node1] Received Heartbeat from node3 term 72
+2026/01/17 19:04:59 [node1] Won election! Becoming Leader for term 73
+2026/01/17 19:05:00 [node1] Received Heartbeat from node2 term 74
+2026/01/17 19:05:00 [node1] Received Heartbeat from node2 term 74
+2026/01/17 19:05:00 [node1] Received Heartbeat from node2 term 74
+2026/01/17 19:05:00 [node1] Received Heartbeat from node2 term 74
+2026/01/17 19:05:01 [node1] Received Heartbeat from node3 term 75
+2026/01/17 19:05:01 [node1] Received Heartbeat from node3 term 75
+2026/01/17 19:05:01 [node1] Received Heartbeat from node3 term 75
+2026/01/17 19:05:01 [node1] Won election! Becoming Leader for term 76
+2026/01/17 19:05:02 [node1] Received Heartbeat from node2 term 77
+2026/01/17 19:05:02 [node1] Received Heartbeat from node2 term 77
+2026/01/17 19:05:02 [node1] Received Heartbeat from node2 term 77
+2026/01/17 19:05:02 [node1] Received Heartbeat from node2 term 77
+2026/01/17 19:05:03 [node1] Received Heartbeat from node3 term 78
+2026/01/17 19:05:03 [node1] Received Heartbeat from node3 term 78
+2026/01/17 19:05:03 [node1] Received Heartbeat from node3 term 78
+2026/01/17 19:05:03 [node1] Won election! Becoming Leader for term 79
+2026/01/17 19:05:04 [node1] Received Heartbeat from node2 term 80
+2026/01/17 19:05:04 [node1] Received Heartbeat from node2 term 80
+2026/01/17 19:05:04 [node1] Received Heartbeat from node2 term 80
+2026/01/17 19:05:04 [node1] Received Heartbeat from node3 term 81
+2026/01/17 19:05:05 [node1] Received Heartbeat from node3 term 81
+2026/01/17 19:05:05 [node1] Received Heartbeat from node3 term 81
+2026/01/17 19:05:05 [node1] Received Heartbeat from node3 term 81
+2026/01/17 19:05:05 [node1] Received Heartbeat from node3 term 81
+2026/01/17 19:05:05 [node1] Received Heartbeat from node3 term 81
+2026/01/17 19:05:05 [node1] Won election! Becoming Leader for term 82
+2026/01/17 19:05:06 [node1] Received Heartbeat from node2 term 83
+2026/01/17 19:05:06 [node1] Received Heartbeat from node2 term 83
+2026/01/17 19:05:06 [node1] Received Heartbeat from node2 term 83
+2026/01/17 19:05:06 [node1] Received Heartbeat from node2 term 83
+2026/01/17 19:05:06 [node1] Received Heartbeat from node2 term 83
+2026/01/17 19:05:07 [node1] Received Heartbeat from node2 term 83
+2026/01/17 19:05:07 [node1] Received Heartbeat from node2 term 83
+2026/01/17 19:05:07 [node1] Received Heartbeat from node3 term 84
+2026/01/17 19:05:07 [node1] Received Heartbeat from node3 term 84
+2026/01/17 19:05:07 [node1] Won election! Becoming Leader for term 85
+2026/01/17 19:05:08 [node1] Received Heartbeat from node2 term 87
+2026/01/17 19:05:09 [node1] Received Heartbeat from node2 term 87
+2026/01/17 19:05:09 [node1] Received Heartbeat from node2 term 87
+2026/01/17 19:05:09 [node1] Received Heartbeat from node2 term 87
+2026/01/17 19:05:09 [node1] Received Heartbeat from node2 term 87
+2026/01/17 19:05:09 [node1] Received Heartbeat from node2 term 87
+2026/01/17 19:05:09 [node1] Received Heartbeat from node2 term 87
+2026/01/17 19:05:09 [node1] Won election! Becoming Leader for term 88
+2026/01/17 19:05:10 [node1] Received Heartbeat from node3 term 89
+2026/01/17 19:05:10 [node1] Received Heartbeat from node3 term 89
+2026/01/17 19:05:10 [node1] Received Heartbeat from node3 term 89
+2026/01/17 19:05:10 [node1] Received Heartbeat from node3 term 89
+2026/01/17 19:05:10 [node1] Received Heartbeat from node3 term 89
+2026/01/17 19:05:10 [node1] Received Heartbeat from node3 term 89
+2026/01/17 19:05:11 [node1] Received Heartbeat from node2 term 90
+2026/01/17 19:05:11 [node1] Won election! Becoming Leader for term 91
+2026/01/17 19:05:11 [node1] Received Heartbeat from node2 term 91
+2026/01/17 19:05:12 [node1] Received Heartbeat from node3 term 93
+2026/01/17 19:05:12 [node1] Received Heartbeat from node3 term 93
+2026/01/17 19:05:12 [node1] Received Heartbeat from node3 term 93
+2026/01/17 19:05:12 [node1] Received Heartbeat from node3 term 93
+2026/01/17 19:05:12 [node1] Won election! Becoming Leader for term 94
+2026/01/17 19:05:13 [node1] Received Heartbeat from node2 term 95
+2026/01/17 19:05:13 [node1] Received Heartbeat from node2 term 95
+2026/01/17 19:05:14 [node1] Received Heartbeat from node3 term 96
+2026/01/17 19:05:14 [node1] Received Heartbeat from node3 term 96
+2026/01/17 19:05:14 [node1] Received Heartbeat from node3 term 96
+2026/01/17 19:05:14 [node1] Received Heartbeat from node3 term 96
+2026/01/17 19:05:14 [node1] Received Heartbeat from node3 term 96
+2026/01/17 19:05:14 [node1] Won election! Becoming Leader for term 97
+2026/01/17 19:05:15 [node1] Received Heartbeat from node2 term 98
+2026/01/17 19:05:15 [node1] Received Heartbeat from node2 term 98
+2026/01/17 19:05:15 [node1] Received Heartbeat from node2 term 98
+2026/01/17 19:05:15 [node1] Received Heartbeat from node2 term 98
+2026/01/17 19:05:15 [node1] Received Heartbeat from node2 term 98
+2026/01/17 19:05:15 [node1] Received Heartbeat from node2 term 98
+2026/01/17 19:05:16 [node1] Received Heartbeat from node2 term 98
+2026/01/17 19:05:16 [node1] Won election! Becoming Leader for term 100
+2026/01/17 19:05:17 [node1] Received Heartbeat from node2 term 101
+2026/01/17 19:05:17 [node1] Received Heartbeat from node2 term 102
+2026/01/17 19:05:18 [node1] Won election! Becoming Leader for term 104
+2026/01/17 19:05:18 [node1] Received Heartbeat from node2 term 105
+2026/01/17 19:05:19 [node1] Received Heartbeat from node2 term 105
+2026/01/17 19:05:19 [node1] Received Heartbeat from node2 term 105
+2026/01/17 19:05:19 [node1] Received Heartbeat from node2 term 105
+2026/01/17 19:05:19 [node1] Received Heartbeat from node2 term 105
+2026/01/17 19:05:19 [node1] Received Heartbeat from node2 term 105
+2026/01/17 19:05:19 [node1] Received Heartbeat from node2 term 105
+2026/01/17 19:05:19 [node1] Won election! Becoming Leader for term 107
+2026/01/17 19:05:21 [node1] Received Heartbeat from node2 term 108
+2026/01/17 19:05:21 [node1] Received Heartbeat from node3 term 109
+2026/01/17 19:05:21 [node1] Received Heartbeat from node3 term 109
+2026/01/17 19:05:21 [node1] Received Heartbeat from node3 term 109
+2026/01/17 19:05:21 [node1] Received Heartbeat from node3 term 109
+2026/01/17 19:05:22 [node1] Received Heartbeat from node3 term 109
+2026/01/17 19:05:22 [node1] Won election! Becoming Leader for term 110
+2026/01/17 19:05:22 [node1] Received Heartbeat from node2 term 111
+2026/01/17 19:05:23 [node1] Received Heartbeat from node2 term 111
+2026/01/17 19:05:23 [node1] Received Heartbeat from node2 term 111
+2026/01/17 19:05:23 [node1] Received Heartbeat from node2 term 111
+2026/01/17 19:05:23 [node1] Received Heartbeat from node3 term 112
+2026/01/17 19:05:23 [node1] Received Heartbeat from node3 term 112
+2026/01/17 19:05:23 [node1] Won election! Becoming Leader for term 113
+2026/01/17 19:05:23 [node1] Received Heartbeat from node3 term 113
+2026/01/17 19:05:24 [node1] Received Heartbeat from node2 term 114
+2026/01/17 19:05:24 [node1] Received Heartbeat from node2 term 114
+2026/01/17 19:05:24 [node1] Received Heartbeat from node2 term 114
+2026/01/17 19:05:24 [node1] Won election! Becoming Leader for term 115
+2026/01/17 19:05:25 [node1] Received Heartbeat from node3 term 116
+2026/01/17 19:05:25 [node1] Received Heartbeat from node3 term 116
+2026/01/17 19:05:25 [node1] Received Heartbeat from node3 term 116
+2026/01/17 19:05:25 [node1] Received Heartbeat from node3 term 116
+2026/01/17 19:05:25 [node1] Received Heartbeat from node3 term 116
+2026/01/17 19:05:25 [node1] Received Heartbeat from node3 term 116
+2026/01/17 19:05:26 [node1] Received Heartbeat from node3 term 117
+2026/01/17 19:05:26 [node1] Won election! Becoming Leader for term 118
+2026/01/17 19:05:27 [node1] Received Heartbeat from node2 term 120
+2026/01/17 19:05:27 [node1] Received Heartbeat from node2 term 120
+2026/01/17 19:05:27 [node1] Received Heartbeat from node2 term 120
+2026/01/17 19:05:28 [node1] Received Heartbeat from node2 term 120
+2026/01/17 19:05:28 [node1] Received Heartbeat from node2 term 120
+2026/01/17 19:05:28 [node1] Received Heartbeat from node2 term 120
+2026/01/17 19:05:28 [node1] Won election! Becoming Leader for term 121
+2026/01/17 19:05:28 [node1] Received Heartbeat from node3 term 122
+2026/01/17 19:05:29 [node1] Received Heartbeat from node3 term 122
+2026/01/17 19:05:29 [node1] Received Heartbeat from node3 term 122
+2026/01/17 19:05:29 [node1] Received Heartbeat from node3 term 122
+2026/01/17 19:05:29 [node1] Received Heartbeat from node3 term 122
+2026/01/17 19:05:29 [node1] Received Heartbeat from node3 term 122
+2026/01/17 19:05:29 [node1] Won election! Becoming Leader for term 124
+2026/01/17 19:05:31 [node1] Received Heartbeat from node3 term 125
+2026/01/17 19:05:31 [node1] Received Heartbeat from node2 term 126
+2026/01/17 19:05:31 [node1] Received Heartbeat from node2 term 126
+2026/01/17 19:05:31 [node1] Received Heartbeat from node2 term 126
+2026/01/17 19:05:31 [node1] Received Heartbeat from node2 term 126
+2026/01/17 19:05:31 [node1] Received Heartbeat from node2 term 126
+2026/01/17 19:05:32 [node1] Received Heartbeat from node2 term 126
+2026/01/17 19:05:32 [node1] Received Heartbeat from node2 term 126
+2026/01/17 19:05:32 [node1] Won election! Becoming Leader for term 127
+2026/01/17 19:05:32 [node1] Received Heartbeat from node3 term 128
+2026/01/17 19:05:32 [node1] Received Heartbeat from node3 term 128
+2026/01/17 19:05:33 [node1] Received Heartbeat from node3 term 128
+2026/01/17 19:05:33 [node1] Received Heartbeat from node3 term 128
+2026/01/17 19:05:33 [node1] Received Heartbeat from node3 term 128
+2026/01/17 19:05:33 [node1] Received Heartbeat from node2 term 129
+2026/01/17 19:05:33 [node1] Received Heartbeat from node2 term 129
+2026/01/17 19:05:33 [node1] Won election! Becoming Leader for term 130
+2026/01/17 19:05:35 [node1] Received Heartbeat from node3 term 132
+2026/01/17 19:05:35 [node1] Received Heartbeat from node3 term 132
+2026/01/17 19:05:35 [node1] Received Heartbeat from node3 term 132
+2026/01/17 19:05:35 [node1] Received Heartbeat from node3 term 132
+2026/01/17 19:05:35 [node1] Received Heartbeat from node3 term 132
+2026/01/17 19:05:35 [node1] Received Heartbeat from node3 term 132
+2026/01/17 19:05:36 [node1] Received Heartbeat from node3 term 132
+2026/01/17 19:05:36 [node1] Received Heartbeat from node3 term 132
+2026/01/17 19:05:36 [node1] Won election! Becoming Leader for term 134
+2026/01/17 19:05:37 [node1] Received Heartbeat from node2 term 136
+2026/01/17 19:05:37 [node1] Received Heartbeat from node2 term 136
+2026/01/17 19:05:37 [node1] Received Heartbeat from node2 term 136
+2026/01/17 19:05:38 [node1] Received Heartbeat from node2 term 136
+2026/01/17 19:05:38 [node1] Received Heartbeat from node2 term 136
+2026/01/17 19:05:38 [node1] Received Heartbeat from node2 term 136
+2026/01/17 19:05:38 [node1] Received Heartbeat from node2 term 136
+2026/01/17 19:05:38 [node1] Won election! Becoming Leader for term 137
+2026/01/17 19:05:38 [node1] Received Heartbeat from node3 term 138
+2026/01/17 19:05:38 [node1] Received Heartbeat from node3 term 138
+2026/01/17 19:05:39 [node1] Received Heartbeat from node3 term 138
+2026/01/17 19:05:39 [node1] Received Heartbeat from node3 term 138
+2026/01/17 19:05:39 [node1] Received Heartbeat from node3 term 138
+2026/01/17 19:05:39 [node1] Received Heartbeat from node3 term 138
+2026/01/17 19:05:39 [node1] Received Heartbeat from node3 term 138
+2026/01/17 19:05:39 [node1] Received Heartbeat from node3 term 138
+2026/01/17 19:05:39 [node1] Won election! Becoming Leader for term 139
+2026/01/17 19:05:39 [node1] Received Heartbeat from node3 term 139
+2026/01/17 19:05:40 [node1] Received Heartbeat from node2 term 140
+2026/01/17 19:05:40 [node1] Received Heartbeat from node2 term 140
+2026/01/17 19:05:40 [node1] Received Heartbeat from node2 term 140
+2026/01/17 19:05:40 [node1] Received Heartbeat from node2 term 140
+2026/01/17 19:05:40 [node1] Received Heartbeat from node2 term 140
+2026/01/17 19:05:40 [node1] Received Heartbeat from node2 term 140
+2026/01/17 19:05:41 [node1] Received Heartbeat from node2 term 140
+2026/01/17 19:05:41 [node1] Won election! Becoming Leader for term 142
+2026/01/17 19:05:42 [node1] Received Heartbeat from node2 term 144
+2026/01/17 19:05:42 [node1] Received Heartbeat from node2 term 144
+2026/01/17 19:05:42 [node1] Received Heartbeat from node2 term 144
+2026/01/17 19:05:43 [node1] Received Heartbeat from node2 term 144
+2026/01/17 19:05:43 [node1] Received Heartbeat from node2 term 144
+2026/01/17 19:05:43 [node1] Received Heartbeat from node2 term 144
+2026/01/17 19:05:43 [node1] Received Heartbeat from node2 term 144
+2026/01/17 19:05:43 [node1] Won election! Becoming Leader for term 145
+2026/01/17 19:05:43 [node1] Received Heartbeat from node2 term 145
+2026/01/17 19:05:43 [node1] Received Heartbeat from node3 term 146
+2026/01/17 19:05:44 [node1] Received Heartbeat from node3 term 146
+2026/01/17 19:05:44 [node1] Received Heartbeat from node3 term 146
+2026/01/17 19:05:44 [node1] Received Heartbeat from node3 term 146
+2026/01/17 19:05:44 [node1] Received Heartbeat from node3 term 146
+2026/01/17 19:05:44 [node1] Received Heartbeat from node3 term 146
+2026/01/17 19:05:44 [node1] Received Heartbeat from node3 term 146
+2026/01/17 19:05:44 [node1] Received Heartbeat from node3 term 146
+2026/01/17 19:05:45 [node1] Won election! Becoming Leader for term 147
+2026/01/17 19:05:45 [node1] Received Heartbeat from node2 term 148
+2026/01/17 19:05:45 [node1] Received Heartbeat from node2 term 148
+2026/01/17 19:05:45 [node1] Received Heartbeat from node2 term 148
+2026/01/17 19:05:45 [node1] Received Heartbeat from node2 term 148
+2026/01/17 19:05:45 [node1] Received Heartbeat from node2 term 148
+2026/01/17 19:05:46 [node1] Received Heartbeat from node2 term 148
+2026/01/17 19:05:46 [node1] Won election! Becoming Leader for term 150
+2026/01/17 19:05:47 [node1] Received Heartbeat from node2 term 151
+2026/01/17 19:05:47 [node1] Received Heartbeat from node3 term 152
+2026/01/17 19:05:47 [node1] Received Heartbeat from node3 term 152
+2026/01/17 19:05:47 [node1] Received Heartbeat from node3 term 152
+2026/01/17 19:05:48 [node1] Received Heartbeat from node3 term 152
+2026/01/17 19:05:48 [node1] Received Heartbeat from node3 term 152
+2026/01/17 19:05:48 [node1] Received Heartbeat from node3 term 152
+2026/01/17 19:05:48 [node1] Received Heartbeat from node3 term 152
+2026/01/17 19:05:48 [node1] Won election! Becoming Leader for term 154
+2026/01/17 19:05:49 [node1] Received Heartbeat from node2 term 156
+2026/01/17 19:05:50 [node1] Received Heartbeat from node2 term 156
+2026/01/17 19:05:50 [node1] Received Heartbeat from node2 term 156
+2026/01/17 19:05:50 [node1] Received Heartbeat from node2 term 156
+2026/01/17 19:05:50 [node1] Received Heartbeat from node2 term 156
+2026/01/17 19:05:50 [node1] Received Heartbeat from node2 term 156
+2026/01/17 19:05:50 [node1] Received Heartbeat from node2 term 156
+2026/01/17 19:05:50 [node1] Received Heartbeat from node2 term 156
+2026/01/17 19:05:51 [node1] Won election! Becoming Leader for term 157
+2026/01/17 19:05:51 [node1] Received Heartbeat from node3 term 158
+2026/01/17 19:05:51 [node1] Received Heartbeat from node3 term 158
+2026/01/17 19:05:51 [node1] Received Heartbeat from node3 term 158
+2026/01/17 19:05:51 [node1] Received Heartbeat from node3 term 158
+2026/01/17 19:05:51 [node1] Received Heartbeat from node3 term 158
+2026/01/17 19:05:52 [node1] Received Heartbeat from node3 term 158
+2026/01/17 19:05:52 [node1] Received Heartbeat from node3 term 158
+2026/01/17 19:05:52 [node1] Won election! Becoming Leader for term 159
+2026/01/17 19:05:52 [node1] Received Heartbeat from node3 term 159
+2026/01/17 19:05:52 [node1] Received Heartbeat from node2 term 160
+2026/01/17 19:05:52 [node1] Received Heartbeat from node2 term 160
+2026/01/17 19:05:52 [node1] Received Heartbeat from node2 term 160
+2026/01/17 19:05:53 [node1] Received Heartbeat from node2 term 160
+2026/01/17 19:05:53 [node1] Received Heartbeat from node2 term 160
+2026/01/17 19:05:53 [node1] Received Heartbeat from node2 term 160
+2026/01/17 19:05:53 [node1] Received Heartbeat from node2 term 160
+2026/01/17 19:05:53 [node1] Won election! Becoming Leader for term 161
+2026/01/17 19:05:53 [node1] Received Heartbeat from node3 term 162
+2026/01/17 19:05:54 [node1] Received Heartbeat from node3 term 162
+2026/01/17 19:05:54 [node1] Received Heartbeat from node3 term 162
+2026/01/17 19:05:54 [node1] Received Heartbeat from node3 term 162
+2026/01/17 19:05:54 [node1] Received Heartbeat from node3 term 162
+2026/01/17 19:05:54 [node1] Received Heartbeat from node3 term 162
+2026/01/17 19:05:54 [node1] Received Heartbeat from node3 term 162
+2026/01/17 19:05:55 [node1] Received Heartbeat from node3 term 162
+2026/01/17 19:05:55 [node1] Won election! Becoming Leader for term 164
+2026/01/17 19:05:56 [node1] Received Heartbeat from node3 term 165
+2026/01/17 19:05:56 [node1] Received Heartbeat from node3 term 165
+2026/01/17 19:05:56 [node1] Received Heartbeat from node2 term 166
+2026/01/17 19:05:56 [node1] Received Heartbeat from node2 term 166
+2026/01/17 19:05:56 [node1] Received Heartbeat from node2 term 166
+2026/01/17 19:05:57 [node1] Received Heartbeat from node2 term 166
+2026/01/17 19:05:57 [node1] Received Heartbeat from node2 term 166
+2026/01/17 19:05:57 [node1] Won election! Becoming Leader for term 167
+2026/01/17 19:05:57 [node1] Received Heartbeat from node3 term 168
+2026/01/17 19:05:57 [node1] Received Heartbeat from node3 term 168
+2026/01/17 19:05:58 [node1] Received Heartbeat from node3 term 168
+2026/01/17 19:05:58 [node1] Received Heartbeat from node3 term 168
+2026/01/17 19:05:58 [node1] Received Heartbeat from node3 term 168
+2026/01/17 19:05:58 [node1] Received Heartbeat from node3 term 168
+2026/01/17 19:05:58 [node1] Received Heartbeat from node3 term 168
+2026/01/17 19:05:58 [node1] Received Heartbeat from node3 term 168
+2026/01/17 19:05:58 [node1] Received Heartbeat from node2 term 169
+2026/01/17 19:05:59 [node1] Won election! Becoming Leader for term 170
+2026/01/17 19:06:00 [node1] Received Heartbeat from node3 term 172
+2026/01/17 19:06:00 [node1] Received Heartbeat from node3 term 172
+2026/01/17 19:06:00 [node1] Received Heartbeat from node3 term 172
+2026/01/17 19:06:00 [node1] Received Heartbeat from node3 term 172
+2026/01/17 19:06:01 [node1] Received Heartbeat from node3 term 172
+2026/01/17 19:06:01 [node1] Received Heartbeat from node3 term 172
+2026/01/17 19:06:01 [node1] Won election! Becoming Leader for term 173
+2026/01/17 19:06:01 [node1] Received Heartbeat from node2 term 174
+2026/01/17 19:06:01 [node1] Received Heartbeat from node2 term 174
+2026/01/17 19:06:01 [node1] Received Heartbeat from node2 term 174
+2026/01/17 19:06:01 [node1] Received Heartbeat from node2 term 174
+2026/01/17 19:06:02 [node1] Received Heartbeat from node2 term 174
+2026/01/17 19:06:02 [node1] Received Heartbeat from node2 term 174
+2026/01/17 19:06:02 [node1] Received Heartbeat from node2 term 174
+2026/01/17 19:06:02 [node1] Received Heartbeat from node2 term 174
+2026/01/17 19:06:02 [node1] Received Heartbeat from node2 term 174
+2026/01/17 19:06:02 [node1] Won election! Becoming Leader for term 175
+2026/01/17 19:06:02 [node1] Received Heartbeat from node3 term 176
+2026/01/17 19:06:03 [node1] Received Heartbeat from node3 term 176
+2026/01/17 19:06:03 [node1] Received Heartbeat from node3 term 176
+2026/01/17 19:06:03 [node1] Received Heartbeat from node3 term 176
+2026/01/17 19:06:03 [node1] Received Heartbeat from node3 term 176
+2026/01/17 19:06:03 [node1] Received Heartbeat from node3 term 176
+2026/01/17 19:06:03 [node1] Received Heartbeat from node3 term 176
+2026/01/17 19:06:04 [node1] Received Heartbeat from node3 term 176
+2026/01/17 19:06:04 [node1] Won election! Becoming Leader for term 177
+2026/01/17 19:06:04 [node1] Received Heartbeat from node2 term 178
+2026/01/17 19:06:04 [node1] Received Heartbeat from node2 term 178
+2026/01/17 19:06:04 [node1] Received Heartbeat from node2 term 178
+2026/01/17 19:06:04 [node1] Received Heartbeat from node2 term 178
+2026/01/17 19:06:04 [node1] Received Heartbeat from node2 term 178
+2026/01/17 19:06:04 [node1] Received Heartbeat from node2 term 178
+2026/01/17 19:06:05 [node1] Won election! Becoming Leader for term 179
+2026/01/17 19:06:05 [node1] Received Heartbeat from node3 term 180
+2026/01/17 19:06:05 [node1] Received Heartbeat from node3 term 180
+2026/01/17 19:06:05 [node1] Received Heartbeat from node3 term 180
+2026/01/17 19:06:05 [node1] Received Heartbeat from node3 term 180
+2026/01/17 19:06:06 [node1] Received Heartbeat from node3 term 180
+2026/01/17 19:06:06 [node1] Received Heartbeat from node2 term 181
+2026/01/17 19:06:06 [node1] Received Heartbeat from node2 term 181
+2026/01/17 19:06:06 [node1] Received Heartbeat from node2 term 181
+2026/01/17 19:06:06 [node1] Received Heartbeat from node2 term 181
+2026/01/17 19:06:06 [node1] Won election! Becoming Leader for term 182
+2026/01/17 19:06:07 [node1] Received Heartbeat from node3 term 183
+2026/01/17 19:06:07 [node1] Received Heartbeat from node3 term 183
+2026/01/17 19:06:07 [node1] Received Heartbeat from node3 term 183
+2026/01/17 19:06:07 [node1] Received Heartbeat from node3 term 183
+2026/01/17 19:06:08 [node1] Received Heartbeat from node3 term 183
+2026/01/17 19:06:08 [node1] Received Heartbeat from node3 term 183
+2026/01/17 19:06:08 [node1] Received Heartbeat from node3 term 184
+2026/01/17 19:06:08 [node1] Won election! Becoming Leader for term 185
+2026/01/17 19:06:09 [node1] Received Heartbeat from node3 term 187
+2026/01/17 19:06:09 [node1] Received Heartbeat from node3 term 187
+2026/01/17 19:06:10 [node1] Received Heartbeat from node3 term 187
+2026/01/17 19:06:10 [node1] Received Heartbeat from node3 term 187
+2026/01/17 19:06:10 [node1] Received Heartbeat from node3 term 187
+2026/01/17 19:06:10 [node1] Received Heartbeat from node3 term 187
+2026/01/17 19:06:10 [node1] Won election! Becoming Leader for term 188
+2026/01/17 19:06:11 [node1] Received Heartbeat from node2 term 190
+2026/01/17 19:06:11 [node1] Received Heartbeat from node2 term 190
+2026/01/17 19:06:12 [node1] Received Heartbeat from node2 term 190
+2026/01/17 19:06:12 [node1] Won election! Becoming Leader for term 192
+2026/01/17 19:06:13 [node1] Received Heartbeat from node2 term 193
+2026/01/17 19:06:13 [node1] Received Heartbeat from node2 term 193
+2026/01/17 19:06:13 [node1] Received Heartbeat from node3 term 194
+2026/01/17 19:06:13 [node1] Received Heartbeat from node3 term 194
+2026/01/17 19:06:14 [node1] Received Heartbeat from node3 term 194
+2026/01/17 19:06:14 [node1] Received Heartbeat from node3 term 194
+2026/01/17 19:06:14 [node1] Received Heartbeat from node3 term 194
+2026/01/17 19:06:14 [node1] Received Heartbeat from node3 term 194
+2026/01/17 19:06:14 [node1] Won election! Becoming Leader for term 195
+2026/01/17 19:06:15 [node1] Received Heartbeat from node2 term 196
+2026/01/17 19:06:15 [node1] Received Heartbeat from node2 term 196
+2026/01/17 19:06:15 [node1] Received Heartbeat from node2 term 196
+2026/01/17 19:06:15 [node1] Received Heartbeat from node2 term 196
+2026/01/17 19:06:15 [node1] Received Heartbeat from node2 term 196
+2026/01/17 19:06:15 [node1] Received Heartbeat from node2 term 196
+2026/01/17 19:06:16 [node1] Received Heartbeat from node2 term 196
+2026/01/17 19:06:16 [node1] Won election! Becoming Leader for term 198
+2026/01/17 19:06:16 [node1] Received Heartbeat from node3 term 198
+2026/01/17 19:06:17 [node1] Received Heartbeat from node2 term 199
+2026/01/17 19:06:17 [node1] Received Heartbeat from node2 term 199
+2026/01/17 19:06:17 [node1] Received Heartbeat from node2 term 199
+2026/01/17 19:06:17 [node1] Received Heartbeat from node2 term 199
+2026/01/17 19:06:17 [node1] Won election! Becoming Leader for term 200
+2026/01/17 19:06:17 [node1] Received Heartbeat from node3 term 201
+2026/01/17 19:06:17 [node1] Received Heartbeat from node3 term 201
+2026/01/17 19:06:18 [node1] Received Heartbeat from node3 term 201
+2026/01/17 19:06:18 [node1] Received Heartbeat from node3 term 201
+2026/01/17 19:06:18 [node1] Received Heartbeat from node3 term 201
+2026/01/17 19:06:18 [node1] Received Heartbeat from node3 term 201
+2026/01/17 19:06:18 [node1] Received Heartbeat from node2 term 202
+2026/01/17 19:06:18 [node1] Won election! Becoming Leader for term 203
+2026/01/17 19:06:20 [node1] Received Heartbeat from node3 term 204
+2026/01/17 19:06:20 [node1] Received Heartbeat from node3 term 204
+2026/01/17 19:06:20 [node1] Received Heartbeat from node2 term 205
+2026/01/17 19:06:20 [node1] Received Heartbeat from node2 term 205
+2026/01/17 19:06:20 [node1] Received Heartbeat from node2 term 205
+2026/01/17 19:06:21 [node1] Received Heartbeat from node2 term 205
+2026/01/17 19:06:21 [node1] Won election! Becoming Leader for term 206
+2026/01/17 19:06:21 [node1] Received Heartbeat from node3 term 207
+2026/01/17 19:06:22 [node1] Received Heartbeat from node3 term 207
+2026/01/17 19:06:22 [node1] Received Heartbeat from node3 term 207
+2026/01/17 19:06:22 [node1] Received Heartbeat from node2 term 208
+2026/01/17 19:06:22 [node1] Received Heartbeat from node2 term 208
+2026/01/17 19:06:22 [node1] Received Heartbeat from node2 term 208
+2026/01/17 19:06:22 [node1] Received Heartbeat from node2 term 208
+2026/01/17 19:06:23 [node1] Received Heartbeat from node2 term 208
+2026/01/17 19:06:23 [node1] Won election! Becoming Leader for term 209
+2026/01/17 19:06:23 [node1] Received Heartbeat from node3 term 210
+2026/01/17 19:06:23 [node1] Received Heartbeat from node3 term 210
+2026/01/17 19:06:24 [node1] Received Heartbeat from node3 term 210
+2026/01/17 19:06:24 [node1] Received Heartbeat from node3 term 210
+2026/01/17 19:06:24 [node1] Received Heartbeat from node3 term 210
+2026/01/17 19:06:24 [node1] Received Heartbeat from node2 term 211
+2026/01/17 19:06:24 [node1] Received Heartbeat from node2 term 211
+2026/01/17 19:06:24 [node1] Won election! Becoming Leader for term 212
+2026/01/17 19:06:25 [node1] Received Heartbeat from node3 term 213
+2026/01/17 19:06:25 [node1] Received Heartbeat from node3 term 213
+2026/01/17 19:06:26 [node1] Received Heartbeat from node3 term 213
+2026/01/17 19:06:26 [node1] Received Heartbeat from node2 term 214
+2026/01/17 19:06:26 [node1] Received Heartbeat from node2 term 214
+2026/01/17 19:06:26 [node1] Received Heartbeat from node2 term 214
+2026/01/17 19:06:26 [node1] Received Heartbeat from node2 term 214
+2026/01/17 19:06:26 [node1] Received Heartbeat from node2 term 214
+2026/01/17 19:06:26 [node1] Won election! Becoming Leader for term 215
+2026/01/17 19:06:28 [node1] Received Heartbeat from node2 term 218
+2026/01/17 19:06:28 [node1] Received Heartbeat from node2 term 218
+2026/01/17 19:06:28 [node1] Received Heartbeat from node2 term 218
+2026/01/17 19:06:28 [node1] Won election! Becoming Leader for term 219
+2026/01/17 19:06:29 [node1] Received Heartbeat from node3 term 220
+2026/01/17 19:06:29 [node1] Received Heartbeat from node3 term 220
+2026/01/17 19:06:29 [node1] Received Heartbeat from node2 term 221
+2026/01/17 19:06:30 [node1] Received Heartbeat from node2 term 221
+2026/01/17 19:06:30 [node1] Received Heartbeat from node2 term 221
+2026/01/17 19:06:30 [node1] Received Heartbeat from node2 term 221
+2026/01/17 19:06:30 [node1] Won election! Becoming Leader for term 222
+2026/01/17 19:06:30 [node1] Received Heartbeat from node3 term 223
+2026/01/17 19:06:31 [node1] Received Heartbeat from node3 term 223
+2026/01/17 19:06:31 [node1] Received Heartbeat from node3 term 223
+2026/01/17 19:06:31 [node1] Received Heartbeat from node3 term 223
+2026/01/17 19:06:31 [node1] Received Heartbeat from node2 term 224
+2026/01/17 19:06:31 [node1] Received Heartbeat from node2 term 224
+2026/01/17 19:06:31 [node1] Received Heartbeat from node2 term 224
+2026/01/17 19:06:32 [node1] Received Heartbeat from node2 term 224
+2026/01/17 19:06:32 [node1] Received Heartbeat from node2 term 224
+2026/01/17 19:06:32 [node1] Won election! Becoming Leader for term 225
+2026/01/17 19:06:32 [node1] Received Heartbeat from node3 term 226
+2026/01/17 19:06:32 [node1] Received Heartbeat from node3 term 226
+2026/01/17 19:06:32 [node1] Received Heartbeat from node3 term 226
+2026/01/17 19:06:33 [node1] Received Heartbeat from node3 term 226
+2026/01/17 19:06:33 [node1] Received Heartbeat from node3 term 226
+2026/01/17 19:06:33 [node1] Received Heartbeat from node3 term 226
+2026/01/17 19:06:33 [node1] Received Heartbeat from node3 term 226
+2026/01/17 19:06:33 [node1] Won election! Becoming Leader for term 228
+2026/01/17 19:06:34 [node1] Received Heartbeat from node2 term 229
+2026/01/17 19:06:34 [node1] Received Heartbeat from node2 term 229
+2026/01/17 19:06:35 [node1] Received Heartbeat from node2 term 229
+2026/01/17 19:06:35 [node1] Received Heartbeat from node3 term 230
+2026/01/17 19:06:35 [node1] Received Heartbeat from node3 term 230
+2026/01/17 19:06:35 [node1] Received Heartbeat from node3 term 230
+2026/01/17 19:06:35 [node1] Received Heartbeat from node3 term 230
+2026/01/17 19:06:35 [node1] Received Heartbeat from node3 term 230
+2026/01/17 19:06:35 [node1] Won election! Becoming Leader for term 231
+2026/01/17 19:06:36 [node1] Received Heartbeat from node2 term 232
+2026/01/17 19:06:36 [node1] Received Heartbeat from node2 term 232
+2026/01/17 19:06:36 [node1] Received Heartbeat from node2 term 232
+2026/01/17 19:06:37 [node1] Received Heartbeat from node2 term 232
+2026/01/17 19:06:37 [node1] Received Heartbeat from node2 term 232
+2026/01/17 19:06:37 [node1] Received Heartbeat from node3 term 233
+2026/01/17 19:06:37 [node1] Won election! Becoming Leader for term 234
+2026/01/17 19:06:37 [node1] Received Heartbeat from node3 term 234
+2026/01/17 19:06:38 [node1] Received Heartbeat from node2 term 236
+2026/01/17 19:06:38 [node1] Received Heartbeat from node2 term 236
+2026/01/17 19:06:38 [node1] Won election! Becoming Leader for term 237
+2026/01/17 19:06:39 [node1] Received Heartbeat from node3 term 238
+2026/01/17 19:06:39 [node1] Received Heartbeat from node3 term 238
+2026/01/17 19:06:40 [node1] Received Heartbeat from node3 term 238
+2026/01/17 19:06:40 [node1] Received Heartbeat from node2 term 239
+2026/01/17 19:06:40 [node1] Received Heartbeat from node2 term 239
+2026/01/17 19:06:40 [node1] Received Heartbeat from node2 term 239
+2026/01/17 19:06:40 [node1] Received Heartbeat from node2 term 239
+2026/01/17 19:06:40 [node1] Received Heartbeat from node2 term 239
+2026/01/17 19:06:41 [node1] Received Heartbeat from node2 term 239
+2026/01/17 19:06:41 [node1] Won election! Becoming Leader for term 240
+2026/01/17 19:06:41 [node1] Received Heartbeat from node3 term 241
+2026/01/17 19:06:41 [node1] Received Heartbeat from node3 term 241
+2026/01/17 19:06:41 [node1] Received Heartbeat from node3 term 241
+2026/01/17 19:06:42 [node1] Received Heartbeat from node3 term 241
+2026/01/17 19:06:42 [node1] Received Heartbeat from node3 term 241
+2026/01/17 19:06:42 [node1] Received Heartbeat from node2 term 242
+2026/01/17 19:06:42 [node1] Received Heartbeat from node2 term 242
+2026/01/17 19:06:42 [node1] Received Heartbeat from node2 term 242
+2026/01/17 19:06:42 [node1] Won election! Becoming Leader for term 243
+2026/01/17 19:06:43 [node1] Received Heartbeat from node3 term 244
+2026/01/17 19:06:43 [node1] Received Heartbeat from node3 term 244
+2026/01/17 19:06:44 [node1] Received Heartbeat from node2 term 245
+2026/01/17 19:06:44 [node1] Received Heartbeat from node2 term 245
+2026/01/17 19:06:44 [node1] Received Heartbeat from node2 term 245
+2026/01/17 19:06:44 [node1] Received Heartbeat from node2 term 245
+2026/01/17 19:06:44 [node1] Received Heartbeat from node2 term 245
+2026/01/17 19:06:44 [node1] Received Heartbeat from node2 term 245
+2026/01/17 19:06:45 [node1] Won election! Becoming Leader for term 246
+2026/01/17 19:06:45 [node1] Received Heartbeat from node2 term 246
+2026/01/17 19:06:45 [node1] Received Heartbeat from node3 term 247
+2026/01/17 19:06:45 [node1] Received Heartbeat from node3 term 247
+2026/01/17 19:06:45 [node1] Received Heartbeat from node3 term 247
+2026/01/17 19:06:45 [node1] Received Heartbeat from node3 term 247
+2026/01/17 19:06:46 [node1] Received Heartbeat from node3 term 247
+2026/01/17 19:06:46 [node1] Won election! Becoming Leader for term 248
+2026/01/17 19:06:46 [node1] Received Heartbeat from node2 term 249
+2026/01/17 19:06:46 [node1] Received Heartbeat from node2 term 249
+2026/01/17 19:06:46 [node1] Received Heartbeat from node2 term 249
+2026/01/17 19:06:46 [node1] Received Heartbeat from node2 term 249
+2026/01/17 19:06:47 [node1] Received Heartbeat from node2 term 249
+2026/01/17 19:06:47 [node1] Received Heartbeat from node2 term 249
+2026/01/17 19:06:47 [node1] Won election! Becoming Leader for term 250
+2026/01/17 19:06:47 [node1] Received Heartbeat from node3 term 251
+2026/01/17 19:06:47 [node1] Received Heartbeat from node3 term 251
+2026/01/17 19:06:48 [node1] Received Heartbeat from node3 term 251
+2026/01/17 19:06:48 [node1] Received Heartbeat from node3 term 251
+2026/01/17 19:06:48 [node1] Received Heartbeat from node3 term 251
+2026/01/17 19:06:48 [node1] Received Heartbeat from node2 term 252
+2026/01/17 19:06:48 [node1] Received Heartbeat from node2 term 252
+2026/01/17 19:06:48 [node1] Received Heartbeat from node2 term 252
+2026/01/17 19:06:48 [node1] Won election! Becoming Leader for term 253
+2026/01/17 19:06:50 [node1] Received Heartbeat from node3 term 254
+2026/01/17 19:06:50 [node1] Received Heartbeat from node2 term 255
+2026/01/17 19:06:50 [node1] Received Heartbeat from node2 term 255
+2026/01/17 19:06:50 [node1] Received Heartbeat from node2 term 255
+2026/01/17 19:06:50 [node1] Received Heartbeat from node2 term 255
+2026/01/17 19:06:50 [node1] Received Heartbeat from node2 term 255
+2026/01/17 19:06:51 [node1] Received Heartbeat from node2 term 255
+2026/01/17 19:06:51 [node1] Received Heartbeat from node2 term 255
+2026/01/17 19:06:51 [node1] Won election! Becoming Leader for term 257
+2026/01/17 19:06:51 [node1] Received Heartbeat from node2 term 257
+2026/01/17 19:06:52 [node1] Received Heartbeat from node3 term 258
+2026/01/17 19:06:52 [node1] Received Heartbeat from node3 term 258
+2026/01/17 19:06:52 [node1] Received Heartbeat from node3 term 258
+2026/01/17 19:06:52 [node1] Received Heartbeat from node2 term 259
+2026/01/17 19:06:52 [node1] Won election! Becoming Leader for term 260
+2026/01/17 19:06:54 [node1] Received Heartbeat from node2 term 262
+2026/01/17 19:06:54 [node1] Received Heartbeat from node2 term 262
+2026/01/17 19:06:54 [node1] Received Heartbeat from node2 term 262
+2026/01/17 19:06:54 [node1] Received Heartbeat from node2 term 262
+2026/01/17 19:06:54 [node1] Received Heartbeat from node2 term 262
+2026/01/17 19:06:54 [node1] Received Heartbeat from node2 term 262
+2026/01/17 19:06:54 [node1] Won election! Becoming Leader for term 263
+2026/01/17 19:06:55 [node1] Received Heartbeat from node3 term 264
+2026/01/17 19:06:55 [node1] Received Heartbeat from node3 term 264
+2026/01/17 19:06:55 [node1] Received Heartbeat from node3 term 264
+2026/01/17 19:06:55 [node1] Received Heartbeat from node3 term 264
+2026/01/17 19:06:55 [node1] Received Heartbeat from node3 term 264
+2026/01/17 19:06:55 [node1] Received Heartbeat from node3 term 264
+2026/01/17 19:06:56 [node1] Won election! Becoming Leader for term 265
+2026/01/17 19:06:56 [node1] Received Heartbeat from node2 term 266
+2026/01/17 19:06:56 [node1] Received Heartbeat from node2 term 266
+2026/01/17 19:06:56 [node1] Received Heartbeat from node2 term 266
+2026/01/17 19:06:56 [node1] Received Heartbeat from node2 term 266
+2026/01/17 19:06:56 [node1] Received Heartbeat from node2 term 266
+2026/01/17 19:06:57 [node1] Received Heartbeat from node2 term 266
+2026/01/17 19:06:57 [node1] Received Heartbeat from node3 term 267
+2026/01/17 19:06:57 [node1] Received Heartbeat from node3 term 267
+2026/01/17 19:06:57 [node1] Won election! Becoming Leader for term 268
+2026/01/17 19:06:58 [node1] Received Heartbeat from node2 term 269
+2026/01/17 19:06:58 [node1] Received Heartbeat from node2 term 269
+2026/01/17 19:06:58 [node1] Received Heartbeat from node3 term 270
+2026/01/17 19:06:58 [node1] Received Heartbeat from node3 term 270
+2026/01/17 19:06:58 [node1] Received Heartbeat from node3 term 270
+2026/01/17 19:06:59 [node1] Received Heartbeat from node3 term 270
+2026/01/17 19:06:59 [node1] Won election! Becoming Leader for term 271
+2026/01/17 19:07:00 [node1] Received Heartbeat from node2 term 272
+2026/01/17 19:07:00 [node1] Received Heartbeat from node2 term 272
+2026/01/17 19:07:00 [node1] Received Heartbeat from node2 term 272
+2026/01/17 19:07:00 [node1] Received Heartbeat from node3 term 273
+2026/01/17 19:07:00 [node1] Received Heartbeat from node3 term 273
+2026/01/17 19:07:00 [node1] Received Heartbeat from node3 term 273
+2026/01/17 19:07:01 [node1] Received Heartbeat from node3 term 273
+2026/01/17 19:07:01 [node1] Won election! Becoming Leader for term 274
+2026/01/17 19:07:01 [node1] Received Heartbeat from node2 term 275
+2026/01/17 19:07:01 [node1] Received Heartbeat from node2 term 275
+2026/01/17 19:07:01 [node1] Received Heartbeat from node2 term 275
+2026/01/17 19:07:02 [node1] Received Heartbeat from node2 term 275
+2026/01/17 19:07:02 [node1] Received Heartbeat from node3 term 276
+2026/01/17 19:07:02 [node1] Received Heartbeat from node3 term 276
+2026/01/17 19:07:02 [node1] Won election! Becoming Leader for term 277
+2026/01/17 19:07:03 [node1] Received Heartbeat from node2 term 278
+2026/01/17 19:07:03 [node1] Received Heartbeat from node2 term 278
+2026/01/17 19:07:03 [node1] Received Heartbeat from node3 term 279
+2026/01/17 19:07:03 [node1] Received Heartbeat from node3 term 279
+2026/01/17 19:07:04 [node1] Received Heartbeat from node3 term 279
+2026/01/17 19:07:04 [node1] Received Heartbeat from node3 term 279
+2026/01/17 19:07:04 [node1] Received Heartbeat from node3 term 279
+2026/01/17 19:07:04 [node1] Received Heartbeat from node3 term 279
+2026/01/17 19:07:04 [node1] Won election! Becoming Leader for term 280
+2026/01/17 19:07:04 [node1] Received Heartbeat from node2 term 281
+2026/01/17 19:07:05 [node1] Received Heartbeat from node2 term 281
+2026/01/17 19:07:05 [node1] Received Heartbeat from node2 term 281
+2026/01/17 19:07:05 [node1] Received Heartbeat from node2 term 281
+2026/01/17 19:07:05 [node1] Received Heartbeat from node2 term 281
+2026/01/17 19:07:05 [node1] Received Heartbeat from node2 term 281
+2026/01/17 19:07:05 [node1] Received Heartbeat from node2 term 281
+2026/01/17 19:07:05 [node1] Received Heartbeat from node2 term 281
+2026/01/17 19:07:06 [node1] Received Heartbeat from node2 term 281
+2026/01/17 19:07:06 [node1] Won election! Becoming Leader for term 283
+2026/01/17 19:07:07 [node1] Received Heartbeat from node2 term 284
+2026/01/17 19:07:07 [node1] Received Heartbeat from node2 term 285
+2026/01/17 19:07:08 [node1] Won election! Becoming Leader for term 286
+2026/01/17 19:07:08 [node1] Received Heartbeat from node3 term 287
+2026/01/17 19:07:09 [node1] Received Heartbeat from node2 term 288
+2026/01/17 19:07:09 [node1] Received Heartbeat from node2 term 288
+2026/01/17 19:07:09 [node1] Received Heartbeat from node2 term 288
+2026/01/17 19:07:09 [node1] Received Heartbeat from node2 term 288
+2026/01/17 19:07:09 [node1] Received Heartbeat from node2 term 288
+2026/01/17 19:07:09 [node1] Received Heartbeat from node2 term 288
+2026/01/17 19:07:10 [node1] Received Heartbeat from node3 term 289
+2026/01/17 19:07:10 [node1] Won election! Becoming Leader for term 290
+2026/01/17 19:07:11 [node1] Received Heartbeat from node2 term 291
+2026/01/17 19:07:11 [node1] Received Heartbeat from node2 term 291
+2026/01/17 19:07:11 [node1] Received Heartbeat from node2 term 292
+2026/01/17 19:07:12 [node1] Won election! Becoming Leader for term 293
+2026/01/17 19:07:13 [node1] Received Heartbeat from node2 term 295
+2026/01/17 19:07:13 [node1] Received Heartbeat from node2 term 295
+2026/01/17 19:07:13 [node1] Received Heartbeat from node2 term 295
+2026/01/17 19:07:13 [node1] Received Heartbeat from node2 term 295
+2026/01/17 19:07:13 [node1] Received Heartbeat from node2 term 295
+2026/01/17 19:07:14 [node1] Received Heartbeat from node2 term 295
+2026/01/17 19:07:14 [node1] Received Heartbeat from node2 term 295
+2026/01/17 19:07:14 [node1] Received Heartbeat from node2 term 295
+2026/01/17 19:07:14 [node1] Received Heartbeat from node2 term 295
+2026/01/17 19:07:14 [node1] Won election! Becoming Leader for term 296
+2026/01/17 19:07:14 [node1] Received Heartbeat from node3 term 297
+2026/01/17 19:07:14 [node1] Received Heartbeat from node3 term 297
+2026/01/17 19:07:15 [node1] Received Heartbeat from node3 term 297
+2026/01/17 19:07:15 [node1] Received Heartbeat from node3 term 297
+2026/01/17 19:07:15 [node1] Received Heartbeat from node3 term 297
+2026/01/17 19:07:15 [node1] Received Heartbeat from node3 term 297
+2026/01/17 19:07:15 [node1] Received Heartbeat from node3 term 297
+2026/01/17 19:07:15 [node1] Received Heartbeat from node3 term 297
+2026/01/17 19:07:15 [node1] Won election! Becoming Leader for term 298
+2026/01/17 19:07:16 [node1] Received Heartbeat from node2 term 299
+2026/01/17 19:07:16 [node1] Received Heartbeat from node2 term 299
+2026/01/17 19:07:16 [node1] Received Heartbeat from node2 term 299
+2026/01/17 19:07:16 [node1] Received Heartbeat from node2 term 299
+2026/01/17 19:07:16 [node1] Received Heartbeat from node2 term 299
+2026/01/17 19:07:16 [node1] Received Heartbeat from node2 term 299
+2026/01/17 19:07:17 [node1] Received Heartbeat from node2 term 299
+2026/01/17 19:07:17 [node1] Received Heartbeat from node3 term 300
+2026/01/17 19:07:17 [node1] Won election! Becoming Leader for term 301
+2026/01/17 19:07:18 [node1] Received Heartbeat from node3 term 303
+2026/01/17 19:07:19 [node1] Received Heartbeat from node3 term 303
+2026/01/17 19:07:19 [node1] Received Heartbeat from node3 term 303
+2026/01/17 19:07:19 [node1] Received Heartbeat from node3 term 303
+2026/01/17 19:07:19 [node1] Received Heartbeat from node3 term 303
+2026/01/17 19:07:19 [node1] Received Heartbeat from node3 term 303
+2026/01/17 19:07:19 [node1] Received Heartbeat from node3 term 303
+2026/01/17 19:07:19 [node1] Won election! Becoming Leader for term 304
+2026/01/17 19:07:20 [node1] Received Heartbeat from node2 term 305
+2026/01/17 19:07:20 [node1] Received Heartbeat from node2 term 305
+2026/01/17 19:07:20 [node1] Received Heartbeat from node2 term 305
+2026/01/17 19:07:20 [node1] Received Heartbeat from node2 term 305
+2026/01/17 19:07:20 [node1] Received Heartbeat from node2 term 305
+2026/01/17 19:07:20 [node1] Received Heartbeat from node2 term 305
+2026/01/17 19:07:20 [node1] Won election! Becoming Leader for term 306
+2026/01/17 19:07:21 [node1] Received Heartbeat from node3 term 307
+2026/01/17 19:07:21 [node1] Received Heartbeat from node3 term 307
+2026/01/17 19:07:21 [node1] Received Heartbeat from node3 term 307
+2026/01/17 19:07:21 [node1] Received Heartbeat from node3 term 307
+2026/01/17 19:07:21 [node1] Received Heartbeat from node3 term 307
+2026/01/17 19:07:21 [node1] Received Heartbeat from node3 term 307
+2026/01/17 19:07:22 [node1] Received Heartbeat from node3 term 307
+2026/01/17 19:07:22 [node1] Won election! Becoming Leader for term 309
+2026/01/17 19:07:23 [node1] Received Heartbeat from node3 term 310
+2026/01/17 19:07:23 [node1] Received Heartbeat from node3 term 310
+2026/01/17 19:07:23 [node1] Received Heartbeat from node2 term 311
+2026/01/17 19:07:23 [node1] Received Heartbeat from node2 term 311
+2026/01/17 19:07:24 [node1] Received Heartbeat from node2 term 311
+2026/01/17 19:07:24 [node1] Received Heartbeat from node2 term 311
+2026/01/17 19:07:24 [node1] Received Heartbeat from node2 term 311
+2026/01/17 19:07:24 [node1] Won election! Becoming Leader for term 312
+2026/01/17 19:07:25 [node1] Received Heartbeat from node3 term 313
+2026/01/17 19:07:25 [node1] Received Heartbeat from node3 term 313
+2026/01/17 19:07:25 [node1] Received Heartbeat from node3 term 313
+2026/01/17 19:07:25 [node1] Received Heartbeat from node2 term 314
+2026/01/17 19:07:25 [node1] Received Heartbeat from node2 term 314
+2026/01/17 19:07:25 [node1] Received Heartbeat from node2 term 314
+2026/01/17 19:07:26 [node1] Received Heartbeat from node2 term 314
+2026/01/17 19:07:26 [node1] Won election! Becoming Leader for term 315
+2026/01/17 19:07:26 [node1] Received Heartbeat from node3 term 316
+2026/01/17 19:07:26 [node1] Received Heartbeat from node3 term 316
+2026/01/17 19:07:27 [node1] Received Heartbeat from node3 term 316
+2026/01/17 19:07:27 [node1] Received Heartbeat from node3 term 316
+2026/01/17 19:07:27 [node1] Received Heartbeat from node3 term 316
+2026/01/17 19:07:27 [node1] Received Heartbeat from node3 term 316
+2026/01/17 19:07:27 [node1] Received Heartbeat from node3 term 316
+2026/01/17 19:07:27 [node1] Received Heartbeat from node2 term 317
+2026/01/17 19:07:28 [node1] Received Heartbeat from node2 term 317
+2026/01/17 19:07:28 [node1] Won election! Becoming Leader for term 318
+2026/01/17 19:07:29 [node1] Received Heartbeat from node3 term 319
+2026/01/17 19:07:29 [node1] Received Heartbeat from node3 term 319
+2026/01/17 19:07:29 [node1] Received Heartbeat from node2 term 320
+2026/01/17 19:07:29 [node1] Received Heartbeat from node2 term 320
+2026/01/17 19:07:29 [node1] Received Heartbeat from node2 term 320
+2026/01/17 19:07:30 [node1] Received Heartbeat from node2 term 320
+2026/01/17 19:07:30 [node1] Received Heartbeat from node2 term 320
+2026/01/17 19:07:30 [node1] Received Heartbeat from node2 term 320
+2026/01/17 19:07:30 [node1] Won election! Becoming Leader for term 321
+2026/01/17 19:07:30 [node1] Received Heartbeat from node3 term 322
+2026/01/17 19:07:31 [node1] Received Heartbeat from node3 term 322
+2026/01/17 19:07:31 [node1] Received Heartbeat from node3 term 322
+2026/01/17 19:07:31 [node1] Received Heartbeat from node3 term 322
+2026/01/17 19:07:31 [node1] Received Heartbeat from node3 term 322
+2026/01/17 19:07:31 [node1] Received Heartbeat from node3 term 322
+2026/01/17 19:07:31 [node1] Received Heartbeat from node3 term 322
+2026/01/17 19:07:31 [node1] Won election! Becoming Leader for term 324
+2026/01/17 19:07:33 [node1] Received Heartbeat from node3 term 326
+2026/01/17 19:07:33 [node1] Received Heartbeat from node3 term 326
+2026/01/17 19:07:33 [node1] Received Heartbeat from node3 term 326
+2026/01/17 19:07:33 [node1] Received Heartbeat from node3 term 326
+2026/01/17 19:07:33 [node1] Received Heartbeat from node3 term 326
+2026/01/17 19:07:34 [node1] Received Heartbeat from node3 term 326
+2026/01/17 19:07:34 [node1] Won election! Becoming Leader for term 327
+2026/01/17 19:07:34 [node1] Received Heartbeat from node2 term 328
+2026/01/17 19:07:34 [node1] Received Heartbeat from node2 term 328
+2026/01/17 19:07:34 [node1] Received Heartbeat from node2 term 328
+2026/01/17 19:07:35 [node1] Received Heartbeat from node2 term 328
+2026/01/17 19:07:35 [node1] Received Heartbeat from node2 term 329
+2026/01/17 19:07:35 [node1] Won election! Becoming Leader for term 330
+2026/01/17 19:07:36 [node1] Received Heartbeat from node3 term 331
+2026/01/17 19:07:36 [node1] Received Heartbeat from node2 term 332
+2026/01/17 19:07:36 [node1] Received Heartbeat from node2 term 332
+2026/01/17 19:07:36 [node1] Received Heartbeat from node2 term 332
+2026/01/17 19:07:37 [node1] Received Heartbeat from node2 term 332
+2026/01/17 19:07:37 [node1] Received Heartbeat from node2 term 332
+2026/01/17 19:07:37 [node1] Won election! Becoming Leader for term 333
+2026/01/17 19:07:38 [node1] Received Heartbeat from node3 term 334
+2026/01/17 19:07:38 [node1] Received Heartbeat from node3 term 334
+2026/01/17 19:07:38 [node1] Received Heartbeat from node3 term 334
+2026/01/17 19:07:38 [node1] Received Heartbeat from node3 term 334
+2026/01/17 19:07:38 [node1] Received Heartbeat from node3 term 334
+2026/01/17 19:07:38 [node1] Received Heartbeat from node2 term 335
+2026/01/17 19:07:39 [node1] Received Heartbeat from node2 term 335
+2026/01/17 19:07:39 [node1] Received Heartbeat from node2 term 335
+2026/01/17 19:07:39 [node1] Received Heartbeat from node2 term 335
+2026/01/17 19:07:39 [node1] Won election! Becoming Leader for term 336
+2026/01/17 19:07:40 [node1] Received Heartbeat from node3 term 337
+2026/01/17 19:07:40 [node1] Received Heartbeat from node2 term 338
+2026/01/17 19:07:40 [node1] Received Heartbeat from node2 term 338
+2026/01/17 19:07:40 [node1] Received Heartbeat from node2 term 338
+2026/01/17 19:07:41 [node1] Received Heartbeat from node2 term 338
+2026/01/17 19:07:41 [node1] Received Heartbeat from node2 term 338
+2026/01/17 19:07:41 [node1] Received Heartbeat from node2 term 338
+2026/01/17 19:07:41 [node1] Received Heartbeat from node2 term 338
+2026/01/17 19:07:41 [node1] Won election! Becoming Leader for term 339
+2026/01/17 19:07:42 [node1] Received Heartbeat from node3 term 340
+2026/01/17 19:07:42 [node1] Received Heartbeat from node3 term 340
+2026/01/17 19:07:42 [node1] Received Heartbeat from node3 term 340
+2026/01/17 19:07:42 [node1] Received Heartbeat from node3 term 340
+2026/01/17 19:07:42 [node1] Received Heartbeat from node3 term 340
+2026/01/17 19:07:42 [node1] Received Heartbeat from node3 term 340
+2026/01/17 19:07:43 [node1] Received Heartbeat from node2 term 341
+2026/01/17 19:07:43 [node1] Received Heartbeat from node2 term 341
+2026/01/17 19:07:43 [node1] Won election! Becoming Leader for term 342
+2026/01/17 19:07:44 [node1] Received Heartbeat from node2 term 344
+2026/01/17 19:07:44 [node1] Received Heartbeat from node2 term 344
+2026/01/17 19:07:44 [node1] Received Heartbeat from node2 term 344
+2026/01/17 19:07:45 [node1] Received Heartbeat from node2 term 344
+2026/01/17 19:07:45 [node1] Received Heartbeat from node2 term 344
+2026/01/17 19:07:45 [node1] Received Heartbeat from node2 term 344
+2026/01/17 19:07:45 [node1] Received Heartbeat from node2 term 344
+2026/01/17 19:07:45 [node1] Received Heartbeat from node2 term 344
+2026/01/17 19:07:45 [node1] Won election! Becoming Leader for term 345
+2026/01/17 19:07:45 [node1] Received Heartbeat from node3 term 346
+2026/01/17 19:07:46 [node1] Received Heartbeat from node3 term 346
+2026/01/17 19:07:46 [node1] Received Heartbeat from node3 term 346
+2026/01/17 19:07:46 [node1] Received Heartbeat from node3 term 346
+2026/01/17 19:07:46 [node1] Received Heartbeat from node3 term 346
+2026/01/17 19:07:46 [node1] Received Heartbeat from node3 term 346
+2026/01/17 19:07:46 [node1] Received Heartbeat from node2 term 347
+2026/01/17 19:07:46 [node1] Won election! Becoming Leader for term 348
+2026/01/17 19:07:48 [node1] Received Heartbeat from node3 term 349
+2026/01/17 19:07:48 [node1] Received Heartbeat from node3 term 349
+2026/01/17 19:07:48 [node1] Received Heartbeat from node2 term 350
+2026/01/17 19:07:48 [node1] Received Heartbeat from node2 term 350
+2026/01/17 19:07:48 [node1] Received Heartbeat from node2 term 350
+2026/01/17 19:07:48 [node1] Received Heartbeat from node2 term 350
+2026/01/17 19:07:49 [node1] Received Heartbeat from node2 term 350
+2026/01/17 19:07:49 [node1] Won election! Becoming Leader for term 351
+2026/01/17 19:07:49 [node1] Received Heartbeat from node3 term 352
+2026/01/17 19:07:49 [node1] Received Heartbeat from node3 term 352
+2026/01/17 19:07:50 [node1] Received Heartbeat from node3 term 352
+2026/01/17 19:07:50 [node1] Received Heartbeat from node3 term 352
+2026/01/17 19:07:50 [node1] Received Heartbeat from node2 term 353
+2026/01/17 19:07:50 [node1] Received Heartbeat from node2 term 353
+2026/01/17 19:07:50 [node1] Won election! Becoming Leader for term 354
+2026/01/17 19:07:52 [node1] Received Heartbeat from node3 term 355
+2026/01/17 19:07:52 [node1] Received Heartbeat from node3 term 355
+2026/01/17 19:07:52 [node1] Received Heartbeat from node3 term 355
+2026/01/17 19:07:52 [node1] Received Heartbeat from node2 term 356
+2026/01/17 19:07:52 [node1] Received Heartbeat from node2 term 356
+2026/01/17 19:07:52 [node1] Received Heartbeat from node2 term 356
+2026/01/17 19:07:52 [node1] Received Heartbeat from node2 term 356
+2026/01/17 19:07:53 [node1] Received Heartbeat from node2 term 356
+2026/01/17 19:07:53 [node1] Won election! Becoming Leader for term 357
+2026/01/17 19:07:53 [node1] Received Heartbeat from node3 term 358
+2026/01/17 19:07:54 [node1] Received Heartbeat from node3 term 358
+2026/01/17 19:07:54 [node1] Received Heartbeat from node3 term 358
+2026/01/17 19:07:54 [node1] Received Heartbeat from node3 term 358
+2026/01/17 19:07:54 [node1] Received Heartbeat from node3 term 358
+2026/01/17 19:07:54 [node1] Received Heartbeat from node2 term 359
+2026/01/17 19:07:54 [node1] Won election! Becoming Leader for term 360
+2026/01/17 19:07:56 [node1] Received Heartbeat from node2 term 362
+2026/01/17 19:07:56 [node1] Received Heartbeat from node2 term 362
+2026/01/17 19:07:56 [node1] Received Heartbeat from node2 term 362
+2026/01/17 19:07:56 [node1] Received Heartbeat from node2 term 362
+2026/01/17 19:07:57 [node1] Received Heartbeat from node2 term 362
+2026/01/17 19:07:57 [node1] Won election! Becoming Leader for term 363
+2026/01/17 19:07:57 [node1] Received Heartbeat from node3 term 364
+2026/01/17 19:07:57 [node1] Received Heartbeat from node3 term 364
+2026/01/17 19:07:57 [node1] Received Heartbeat from node3 term 364
+2026/01/17 19:07:57 [node1] Received Heartbeat from node3 term 364
+2026/01/17 19:07:58 [node1] Received Heartbeat from node3 term 364
+2026/01/17 19:07:58 [node1] Received Heartbeat from node2 term 365
+2026/01/17 19:07:58 [node1] Received Heartbeat from node2 term 365
+2026/01/17 19:07:58 [node1] Received Heartbeat from node2 term 365
+2026/01/17 19:07:58 [node1] Won election! Becoming Leader for term 366
+2026/01/17 19:07:59 [node1] Received Heartbeat from node3 term 367
+2026/01/17 19:07:59 [node1] Received Heartbeat from node3 term 367
+2026/01/17 19:08:00 [node1] Received Heartbeat from node2 term 368
+2026/01/17 19:08:00 [node1] Received Heartbeat from node2 term 368
+2026/01/17 19:08:00 [node1] Received Heartbeat from node2 term 368
+2026/01/17 19:08:00 [node1] Received Heartbeat from node2 term 368
+2026/01/17 19:08:00 [node1] Won election! Becoming Leader for term 369
+2026/01/17 19:08:01 [node1] Received Heartbeat from node3 term 370
+2026/01/17 19:08:01 [node1] Received Heartbeat from node3 term 370
+2026/01/17 19:08:01 [node1] Received Heartbeat from node3 term 370
+2026/01/17 19:08:01 [node1] Received Heartbeat from node2 term 371
+2026/01/17 19:08:02 [node1] Received Heartbeat from node2 term 371
+2026/01/17 19:08:02 [node1] Received Heartbeat from node2 term 371
+2026/01/17 19:08:02 [node1] Received Heartbeat from node2 term 371
+2026/01/17 19:08:02 [node1] Received Heartbeat from node2 term 371
+2026/01/17 19:08:02 [node1] Won election! Becoming Leader for term 372
+2026/01/17 19:08:03 [node1] Received Heartbeat from node3 term 373
+2026/01/17 19:08:03 [node1] Received Heartbeat from node3 term 373
+2026/01/17 19:08:03 [node1] Received Heartbeat from node3 term 373
+2026/01/17 19:08:03 [node1] Received Heartbeat from node3 term 373
+2026/01/17 19:08:03 [node1] Received Heartbeat from node3 term 373
+2026/01/17 19:08:03 [node1] Received Heartbeat from node3 term 373
+2026/01/17 19:08:04 [node1] Received Heartbeat from node2 term 374
+2026/01/17 19:08:04 [node1] Received Heartbeat from node2 term 374
+2026/01/17 19:08:04 [node1] Won election! Becoming Leader for term 375
+2026/01/17 19:08:05 [node1] Received Heartbeat from node3 term 377
+2026/01/17 19:08:05 [node1] Received Heartbeat from node3 term 377
+2026/01/17 19:08:05 [node1] Received Heartbeat from node3 term 377
+2026/01/17 19:08:05 [node1] Received Heartbeat from node3 term 377
+2026/01/17 19:08:06 [node1] Received Heartbeat from node3 term 377
+2026/01/17 19:08:06 [node1] Received Heartbeat from node3 term 377
+2026/01/17 19:08:06 [node1] Received Heartbeat from node3 term 377
+2026/01/17 19:08:06 [node1] Received Heartbeat from node3 term 377
+2026/01/17 19:08:06 [node1] Won election! Becoming Leader for term 378
+2026/01/17 19:08:06 [node1] Received Heartbeat from node2 term 379
+2026/01/17 19:08:06 [node1] Received Heartbeat from node2 term 379
+2026/01/17 19:08:07 [node1] Received Heartbeat from node2 term 379
+2026/01/17 19:08:07 [node1] Received Heartbeat from node2 term 379
+2026/01/17 19:08:07 [node1] Received Heartbeat from node2 term 379
+2026/01/17 19:08:07 [node1] Received Heartbeat from node2 term 379
+2026/01/17 19:08:07 [node1] Received Heartbeat from node3 term 380
+2026/01/17 19:08:07 [node1] Won election! Becoming Leader for term 381
+2026/01/17 19:08:08 [node1] Received Heartbeat from node2 term 382
+2026/01/17 19:08:09 [node1] Received Heartbeat from node2 term 382
+2026/01/17 19:08:09 [node1] Received Heartbeat from node3 term 383
+2026/01/17 19:08:09 [node1] Received Heartbeat from node3 term 383
+2026/01/17 19:08:09 [node1] Received Heartbeat from node3 term 383
+2026/01/17 19:08:09 [node1] Received Heartbeat from node3 term 383
+2026/01/17 19:08:09 [node1] Won election! Becoming Leader for term 384
+2026/01/17 19:08:10 [node1] Received Heartbeat from node2 term 385
+2026/01/17 19:08:10 [node1] Received Heartbeat from node2 term 385
+2026/01/17 19:08:10 [node1] Received Heartbeat from node2 term 385
+2026/01/17 19:08:10 [node1] Received Heartbeat from node2 term 385
+2026/01/17 19:08:10 [node1] Received Heartbeat from node2 term 385
+2026/01/17 19:08:11 [node1] Received Heartbeat from node2 term 385
+2026/01/17 19:08:11 [node1] Received Heartbeat from node2 term 385
+2026/01/17 19:08:11 [node1] Received Heartbeat from node2 term 386
+2026/01/17 19:08:11 [node1] Won election! Becoming Leader for term 387
+2026/01/17 19:08:12 [node1] Received Heartbeat from node2 term 389
+2026/01/17 19:08:12 [node1] Received Heartbeat from node2 term 389
+2026/01/17 19:08:12 [node1] Received Heartbeat from node2 term 389
+2026/01/17 19:08:13 [node1] Received Heartbeat from node2 term 389
+2026/01/17 19:08:13 [node1] Received Heartbeat from node2 term 389
+2026/01/17 19:08:13 [node1] Received Heartbeat from node2 term 389
+2026/01/17 19:08:13 [node1] Received Heartbeat from node2 term 389
+2026/01/17 19:08:13 [node1] Won election! Becoming Leader for term 390
+2026/01/17 19:08:13 [node1] Received Heartbeat from node3 term 391
+2026/01/17 19:08:14 [node1] Received Heartbeat from node3 term 391
+2026/01/17 19:08:14 [node1] Received Heartbeat from node3 term 391
+2026/01/17 19:08:14 [node1] Received Heartbeat from node3 term 391
+2026/01/17 19:08:14 [node1] Received Heartbeat from node3 term 391
+2026/01/17 19:08:14 [node1] Received Heartbeat from node3 term 391
+2026/01/17 19:08:14 [node1] Received Heartbeat from node2 term 392
+2026/01/17 19:08:15 [node1] Won election! Becoming Leader for term 393
+2026/01/17 19:08:16 [node1] Received Heartbeat from node3 term 394
+2026/01/17 19:08:16 [node1] Received Heartbeat from node2 term 395
+2026/01/17 19:08:16 [node1] Received Heartbeat from node2 term 395
+2026/01/17 19:08:16 [node1] Received Heartbeat from node2 term 395
+2026/01/17 19:08:16 [node1] Received Heartbeat from node2 term 395
+2026/01/17 19:08:16 [node1] Received Heartbeat from node2 term 395
+2026/01/17 19:08:17 [node1] Won election! Becoming Leader for term 396
+2026/01/17 19:08:17 [node1] Received Heartbeat from node3 term 397
+2026/01/17 19:08:17 [node1] Received Heartbeat from node3 term 397
+2026/01/17 19:08:17 [node1] Received Heartbeat from node3 term 397
+2026/01/17 19:08:17 [node1] Received Heartbeat from node3 term 397
+2026/01/17 19:08:18 [node1] Received Heartbeat from node3 term 397
+2026/01/17 19:08:18 [node1] Received Heartbeat from node3 term 397
+2026/01/17 19:08:18 [node1] Received Heartbeat from node3 term 397
+2026/01/17 19:08:18 [node1] Won election! Becoming Leader for term 399
+2026/01/17 19:08:20 [node1] Received Heartbeat from node2 term 401
+2026/01/17 19:08:20 [node1] Received Heartbeat from node2 term 401
+2026/01/17 19:08:20 [node1] Received Heartbeat from node2 term 401
+2026/01/17 19:08:20 [node1] Received Heartbeat from node2 term 401
+2026/01/17 19:08:20 [node1] Received Heartbeat from node2 term 401
+2026/01/17 19:08:20 [node1] Received Heartbeat from node2 term 401
+2026/01/17 19:08:21 [node1] Received Heartbeat from node2 term 401
+2026/01/17 19:08:21 [node1] Won election! Becoming Leader for term 403
+2026/01/17 19:08:22 [node1] Received Heartbeat from node2 term 405
+2026/01/17 19:08:22 [node1] Received Heartbeat from node2 term 405
+2026/01/17 19:08:23 [node1] Received Heartbeat from node2 term 405
+2026/01/17 19:08:23 [node1] Received Heartbeat from node2 term 405
+2026/01/17 19:08:23 [node1] Received Heartbeat from node2 term 405
+2026/01/17 19:08:23 [node1] Received Heartbeat from node2 term 405
+2026/01/17 19:08:23 [node1] Received Heartbeat from node2 term 405
+2026/01/17 19:08:23 [node1] Won election! Becoming Leader for term 407
+2026/01/17 19:08:25 [node1] Received Heartbeat from node3 term 409
+2026/01/17 19:08:25 [node1] Received Heartbeat from node3 term 409
+2026/01/17 19:08:25 [node1] Received Heartbeat from node3 term 409
+2026/01/17 19:08:25 [node1] Received Heartbeat from node3 term 409
+2026/01/17 19:08:25 [node1] Received Heartbeat from node3 term 409
+2026/01/17 19:08:25 [node1] Received Heartbeat from node3 term 409
+2026/01/17 19:08:26 [node1] Received Heartbeat from node3 term 409
+2026/01/17 19:08:26 [node1] Received Heartbeat from node2 term 410
+2026/01/17 19:08:26 [node1] Won election! Becoming Leader for term 411
+2026/01/17 19:08:27 [node1] Received Heartbeat from node3 term 412
+2026/01/17 19:08:27 [node1] Received Heartbeat from node3 term 412
+2026/01/17 19:08:27 [node1] Received Heartbeat from node2 term 413
+2026/01/17 19:08:28 [node1] Received Heartbeat from node2 term 413
+2026/01/17 19:08:28 [node1] Received Heartbeat from node2 term 413
+2026/01/17 19:08:28 [node1] Received Heartbeat from node2 term 413
+2026/01/17 19:08:28 [node1] Received Heartbeat from node2 term 413
+2026/01/17 19:08:28 [node1] Won election! Becoming Leader for term 414
+2026/01/17 19:08:29 [node1] Received Heartbeat from node3 term 415
+2026/01/17 19:08:29 [node1] Received Heartbeat from node3 term 415
+2026/01/17 19:08:29 [node1] Received Heartbeat from node3 term 415
+2026/01/17 19:08:29 [node1] Received Heartbeat from node3 term 415
+2026/01/17 19:08:29 [node1] Received Heartbeat from node3 term 415
+2026/01/17 19:08:30 [node1] Received Heartbeat from node2 term 416
+2026/01/17 19:08:30 [node1] Received Heartbeat from node2 term 416
+2026/01/17 19:08:30 [node1] Won election! Becoming Leader for term 417
+2026/01/17 19:08:31 [node1] Received Heartbeat from node2 term 419
+2026/01/17 19:08:31 [node1] Received Heartbeat from node2 term 419
+2026/01/17 19:08:31 [node1] Received Heartbeat from node2 term 419
+2026/01/17 19:08:32 [node1] Received Heartbeat from node2 term 419
+2026/01/17 19:08:32 [node1] Received Heartbeat from node2 term 419
+2026/01/17 19:08:32 [node1] Received Heartbeat from node2 term 419
+2026/01/17 19:08:32 [node1] Received Heartbeat from node3 term 420
+2026/01/17 19:08:32 [node1] Won election! Becoming Leader for term 421
+2026/01/17 19:08:33 [node1] Received Heartbeat from node2 term 422
+2026/01/17 19:08:34 [node1] Received Heartbeat from node3 term 423
+2026/01/17 19:08:34 [node1] Received Heartbeat from node3 term 423
+2026/01/17 19:08:34 [node1] Received Heartbeat from node3 term 423
+2026/01/17 19:08:34 [node1] Received Heartbeat from node3 term 423
+2026/01/17 19:08:34 [node1] Received Heartbeat from node3 term 423
+2026/01/17 19:08:34 [node1] Received Heartbeat from node3 term 423
+2026/01/17 19:08:34 [node1] Received Heartbeat from node3 term 423
+2026/01/17 19:08:34 [node1] Won election! Becoming Leader for term 424
+2026/01/17 19:08:35 [node1] Received Heartbeat from node2 term 425
+2026/01/17 19:08:35 [node1] Received Heartbeat from node2 term 425
+2026/01/17 19:08:35 [node1] Received Heartbeat from node2 term 425
+2026/01/17 19:08:35 [node1] Received Heartbeat from node2 term 425
+2026/01/17 19:08:35 [node1] Received Heartbeat from node2 term 425
+2026/01/17 19:08:35 [node1] Received Heartbeat from node2 term 425
+2026/01/17 19:08:36 [node1] Received Heartbeat from node3 term 426
+2026/01/17 19:08:36 [node1] Received Heartbeat from node3 term 426
+2026/01/17 19:08:36 [node1] Won election! Becoming Leader for term 427
+2026/01/17 19:08:37 [node1] Received Heartbeat from node2 term 428
+2026/01/17 19:08:37 [node1] Received Heartbeat from node3 term 429
+2026/01/17 19:08:37 [node1] Received Heartbeat from node3 term 429
+2026/01/17 19:08:38 [node1] Received Heartbeat from node3 term 429
+2026/01/17 19:08:38 [node1] Received Heartbeat from node3 term 429
+2026/01/17 19:08:38 [node1] Received Heartbeat from node3 term 429
+2026/01/17 19:08:38 [node1] Won election! Becoming Leader for term 430
+2026/01/17 19:08:38 [node1] Received Heartbeat from node2 term 431
+2026/01/17 19:08:39 [node1] Received Heartbeat from node2 term 431
+2026/01/17 19:08:39 [node1] Received Heartbeat from node2 term 431
+2026/01/17 19:08:39 [node1] Received Heartbeat from node2 term 431
+2026/01/17 19:08:39 [node1] Received Heartbeat from node2 term 431
+2026/01/17 19:08:39 [node1] Received Heartbeat from node2 term 431
+2026/01/17 19:08:39 [node1] Received Heartbeat from node2 term 431
+2026/01/17 19:08:40 [node1] Received Heartbeat from node3 term 432
+2026/01/17 19:08:40 [node1] Won election! Becoming Leader for term 433
+2026/01/17 19:08:41 [node1] Received Heartbeat from node3 term 435
+2026/01/17 19:08:41 [node1] Received Heartbeat from node3 term 435
+2026/01/17 19:08:41 [node1] Received Heartbeat from node3 term 435
+2026/01/17 19:08:41 [node1] Received Heartbeat from node3 term 435
+2026/01/17 19:08:41 [node1] Received Heartbeat from node3 term 435
+2026/01/17 19:08:42 [node1] Received Heartbeat from node3 term 435
+2026/01/17 19:08:42 [node1] Received Heartbeat from node3 term 435
+2026/01/17 19:08:42 [node1] Received Heartbeat from node3 term 435
+2026/01/17 19:08:42 [node1] Won election! Becoming Leader for term 436
+2026/01/17 19:08:42 [node1] Received Heartbeat from node2 term 437
+2026/01/17 19:08:42 [node1] Received Heartbeat from node2 term 437
+2026/01/17 19:08:43 [node1] Received Heartbeat from node2 term 437
+2026/01/17 19:08:43 [node1] Received Heartbeat from node2 term 437
+2026/01/17 19:08:43 [node1] Received Heartbeat from node2 term 437
+2026/01/17 19:08:43 [node1] Received Heartbeat from node2 term 437
+2026/01/17 19:08:43 [node1] Received Heartbeat from node2 term 437
+2026/01/17 19:08:43 [node1] Won election! Becoming Leader for term 438
+2026/01/17 19:08:43 [node1] Received Heartbeat from node3 term 439
+2026/01/17 19:08:44 [node1] Received Heartbeat from node3 term 439
+2026/01/17 19:08:44 [node1] Received Heartbeat from node3 term 439
+2026/01/17 19:08:44 [node1] Received Heartbeat from node3 term 439
+2026/01/17 19:08:44 [node1] Received Heartbeat from node3 term 439
+2026/01/17 19:08:44 [node1] Received Heartbeat from node3 term 439
+2026/01/17 19:08:44 [node1] Received Heartbeat from node3 term 439
+2026/01/17 19:08:45 [node1] Received Heartbeat from node2 term 440
+2026/01/17 19:08:45 [node1] Won election! Becoming Leader for term 441
+2026/01/17 19:08:46 [node1] Received Heartbeat from node3 term 442
+2026/01/17 19:08:46 [node1] Received Heartbeat from node3 term 442
+2026/01/17 19:08:46 [node1] Received Heartbeat from node3 term 442
+2026/01/17 19:08:46 [node1] Received Heartbeat from node2 term 443
+2026/01/17 19:08:46 [node1] Received Heartbeat from node2 term 443
+2026/01/17 19:08:46 [node1] Received Heartbeat from node2 term 443
+2026/01/17 19:08:47 [node1] Received Heartbeat from node2 term 443
+2026/01/17 19:08:47 [node1] Won election! Becoming Leader for term 444
+2026/01/17 19:08:47 [node1] Received Heartbeat from node3 term 445
+2026/01/17 19:08:48 [node1] Received Heartbeat from node3 term 445
+2026/01/17 19:08:48 [node1] Received Heartbeat from node3 term 445
+2026/01/17 19:08:48 [node1] Received Heartbeat from node2 term 446
+2026/01/17 19:08:48 [node1] Received Heartbeat from node2 term 446
+2026/01/17 19:08:48 [node1] Received Heartbeat from node2 term 446
+2026/01/17 19:08:48 [node1] Received Heartbeat from node2 term 446
+2026/01/17 19:08:48 [node1] Won election! Becoming Leader for term 447
+2026/01/17 19:08:49 [node1] Received Heartbeat from node3 term 448
+2026/01/17 19:08:49 [node1] Received Heartbeat from node3 term 448
+2026/01/17 19:08:49 [node1] Received Heartbeat from node3 term 448
+2026/01/17 19:08:49 [node1] Received Heartbeat from node3 term 448
+2026/01/17 19:08:50 [node1] Received Heartbeat from node2 term 449
+2026/01/17 19:08:50 [node1] Received Heartbeat from node2 term 449
+2026/01/17 19:08:50 [node1] Received Heartbeat from node2 term 449
+2026/01/17 19:08:50 [node1] Received Heartbeat from node2 term 449
+2026/01/17 19:08:50 [node1] Won election! Becoming Leader for term 450
+2026/01/17 19:08:51 [node1] Received Heartbeat from node3 term 451
+2026/01/17 19:08:51 [node1] Received Heartbeat from node3 term 451
+2026/01/17 19:08:51 [node1] Received Heartbeat from node3 term 451
+2026/01/17 19:08:51 [node1] Received Heartbeat from node3 term 451
+2026/01/17 19:08:52 [node1] Received Heartbeat from node2 term 452
+2026/01/17 19:08:52 [node1] Received Heartbeat from node2 term 452
+2026/01/17 19:08:52 [node1] Received Heartbeat from node2 term 452
+2026/01/17 19:08:52 [node1] Received Heartbeat from node2 term 452
+2026/01/17 19:08:52 [node1] Received Heartbeat from node2 term 452
+2026/01/17 19:08:52 [node1] Won election! Becoming Leader for term 453
+2026/01/17 19:08:53 [node1] Received Heartbeat from node3 term 454
+2026/01/17 19:08:53 [node1] Received Heartbeat from node3 term 454
+2026/01/17 19:08:53 [node1] Received Heartbeat from node3 term 454
+2026/01/17 19:08:53 [node1] Received Heartbeat from node3 term 454
+2026/01/17 19:08:53 [node1] Received Heartbeat from node3 term 454
+2026/01/17 19:08:54 [node1] Received Heartbeat from node3 term 454
+2026/01/17 19:08:54 [node1] Won election! Becoming Leader for term 456
+2026/01/17 19:08:54 [node1] Received Heartbeat from node2 term 456
+2026/01/17 19:08:55 [node1] Election timeout, becoming Candidate
+2026/01/17 19:08:55 [node1] Won election! Becoming Leader for term 457
+2026/01/17 19:08:55 [node1] Received Heartbeat from node3 term 458
+2026/01/17 19:08:55 [node1] Received Heartbeat from node3 term 458
+2026/01/17 19:08:55 [node1] Received Heartbeat from node3 term 458
+2026/01/17 19:08:55 [node1] Received Heartbeat from node2 term 459
+2026/01/17 19:08:55 [node1] Received Heartbeat from node2 term 459
+2026/01/17 19:08:56 [node1] Received Heartbeat from node2 term 459
+2026/01/17 19:08:56 [node1] Received Heartbeat from node2 term 459
+2026/01/17 19:08:56 [node1] Won election! Becoming Leader for term 460
+2026/01/17 19:08:57 [node1] Received Heartbeat from node2 term 462
+2026/01/17 19:08:58 [node1] Received Heartbeat from node2 term 462
+2026/01/17 19:08:58 [node1] Received Heartbeat from node2 term 462
+2026/01/17 19:08:58 [node1] Won election! Becoming Leader for term 463
+2026/01/17 19:08:58 [node1] Received Heartbeat from node3 term 464
+2026/01/17 19:08:58 [node1] Received Heartbeat from node3 term 464
+2026/01/17 19:08:59 [node1] Received Heartbeat from node3 term 464
+2026/01/17 19:08:59 [node1] Received Heartbeat from node3 term 464
+2026/01/17 19:08:59 [node1] Received Heartbeat from node3 term 464
+2026/01/17 19:08:59 [node1] Received Heartbeat from node3 term 464
+2026/01/17 19:08:59 [node1] Received Heartbeat from node2 term 465
+2026/01/17 19:08:59 [node1] Received Heartbeat from node2 term 465
+2026/01/17 19:09:00 [node1] Won election! Becoming Leader for term 466
+2026/01/17 19:09:01 [node1] Received Heartbeat from node2 term 468
+2026/01/17 19:09:01 [node1] Received Heartbeat from node2 term 468
+2026/01/17 19:09:01 [node1] Received Heartbeat from node2 term 468
+2026/01/17 19:09:01 [node1] Received Heartbeat from node2 term 468
+2026/01/17 19:09:01 [node1] Received Heartbeat from node2 term 468
+2026/01/17 19:09:01 [node1] Received Heartbeat from node2 term 468
+2026/01/17 19:09:02 [node1] Received Heartbeat from node3 term 469
+2026/01/17 19:09:02 [node1] Won election! Becoming Leader for term 470
+2026/01/17 19:09:03 [node1] Received Heartbeat from node3 term 471
+2026/01/17 19:09:03 [node1] Received Heartbeat from node2 term 472
+2026/01/17 19:09:03 [node1] Received Heartbeat from node2 term 472
+2026/01/17 19:09:04 [node1] Received Heartbeat from node2 term 472
+2026/01/17 19:09:04 [node1] Received Heartbeat from node2 term 472
+2026/01/17 19:09:04 [node1] Received Heartbeat from node2 term 472
+2026/01/17 19:09:04 [node1] Received Heartbeat from node2 term 472
+2026/01/17 19:09:04 [node1] Received Heartbeat from node2 term 472
+2026/01/17 19:09:04 [node1] Won election! Becoming Leader for term 473
+2026/01/17 19:09:05 [node1] Received Heartbeat from node3 term 474
+2026/01/17 19:09:05 [node1] Received Heartbeat from node3 term 474
+2026/01/17 19:09:05 [node1] Received Heartbeat from node3 term 474
+2026/01/17 19:09:05 [node1] Received Heartbeat from node3 term 474
+2026/01/17 19:09:05 [node1] Received Heartbeat from node3 term 474
+2026/01/17 19:09:05 [node1] Received Heartbeat from node3 term 474
+2026/01/17 19:09:06 [node1] Received Heartbeat from node2 term 475
+2026/01/17 19:09:06 [node1] Received Heartbeat from node2 term 475
+2026/01/17 19:09:06 [node1] Won election! Becoming Leader for term 476
+2026/01/17 19:09:07 [node1] Received Heartbeat from node3 term 477
+2026/01/17 19:09:07 [node1] Received Heartbeat from node2 term 478
+2026/01/17 19:09:07 [node1] Received Heartbeat from node2 term 478
+2026/01/17 19:09:08 [node1] Received Heartbeat from node2 term 478
+2026/01/17 19:09:08 [node1] Received Heartbeat from node2 term 478
+2026/01/17 19:09:08 [node1] Received Heartbeat from node2 term 478
+2026/01/17 19:09:08 [node1] Won election! Becoming Leader for term 479
+2026/01/17 19:09:09 [node1] Received Heartbeat from node3 term 481
+2026/01/17 19:09:09 [node1] Received Heartbeat from node2 term 482
+2026/01/17 19:09:09 [node1] Won election! Becoming Leader for term 483
+2026/01/17 19:09:10 [node1] Received Heartbeat from node3 term 484
+2026/01/17 19:09:11 [node1] Received Heartbeat from node3 term 484
+2026/01/17 19:09:11 [node1] Received Heartbeat from node3 term 484
+2026/01/17 19:09:11 [node1] Received Heartbeat from node2 term 485
+2026/01/17 19:09:11 [node1] Received Heartbeat from node2 term 485
+2026/01/17 19:09:11 [node1] Received Heartbeat from node2 term 485
+2026/01/17 19:09:11 [node1] Received Heartbeat from node2 term 485
+2026/01/17 19:09:12 [node1] Won election! Becoming Leader for term 486
+2026/01/17 19:09:12 [node1] Received Heartbeat from node3 term 487
+2026/01/17 19:09:12 [node1] Received Heartbeat from node3 term 487
+2026/01/17 19:09:12 [node1] Received Heartbeat from node3 term 487
+2026/01/17 19:09:13 [node1] Received Heartbeat from node3 term 487
+2026/01/17 19:09:13 [node1] Received Heartbeat from node3 term 487
+2026/01/17 19:09:13 [node1] Received Heartbeat from node2 term 488
+2026/01/17 19:09:13 [node1] Received Heartbeat from node2 term 488
+2026/01/17 19:09:13 [node1] Received Heartbeat from node2 term 488
+2026/01/17 19:09:13 [node1] Received Heartbeat from node2 term 488
+2026/01/17 19:09:14 [node1] Won election! Becoming Leader for term 489
+2026/01/17 19:09:14 [node1] Received Heartbeat from node3 term 490
+2026/01/17 19:09:14 [node1] Received Heartbeat from node3 term 490
+2026/01/17 19:09:14 [node1] Received Heartbeat from node3 term 490
+2026/01/17 19:09:14 [node1] Received Heartbeat from node3 term 490
+2026/01/17 19:09:15 [node1] Received Heartbeat from node3 term 490
+2026/01/17 19:09:15 [node1] Received Heartbeat from node3 term 490
+2026/01/17 19:09:15 [node1] Won election! Becoming Leader for term 492
+2026/01/17 19:09:16 [node1] Received Heartbeat from node3 term 494
+2026/01/17 19:09:17 [node1] Received Heartbeat from node3 term 494
+2026/01/17 19:09:17 [node1] Received Heartbeat from node3 term 494
+2026/01/17 19:09:17 [node1] Received Heartbeat from node3 term 494
+2026/01/17 19:09:17 [node1] Received Heartbeat from node3 term 494
+2026/01/17 19:09:17 [node1] Received Heartbeat from node3 term 494
+2026/01/17 19:09:17 [node1] Received Heartbeat from node3 term 494
+2026/01/17 19:09:18 [node1] Received Heartbeat from node3 term 494
+2026/01/17 19:09:18 [node1] Received Heartbeat from node3 term 494
+2026/01/17 19:09:18 [node1] Won election! Becoming Leader for term 495
+2026/01/17 19:09:18 [node1] Received Heartbeat from node2 term 496
+2026/01/17 19:09:18 [node1] Received Heartbeat from node2 term 496
+2026/01/17 19:09:18 [node1] Received Heartbeat from node2 term 496
+2026/01/17 19:09:18 [node1] Received Heartbeat from node2 term 496
+2026/01/17 19:09:19 [node1] Received Heartbeat from node2 term 496
+2026/01/17 19:09:19 [node1] Received Heartbeat from node2 term 496
+2026/01/17 19:09:19 [node1] Received Heartbeat from node2 term 496
+2026/01/17 19:09:19 [node1] Received Heartbeat from node3 term 497
+2026/01/17 19:09:19 [node1] Won election! Becoming Leader for term 498
