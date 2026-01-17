@@ -13,7 +13,9 @@ const nextConfig: any = {
   productionBrowserSourceMaps: false,
   compress: true,
   poweredByHeader: false,
+  // High memory usage fix: disable minification
   swcMinify: true,
+  output: "standalone",
 };
 
 export default nextConfig;
